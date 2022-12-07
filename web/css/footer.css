@@ -1,0 +1,36 @@
+.footer{
+    background-color: #ECF0FB;
+}
+.footer .paragraph-main{
+    font-size: 14px;
+}
+.contact-us > .paragraph-main{
+    font-size: 18px;
+}
+.contact-us{
+    width: 496px;
+    margin-right: 74px;
+}
+.contact-us-list{
+    list-style-type: none;
+}
+.contact-us-list-item{
+    padding-left: 32px;
+    position: relative;
+}
+.contact-us-list-item::before{
+    content:'';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    left: 0;
+    top: 10px;
+    background-color: black;
+}
+.footer .main-container{
+    margin-top: 64px;
+}
+.footer .link{
+    color: #690C52;
+}

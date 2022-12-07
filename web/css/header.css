@@ -1,0 +1,25 @@
+.nav-items-list{
+    list-style-type: none;
+}
+.header .link{
+    color: #808080;
+}
+.font-heading{
+    font-size: 40px
+}
+.nav-items-list li:not(:last-child){
+    margin-right: 40px;
+}
+.nav-logo{
+    min-width: 637px;
+}
+.btn-request{
+    border: 1px solid #690C52;
+    width: 185px;
+    height: 48px;
+    border-radius: 4px;
+    color: #232323;
+}
+.header .paragraph-main{
+    font-size: 16px;
+}

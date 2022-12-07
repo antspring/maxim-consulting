@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+*{
+    font-family: "Lato", serif;
+}
+.main-container{
+    margin: 0 405px;
+}
+.paragraph-main{
+    font-size: 16px;
+    color: #232323;
+}
+.paragraph-heading{
+    font-size: 40px;
+    color: #0B2052;
+}
+.link{
+    color: black;
+    text-decoration: none;
+}
+.footer-info{
+    margin-top: 40px;
+}
