@@ -49,6 +49,7 @@ $config = [
             ],
         ],
     ],
+    'language' => 'ru_RU',
     'params' => $params,
 ];
 
