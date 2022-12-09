@@ -8,7 +8,7 @@ use app\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 use yii\widgets\ActiveForm;
-use app\models\ConsultationFeedbackForm;
+use app\components\ConsultationFeedbackFormWidget;
 
 AppAsset::register($this);
 
@@ -88,14 +88,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </ul>
             </div>
             <div>
-                <?php $model = new ConsultationFeedbackForm()?>
-                <?php $form = ActiveForm::begin(); ?>
-                    <?= $form->field($model, 'name', ['options' => ['class' => 'input-consultation-form']]) ?>
-                    <?= $form->field($model, 'tel_number') ?>
-                    <?= $form->field($model, 'city') ?>
-                    <?= $form->field($model, 'question') ?>
-                    <?= \yii\helpers\Html::button('Оставить заявку', ['class' => 'btn']) ?>
-                <?php ActiveForm::end() ?>
+                <?= ConsultationFeedbackFormWidget::widget() ?>
             </div>
         </div>
         <div class="w-100 d-flex justify-content-between footer-info">
