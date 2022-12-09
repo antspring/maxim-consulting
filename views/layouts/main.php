@@ -33,7 +33,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <div class="w-100 d-flex justify-content-center" style="height: 100px">
         <div class="w-100 h-100 d-flex align-items-center justify-content-between main-container">
             <div class="d-flex align-items-center justify-content-between nav-logo">
-                <img src="<?= Yii::getAlias('@web/images/Logo_maxim_consulting.jpg') ?>" alt="">
+                <img src="<?= Yii::getAlias('@web/images/Logo_maxim.png') ?>" alt="">
                 <div class="nav-items">
                     <ul class="d-flex m-0 p-0 nav-items-list ">
                         <li class="paragraph-main">
@@ -55,20 +55,18 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </div>
             </div>
             <div>
-                <button class="btn btn-request">Оставить  заявку</button>
+                <button class="btn-request btn-request-secondary-outline">Оставить  заявку</button>
             </div>
         </div>
     </div>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-    <div class="container">
         <?php if (!empty($this->params['breadcrumbs'])): ?>
             <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
         <?php endif ?>
         <?= Alert::widget() ?>
         <?= $content ?>
-    </div>
 </main>
 
 <footer id="footer" class="footer">

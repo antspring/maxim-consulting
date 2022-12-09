@@ -1,6 +1,13 @@
 .nav-items-list{
     list-style-type: none;
 }
+.header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
 .header .link{
     color: #808080;
 }
@@ -12,13 +19,6 @@
 }
 .nav-logo{
     min-width: 637px;
-}
-.btn-request{
-    border: 1px solid #690C52;
-    width: 185px;
-    height: 48px;
-    border-radius: 4px;
-    color: #232323;
 }
 .header .paragraph-main{
     font-size: 16px;

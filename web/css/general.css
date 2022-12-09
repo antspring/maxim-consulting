@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Lato-Regular";
+    font-weight: 400;
+    src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face{
+    font-family: "Lato-SemiBold";
+    font-weight: 600;
+    src: url("../fonts/Lato-SemiBold.ttf");
+}
+@font-face{
+    font-family: "Lato-SemiBoldItalic";
+    font-weight: 600;
+    src: url("../fonts/Lato-SemiBoldItalic.ttf");
+}
+@font-face {
+    font-family: "Lato-Bold";
+    font-weight: 700;
+    src: url("../fonts/Lato-Bold.ttf");
+}
+*{
+    font-family: "Lato-Regular", serif;
+    font-size: 16px;
+    color: #232323;
+}
+.semi-bold-item{
+    font-family: "Lato-SemiBold", serif;
+}
+.bold-item{
+    font-family: "Lato-Bold", serif;
+}
+.paragraph-italic{
+    font-family: "Lato-SemiBoldItalic", serif;
+    font-size: 24px;
+    line-height: 32px;
+}
+.heading{
+    color: #0B2052;
+    font-size: 40px;
+    line-height: 56px;
+    padding-top: 65px;
+}
+.main-container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.paragraph-main{
+    font-size: 16px;
+    color: #232323;
+}
+.paragraph-heading{
+    font-size: 40px;
+    color: #0B2052;
+}
+.link{
+    color: #232323;
+    text-decoration: none;
+}
+.link:hover{
+    color: #232323;
+}
+.footer-info{
+    margin-top: 40px;
+}
+.btn-request{
+    border-radius: 4px;
+    padding: 12px 32px;
+}
+.btn-request-primary-outline{
+    border: 1px solid #690C52;
+    color: #232323;
+}
+.btn-request-primary-fill{
+    background-color: #690C52;
+    border: 1px solid #690C52;
+    color: #FFFFFF;
+}
+.btn-request-secondary-outline{
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
