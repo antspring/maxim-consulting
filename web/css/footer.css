@@ -1,25 +1,31 @@
-.footer{
+.footer {
     background-color: #ECF0FB;
 }
-.footer .paragraph-main{
+
+.footer .paragraph-main {
     font-size: 14px;
 }
-.contact-us > .paragraph-main{
+
+.contact-us > .paragraph-main {
     font-size: 18px;
 }
-.contact-us{
+
+.contact-us {
     width: 496px;
     margin-right: 74px;
 }
-.contact-us-list{
+
+.contact-us-list {
     list-style-type: none;
 }
-.contact-us-list-item{
+
+.contact-us-list-item {
     padding-left: 32px;
     position: relative;
 }
-.contact-us-list-item::before{
-    content:'';
+
+.contact-us-list-item::before {
+    content: '';
     position: absolute;
     width: 6px;
     height: 6px;
@@ -28,9 +34,11 @@
     top: 10px;
     background-color: black;
 }
-.footer .main-container{
+
+.footer .main-container {
     margin-top: 64px;
 }
-.footer .link{
+
+.footer .link {
     color: #690C52;
 }

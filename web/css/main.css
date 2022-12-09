@@ -1,30 +1,37 @@
-.main-heading{
+.main-heading {
     padding: 100px 405px 0 405px;
 }
-.heading-container h1{
+
+.heading-container h1 {
     font-size: 56px;
     line-height: 80px;
 }
-.heading-container-paragraph{
+
+.heading-container-paragraph {
     font-size: 32px;
     line-height: 48px;
     color: #0B2052;
 }
-.small-description-list{
+
+.small-description-list {
     margin-top: 65px;
 }
-.small-description-list .list-item{
+
+.small-description-list .list-item {
     font-size: 20px;
     line-height: 32px;
 }
+
 .list-item {
     list-style-type: none;
     padding-left: 40px;
 }
-.list-item:not(:last-child){
+
+.list-item:not(:last-child) {
     margin-bottom: 15px;
 }
-.list-item::before{
+
+.list-item::before {
     content: '';
     position: absolute;
     width: 6px;
@@ -32,29 +39,34 @@
     background-color: #0B2052;
     border-radius: 100%;
     left: 12px;
-    top:50%;
+    top: 50%;
 }
-.round-main{
+
+.round-main {
     position: absolute;
     top: 0;
     right: 0;
     z-index: -1;
     width: 778px;
 }
-.main-services{
+
+.main-services {
     padding-top: 65px;
 }
-.main-background{
+
+.main-background {
     background-color: #ECF0FB;
 }
-.services-switcher-button{
+
+.services-switcher-button {
     font-size: 24px;
     background: none;
     border: none;
     color: #808080;
     line-height: 32px;
 }
-.services-switcher-button:not(:last-child)::after{
+
+.services-switcher-button:not(:last-child)::after {
     content: '';
     position: absolute;
     width: 2px;
@@ -62,71 +74,91 @@
     background-color: #0B2052;
     right: 20px;
 }
-.services-switcher .active{
+
+.services-switcher .active {
     color: #232323;
 }
-.services-item-icon{
+
+.services-item-icon {
     fill: #570242;
 }
-.services-item:hover{
+
+.services-item:hover {
     border: 1px solid #690C52;
 }
-.services-item:hover .services-paragraph{
+
+.services-item:hover .services-paragraph {
     color: #570242;
 }
-.services-item{
+
+.services-item {
     border: 1px solid #CED6EC;
     border-radius: 4px;
     background: #FFFFFF;
     cursor: pointer;
 }
-.services-paragraph{
+
+.services-paragraph {
     line-height: 24px;
 }
-.services-item-container{
+
+.services-item-container {
     min-width: fit-content;
 }
-.services-request{
+
+.services-request {
     margin-top: 64px;
     padding-bottom: 85px;
 }
-.main-company-description{
+
+.main-company-description {
     margin: 40px 0 65px 0;
 }
-.main-company-description-text{
+
+.main-company-description-text {
     padding-left: 30px;
 }
-.main-company-description-list{
+
+.main-company-description-list {
     max-width: 400px;
 }
-.main-company-description-list .list-item::before{
+
+.main-company-description-list .list-item::before {
     top: 10px;
 }
-.main-stages-work-text{
+
+.main-stages-work-text {
     margin-left: 40px;
 }
+
 .main-stages-work-item {
     margin-top: 32px;
 }
-.main-stages-work-container{
+
+.main-stages-work-container {
     padding-bottom: 65px;
 }
-.main-blog-item{
+
+.main-blog-item {
     margin-bottom: 12px;
     border: 1px solid #CED6EC;
     border-radius: 4px;
     padding: 24px 16px;
 }
-.main-blog-item-text{
+
+.main-blog-item-text {
     margin-left: 20px;
 }
-.main-blog-item-list{
+
+.main-blog-item-list {
     margin: 40px 0;
 }
-.main-blog-item-text .link{
+
+.main-blog-item-text .link {
     font-size: 14px;
     color: #690C52;
 }
-.main-blog{
+
+.main-blog {
     margin-bottom: 65px;
 }

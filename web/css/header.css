@@ -1,25 +1,31 @@
-.nav-items-list{
+.nav-items-list {
     list-style-type: none;
 }
-.header{
+
+.header {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     z-index: 1;
 }
-.header .link{
+
+.header .link {
     color: #808080;
 }
-.font-heading{
+
+.font-heading {
     font-size: 40px
 }
-.nav-items-list li:not(:last-child){
+
+.nav-items-list li:not(:last-child) {
     margin-right: 40px;
 }
-.nav-logo{
+
+.nav-logo {
     min-width: 637px;
 }
-.header .paragraph-main{
+
+.header .paragraph-main {
     font-size: 16px;
 }
