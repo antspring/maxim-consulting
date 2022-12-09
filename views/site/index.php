@@ -166,12 +166,12 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="../images/Img.jpg" alt="">
                     <div class="main-blog-item-text">
-                        <p>
+                        <p class="semi-bold-item">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
                         </p>
                         <div class="d-flex justify-content-between">
                             <a class="link" href="#">Новости</a>
-                            <p class="m-0">20.06.2022</p>
+                            <p class="m-0 main-blog-item-date">20.06.2022</p>
                         </div>
                     </div>
                 </div>
@@ -180,12 +180,12 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="../images/Img.jpg" alt="">
                     <div class="main-blog-item-text">
-                        <p>
+                        <p class="semi-bold-item">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
                         </p>
                         <div class="d-flex justify-content-between">
                             <a class="link" href="#">Новости</a>
-                            <p class="m-0">20.06.2022</p>
+                            <p class="m-0 main-blog-item-date">20.06.2022</p>
                         </div>
                     </div>
                 </div>
@@ -194,12 +194,12 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="../images/Img.jpg" alt="">
                     <div class="main-blog-item-text">
-                        <p>
+                        <p class="semi-bold-item">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
                         </p>
                         <div class="d-flex justify-content-between">
                             <a class="link" href="#">Новости</a>
-                            <p class="m-0">20.06.2022</p>
+                            <p class="m-0 main-blog-item-date">20.06.2022</p>
                         </div>
                     </div>
                 </div>
@@ -208,12 +208,12 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="../images/Img.jpg" alt="">
                     <div class="main-blog-item-text">
-                        <p>
+                        <p class="semi-bold-item">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
                         </p>
                         <div class="d-flex justify-content-between">
                             <a class="link" href="#">Новости</a>
-                            <p class="m-0">20.06.2022</p>
+                            <p class="m-0 main-blog-item-date">20.06.2022</p>
                         </div>
                     </div>
                 </div>

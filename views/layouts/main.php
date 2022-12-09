@@ -1,14 +1,14 @@
 <?php
 
 /** @var yii\web\View $this */
+
 /** @var string $content */
 
 use app\assets\AppAsset;
+use app\components\ConsultationFeedbackFormWidget;
 use app\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
-use yii\widgets\ActiveForm;
-use app\components\ConsultationFeedbackFormWidget;
 
 AppAsset::register($this);
 
@@ -19,15 +19,18 @@ $this->registerMetaTag(['name' => 'description', 'content' => $this->params['met
 $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_keywords'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
 ?>
-<?php $this->beginPage() ?>
+<?php
+$this->beginPage() ?>
 <!DOCTYPE html>
 <html lang="<?= Yii::$app->language ?>" class="h-100">
 <head>
     <title><?= Html::encode($this->title) ?></title>
-    <?php $this->head() ?>
+    <?php
+    $this->head() ?>
 </head>
 <body class="d-flex flex-column h-100">
-<?php $this->beginBody() ?>
+<?php
+$this->beginBody() ?>
 
 <header id="header" class="header">
     <div class="w-100 d-flex justify-content-center" style="height: 100px">
@@ -55,18 +58,20 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary-outline">Оставить  заявку</button>
+                <button class="btn-request btn-request-secondary-outline">Оставить заявку</button>
             </div>
         </div>
     </div>
 </header>
 
 <main id="main" class="flex-shrink-0" role="main">
-        <?php if (!empty($this->params['breadcrumbs'])): ?>
-            <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-        <?php endif ?>
-        <?= Alert::widget() ?>
-        <?= $content ?>
+    <?php
+    if (!empty($this->params['breadcrumbs'])): ?>
+        <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
+    <?php
+    endif ?>
+    <?= Alert::widget() ?>
+    <?= $content ?>
 </main>
 
 <footer id="footer" class="footer">
@@ -74,16 +79,20 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         <p class="paragraph-heading">Свяжитесь с нами</p>
         <div class="d-flex ">
             <div class="contact-us">
-                <p class="paragraph-main">Оставьте заявку и получите бесплатную юридическую консультацию по телефону</p>
+                <p class="paragraph-main semi-bold-item">Оставьте заявку и получите бесплатную юридическую консультацию
+                    по телефону</p>
                 <ul class="contact-us-list p-0">
                     <li class="contact-us-list-item">
-                        <p class="paragraph-main">В команде нет менеджеров. По заявке перезвонит профильный специалист - он ответит на любой вопрос.</p>
+                        <p class="paragraph-main">В команде нет менеджеров. По заявке перезвонит профильный специалист -
+                            он ответит на любой вопрос.</p>
                     </li>
                     <li class="contact-us-list-item">
-                        <p class="paragraph-main">Консультируем простым языком и по делу, заранее изучаем документы и похожие кейсы.</p>
+                        <p class="paragraph-main">Консультируем простым языком и по делу, заранее изучаем документы и
+                            похожие кейсы.</p>
                     </li>
                     <li class="contact-us-list-item">
-                        <p class="paragraph-main">Предлагаем  эффективную стратегию и понятные шаги для лучшего решения вопроса.</p>
+                        <p class="paragraph-main">Предлагаем эффективную стратегию и понятные шаги для лучшего решения
+                            вопроса.</p>
                     </li>
                 </ul>
             </div>
@@ -98,7 +107,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     </div>
 </footer>
 
-<?php $this->endBody() ?>
+<?php
+$this->endBody() ?>
 </body>
 </html>
-<?php $this->endPage() ?>
+<?php
+$this->endPage() ?>

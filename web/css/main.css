@@ -5,6 +5,7 @@
 .heading-container h1 {
     font-size: 56px;
     line-height: 80px;
+    padding-top: 40px;
 }
 
 .heading-container-paragraph {
@@ -161,4 +162,12 @@
 
 .main-blog {
     margin-bottom: 65px;
+}
+
+.main-blog-item:hover .main-blog-item-text > p {
+    color: #690C52;
+}
+
+.main-blog-item-date {
+    color: #808080;
 }

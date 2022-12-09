@@ -1,0 +1,23 @@
+.services-container {
+    margin-top: 100px;
+}
+
+.services-list-item {
+    border: 1px solid #CED6EC;
+    border-radius: 4px;
+    margin: 12px 0px
+}
+
+.services-list-item:hover {
+    border: 1px solid #690C52;
+}
+
+.services-list-item-text {
+    font-size: 14px;
+    color: #808080;
+    margin-bottom: 40px;
+}
+
+.services-list-item-link {
+    color: #570242;
+}

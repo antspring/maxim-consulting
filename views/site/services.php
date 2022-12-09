@@ -1,0 +1,90 @@
+<?php
+
+?>
+
+<section class="services-container">
+    <div class="main-container">
+        <div class="heading-container">
+            <h1 class="bold-item heading">Услуги</h1>
+        </div>
+        <h2 class="bold-item heading">Для частных лиц</h2>
+        <div class="row services-list mt-3">
+            <div class="services-list-container col-4">
+                <div class="services-list-item p-4">
+                    <img src="../images/Vector.png" alt="">
+                    <p class="services-list-item-name semi-bold-item m-0 mt-3">Банкротство</p>
+                    <p class="services-list-item-text mt-3">Защита от звонков коллекторов, снятие ареста с
+                        имущества,
+                        списание долга через суд.</p>
+                    <a class="link services-list-item-link" href="#">Читать подробнее</a>
+                </div>
+            </div>
+            <div class="services-list-container col-4">
+                <div class="services-list-item p-4">
+                    <img src="../images/Vector.png" alt="">
+                    <p class="services-list-item-name semi-bold-item m-0 mt-3">Банкротство</p>
+                    <p class="services-list-item-text mt-3">Защита от звонков коллекторов, снятие ареста с имущества,
+                        списание долга через суд.</p>
+                    <a class="link services-list-item-link" href="#">Читать подробнее</a>
+                </div>
+            </div>
+            <div class="services-list-container col-4">
+                <div class="services-list-item p-4">
+                    <img src="../images/Vector.png" alt="">
+                    <p class="services-list-item-name semi-bold-item m-0 mt-3">Банкротство</p>
+                    <p class="services-list-item-text mt-3">Защита от звонков коллекторов, снятие ареста с имущества,
+                        списание долга через суд.</p>
+                    <a class="link services-list-item-link" href="#">Читать подробнее</a>
+                </div>
+            </div>
+            <div class="services-list-container col-4">
+                <div class="services-list-item p-4">
+                    <img src="../images/Vector.png" alt="">
+                    <p class="services-list-item-name semi-bold-item m-0 mt-3">Банкротство</p>
+                    <p class="services-list-item-text mt-3">Защита от звонков коллекторов, снятие ареста с имущества,
+                        списание долга через суд.</p>
+                    <a class="link services-list-item-link" href="#">Читать подробнее</a>
+                </div>
+            </div>
+        </div>
+        <h2 class="bold-item heading">Для бизнеса</h2>
+        <div class="row services-list mt-3 mb-4">
+            <div class="services-list-container col-4">
+                <div class="services-list-item p-4">
+                    <img src="../images/Vector-2.png" alt="">
+                    <p class="services-list-item-name semi-bold-item m-0 mt-3">Сопровождение</p>
+                    <p class="services-list-item-text mt-3">Консультации, аудит, разработка шаблонов договров, писем,
+                        ответов на претензии</p>
+                    <a class="link services-list-item-link" href="#">Читать подробнее</a>
+                </div>
+            </div>
+            <div class="services-list-container col-4">
+                <div class="services-list-item p-4 ">
+                    <img src="../images/Vector-2.png" alt="">
+                    <p class="services-list-item-name semi-bold-item m-0 mt-3">Сопровождение</p>
+                    <p class="services-list-item-text mt-3">Консультации, аудит, разработка шаблонов договров, писем,
+                        ответов на претензии</p>
+                    <a class="link services-list-item-link" href="#">Читать подробнее</a>
+                </div>
+            </div>
+            <div class="services-list-container col-4">
+                <div class="services-list-item p-4">
+                    <img src="../images/Vector-2.png" alt="">
+                    <p class="services-list-item-name semi-bold-item m-0 mt-3">Сопровождение</p>
+                    <p class="services-list-item-text mt-3">Консультации, аудит, разработка шаблонов договров, писем,
+                        ответов на претензии</p>
+                    <a class="link services-list-item-link" href="#">Читать подробнее</a>
+                </div>
+            </div>
+            <div class="services-list-container col-4">
+                <div class="services-list-item p-4">
+                    <img src="../images/Vector-2.png" alt="">
+                    <p class="services-list-item-name semi-bold-item m-0 mt-3">Сопровождение</p>
+                    <p class="services-list-item-text mt-3">Консультации, аудит, разработка шаблонов договров, писем,
+                        ответов на претензии</p>
+                    <a class="link services-list-item-link" href="#">Читать подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
