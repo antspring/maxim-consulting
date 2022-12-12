@@ -1,12 +1,16 @@
 <?php
+/** @var yii\web\View $this */
 
+$this->title = 'Услуги | Maxim Консалтинг'
 ?>
 
 <section class="services-container">
-    <div class="main-container">
+    <div class="main-heading">
         <div class="heading-container">
             <h1 class="bold-item heading">Услуги</h1>
         </div>
+    </div>
+    <div class="main-container">
         <h2 class="bold-item heading">Для частных лиц</h2>
         <div class="row services-list mt-3">
             <div class="services-list-container col-4">

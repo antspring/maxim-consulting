@@ -1,0 +1,37 @@
+.service-container .heading-container {
+    max-width: 570px;
+}
+
+.service-container .main-heading {
+    margin-bottom: 232px;
+}
+
+.half-circle {
+    top: 0;
+    right: 0;
+}
+
+.sub-heading {
+    font-size: 20px;
+    margin-top: 64px;
+    line-height: 32px;
+}
+
+.submit-application .services-request {
+    padding: 32px 0;
+    margin: 0;
+}
+
+.services-questions .heading {
+    margin-bottom: 25px;
+}
+
+.service-sub-heading {
+    margin: 40px 0 15px;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.services-cards {
+    margin-bottom: 65px;
+}

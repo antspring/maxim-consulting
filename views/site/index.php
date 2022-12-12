@@ -4,7 +4,7 @@
 
 $this->title = 'Юридические услуги | Maxim Consulting';
 ?>
-<section class="main-heading d-flex justify-content-between position-relative">
+<section class="main-heading d-flex justify-content-between">
     <div class="main-advantage">
         <div class="heading-container">
             <h1 class="bold-item heading">Юридические услуги</h1>
@@ -17,7 +17,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
         </ul>
     </div>
     <img style="height: 100%" src="./images/1D9A2784.png" alt="">
-    <img class="round-main top end" src="./images/Round.png" alt="">
+    <img class="round-main" src="./images/Round.png" alt="">
 </section>
 <section class="main-services main-background">
     <div class="main-container">

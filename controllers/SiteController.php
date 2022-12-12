@@ -62,12 +62,20 @@ class SiteController extends Controller
     }
 
     /**
-     * Login action.
      *
      * @return Response|string
      */
     public function actionServices()
     {
         return $this->render('services');
+    }
+
+    /**
+     *
+     * @return Response|string
+     */
+    public function actionService(int $id)
+    {
+        return $this->render('service');
     }
 }

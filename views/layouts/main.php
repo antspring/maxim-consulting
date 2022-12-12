@@ -9,6 +9,7 @@ use app\components\ConsultationFeedbackFormWidget;
 use app\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 
@@ -40,7 +41,7 @@ $this->beginBody() ?>
                 <div class="nav-items">
                     <ul class="d-flex m-0 p-0 nav-items-list ">
                         <li class="paragraph-main">
-                            <a class="link" href="#">Услуги</a>
+                            <a class="link" href="<?= Url::toRoute('site/services') ?>">Услуги</a>
                         </li>
                         <li class="paragraph-main">
                             <a class="link" href="#">Цены</a>
@@ -74,7 +75,7 @@ $this->beginBody() ?>
     <?= $content ?>
 </main>
 
-<footer id="footer" class="footer">
+<footer id="footer" class="footer main-background">
     <div class="main-container">
         <p class="paragraph-heading">Свяжитесь с нами</p>
         <div class="d-flex ">
