@@ -25,7 +25,8 @@ class AppAsset extends AssetBundle
         'css/footer.css',
         'css/main.css',
         'css/services.css',
-        'css/service.css'
+        'css/service.css',
+        'css/price.css'
     ];
     public $js = [
     ];

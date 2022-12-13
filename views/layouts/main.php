@@ -44,7 +44,7 @@ $this->beginBody() ?>
                             <a class="link" href="<?= Url::toRoute('site/services') ?>">Услуги</a>
                         </li>
                         <li class="paragraph-main">
-                            <a class="link" href="#">Цены</a>
+                            <a class="link" href="<?= Url::toRoute('/site/price') ?>">Цены</a>
                         </li>
                         <li class="paragraph-main">
                             <a class="link" href="#">Блог</a>
