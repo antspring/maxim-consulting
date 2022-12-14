@@ -92,3 +92,5 @@ $this->title = 'Услуги | Maxim Консалтинг'
         </div>
     </div>
 </section>
+
+<script src="../js/change-button.js"></script>

@@ -59,6 +59,15 @@
     color: #232323;
 }
 
+.paragraph-main:hover .link {
+    color: #232323;
+}
+
+.link-active {
+    color: #232323;
+    text-decoration: none;
+}
+
 .paragraph-heading {
     font-size: 40px;
     color: #0B2052;

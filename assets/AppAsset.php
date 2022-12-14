@@ -29,6 +29,8 @@ class AppAsset extends AssetBundle
         'css/price.css'
     ];
     public $js = [
+        'js/header-scroll.js',
+        'js/header-links.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
