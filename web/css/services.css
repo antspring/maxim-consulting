@@ -1,19 +1,19 @@
 .services-list-item {
-    border: 1px solid #CED6EC;
+    border: 1px solid var(--outline-accent);
     border-radius: 4px;
-    margin: 12px 0px
+    margin: 12px 0;
 }
 
 .services-list-item:hover {
-    border: 1px solid #690C52;
+    border: 1px solid var(--accent-purple);
 }
 
 .services-list-item-text {
     font-size: 14px;
-    color: #808080;
+    color: var(--text-grey);
     margin-bottom: 40px;
 }
 
 .services-list-item-link {
-    color: #570242;
+    color: var(--accent-hover);
 }

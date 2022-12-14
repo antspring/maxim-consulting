@@ -12,7 +12,7 @@
 .heading-container-paragraph {
     font-size: 32px;
     line-height: 48px;
-    color: #0B2052;
+    color: var(--accent-blue);
 }
 
 .small-description-list {
@@ -38,7 +38,7 @@
     position: absolute;
     width: 6px;
     height: 6px;
-    background-color: #0B2052;
+    background-color: var(--accent-blue);
     border-radius: 100%;
     left: 12px;
     top: 50%;
@@ -54,14 +54,14 @@
 }
 
 .main-background {
-    background-color: #ECF0FB;
+    background-color: var(--bg-grey);
 }
 
 .services-switcher-button {
     font-size: 24px;
     background: none;
     border: none;
-    color: #808080;
+    color: var(--text-grey);
     line-height: 32px;
 }
 
@@ -70,30 +70,30 @@
     position: absolute;
     width: 2px;
     height: 32px;
-    background-color: #0B2052;
+    background-color: var(--accent-blue);
     right: 20px;
 }
 
 .services-switcher .active {
-    color: #232323;
+    color: var(--text-black);
 }
 
 .services-item-icon {
-    fill: #570242;
+    fill: var(--accent-hover);
 }
 
 .services-item:hover {
-    border: 1px solid #690C52;
+    border: 1px solid var(--accent-purple);
 }
 
 .services-item:hover .services-paragraph {
-    color: #570242;
+    color: var(--accent-hover);
 }
 
 .services-item {
-    border: 1px solid #CED6EC;
+    border: 1px solid var(--outline-accent);
     border-radius: 4px;
-    background: #FFFFFF;
+    background: var(--bg-white);
     cursor: pointer;
 }
 
@@ -140,7 +140,7 @@
 
 .main-blog-item {
     margin-bottom: 12px;
-    border: 1px solid #CED6EC;
+    border: 1px solid var(--outline-accent);
     border-radius: 4px;
     padding: 24px 16px;
 }
@@ -155,7 +155,7 @@
 
 .main-blog-item-text .link {
     font-size: 14px;
-    color: #690C52;
+    color: var(--accent-purple);
 }
 
 .main-blog {
@@ -163,9 +163,9 @@
 }
 
 .main-blog-item:hover .main-blog-item-text > p {
-    color: #690C52;
+    color: var(--accent-purple);
 }
 
 .main-blog-item-date {
-    color: #808080;
+    color: var(--text-grey);
 }

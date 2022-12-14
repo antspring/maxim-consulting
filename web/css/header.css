@@ -3,11 +3,11 @@
 }
 
 .header .link {
-    color: #808080;
+    color: var(--text-grey);
 }
 
 .header-slick {
-    background-color: #FFFFFF;
+    background-color: var(--bg-white);
     transition: background-color .3s;
 }
 

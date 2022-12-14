@@ -15,7 +15,7 @@
 }
 
 .services-price-category-item, .services-price-list {
-    border: 1px solid #CED6EC;
+    border: 1px solid var(--outline-accent);
     border-radius: 4px;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .services-price-list-item {
-    border-bottom: 1px solid #CED6EC;
+    border-bottom: 1px solid var(--outline-accent);
 }
 
 .services-price-list {

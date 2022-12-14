@@ -37,7 +37,7 @@
 }
 
 .footer .link {
-    color: #690C52;
+    color: var(--accent-purple);
 }
 
 .input-consultation-form {
@@ -51,7 +51,7 @@
 .input-consultation-form .form-control {
     margin-bottom: 16px;
     padding: 12px 16px;
-    border: 1px solid #808080;
+    border: 1px solid var(--text-grey);
     border-radius: 4px;
     background-color: transparent;
 }
@@ -62,6 +62,6 @@
 }
 
 .agreement-text {
-    color: #808080;
+    color: var(--text-grey);
     font-size: 12px;
 }

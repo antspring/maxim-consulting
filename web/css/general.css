@@ -22,10 +22,21 @@
     src: url("../fonts/Lato-Bold.ttf");
 }
 
+:root {
+    --accent-blue: #0B2052;
+    --accent-purple: #690C52;
+    --accent-hover: #570242;
+    --text-black: #232323;
+    --text-grey: #808080;
+    --bg-grey: #ECF0FB;
+    --bg-white: #FFFFFF;
+    --outline-accent: #CED6EC;
+}
+
 * {
     font-family: "Lato-Regular", serif;
     font-size: 16px;
-    color: #232323;
+    color: var(--text-black);
 }
 
 .semi-bold-item {
@@ -43,7 +54,7 @@
 }
 
 .heading {
-    color: #0B2052;
+    color: var(--accent-blue);
     font-size: 40px;
     line-height: 56px;
     padding-top: 65px;
@@ -56,30 +67,30 @@
 
 .paragraph-main {
     font-size: 16px;
-    color: #232323;
+    color: var(--text-black);
 }
 
 .paragraph-main:hover .link {
-    color: #232323;
+    color: var(--text-black);
 }
 
 .link-active {
-    color: #232323;
+    color: var(--text-black);
     text-decoration: none;
 }
 
 .paragraph-heading {
     font-size: 40px;
-    color: #0B2052;
+    color: var(--accent-blue);
 }
 
 .link {
-    color: #232323;
+    color: var(--text-black);
     text-decoration: none;
 }
 
 .link:hover {
-    color: #232323;
+    color: var(--text-black);
 }
 
 .footer-info {
@@ -92,40 +103,40 @@
 }
 
 .btn-request-primary {
-    border: 1px solid #690C52;
+    border: 1px solid var(--accent-purple);
 }
 
 .btn-request-primary:hover {
-    border: 1px solid #570242;
-    background-color: #570242;
-    color: #FFFFFF;
+    border: 1px solid var(--accent-hover);
+    background-color: var(--accent-hover);
+    color: var(--bg-white);
 }
 
 .btn-request-primary-outline {
     background-color: transparent;
-    color: #232323;
+    color: var(--text-black);
 }
 
 .btn-request-primary-fill {
-    background-color: #690C52;
-    color: #FFFFFF;
+    background-color: var(--accent-purple);
+    color: var(--bg-white);
 }
 
 .btn-request-secondary {
-    border: 1px solid #FFFFFF;
+    border: 1px solid var(--bg-white);
 }
 
 .btn-request-secondary:hover {
-    background-color: #FFFFFF;
-    color: #0B2052;
+    background-color: var(--bg-white);
+    color: var(--accent-blue);
 }
 
 .btn-request-secondary-outline {
     background-color: transparent;
-    color: #FFFFFF;
+    color: var(--bg-white);
 }
 
 .btn-request-secondary-fill {
-    background-color: #FFFFFF;
-    color: #0B2052;
+    background-color: var(--bg-white);
+    color: var(--accent-blue);
 }
