@@ -82,19 +82,41 @@
     padding: 12px 32px;
 }
 
-.btn-request-primary-outline {
+.btn-request-primary {
     border: 1px solid #690C52;
+}
+
+.btn-request-primary:hover {
+    border: 1px solid #570242;
+    background-color: #570242;
+    color: #FFFFFF;
+}
+
+.btn-request-primary-outline {
+    background-color: transparent;
     color: #232323;
 }
 
 .btn-request-primary-fill {
     background-color: #690C52;
-    border: 1px solid #690C52;
     color: #FFFFFF;
+}
+
+.btn-request-secondary {
+    border: 1px solid #FFFFFF;
+}
+
+.btn-request-secondary:hover {
+    background-color: #FFFFFF;
+    color: #0B2052;
 }
 
 .btn-request-secondary-outline {
     background-color: transparent;
-    border: 1px solid #FFFFFF;
     color: #FFFFFF;
+}
+
+.btn-request-secondary-fill {
+    background-color: #FFFFFF;
+    color: #0B2052;
 }

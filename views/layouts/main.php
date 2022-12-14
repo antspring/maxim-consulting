@@ -59,7 +59,7 @@ $this->beginBody() ?>
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary-outline">Оставить заявку</button>
+                <button class="btn-request btn-request-secondary btn-request-secondary-outline">Оставить заявку</button>
             </div>
         </div>
     </div>

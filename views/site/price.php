@@ -28,7 +28,7 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
                 Оставьте заявку на бесплатную консультацию
             </p>
             <p class="m-0">Оценим дела и предложим эффективную стратегию</p>
-            <button class="btn-request btn-request-primary-fill mt-4">Оставить заявку</button>
+            <button class="btn-request btn-request-primary btn-request-primary-fill mt-4">Оставить заявку</button>
         </div>
     </div>
 </section>

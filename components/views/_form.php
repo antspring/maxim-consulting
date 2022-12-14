@@ -25,7 +25,7 @@ $form = ActiveForm::begin(['action' => 'form/feedback']); ?>
 ) ?>
 <?= \yii\helpers\Html::button(
     'Оставить заявку',
-    ['class' => 'btn btn-request btn-request-primary-fill', 'type' => 'submit']
+    ['class' => 'btn btn-request btn-request-primary btn-request-primary-fill', 'type' => 'submit']
 ) ?>
 <p class="mt-3 mb-0 agreement-text">Нажимая «Оставить заявку», я даю согласие на...</p>
 <?php

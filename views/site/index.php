@@ -82,7 +82,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                 Оставьте заявку на бесплатную консультацию
             </p>
             <p class="m-0">Оценим дела и предложим эффективную стратегию</p>
-            <button class="btn-request btn-request-primary-fill mt-4">Оставить заявку</button>
+            <button class="btn-request btn-request-primary btn-request-primary-fill mt-4">Оставить заявку</button>
         </div>
     </div>
 </section>
@@ -119,7 +119,8 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                         </li>
                     </ul>
                 </div>
-                <a class="btn-request btn-request-primary-outline link" href="#">Подробнее о компании</a>
+                <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Подробнее о
+                    компании</a>
             </div>
         </div>
     </div>
@@ -136,8 +137,10 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                     <p class="paragraph-italic m-0">Заявка</p>
                     <p class="mb-3">Оставьте заявку на сайте или позвоните</p>
                     <div class="d-flex">
-                        <button class="btn-request btn-request-primary-fill me-4">Оставить заявку</button>
-                        <a class="btn-request btn-request-primary-outline link" href="#">Контакты и адреса офиса</a>
+                        <button class="btn-request btn-request-primary btn-request-primary-fill me-4">Оставить заявку
+                        </button>
+                        <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Контакты и
+                            адреса офиса</a>
                     </div>
                 </div>
             </div>
@@ -219,6 +222,6 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                 </div>
             </div>
         </div>
-        <a class="btn-request btn-request-primary-outline link" href="#">Больше новостей</a>
+        <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Больше новостей</a>
     </div>
 </section>
