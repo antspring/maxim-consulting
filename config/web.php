@@ -9,7 +9,7 @@ $config = [
     'bootstrap' => ['log'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
     ],
     'components' => [
         'request' => [
@@ -48,6 +48,11 @@ $config = [
             'rules' => [
             ],
         ],
+        'reCaptcha' => [
+            'class' => 'himiklab\yii2\recaptcha\ReCaptchaConfig',
+            'siteKeyV2' => '6LemKXsjAAAAALo1lKK_fHMWpjM79NZYxkirTBI6',
+            'secretV2' => '6LemKXsjAAAAAHtZ1dBZEvGo7UaQh32ANa6b5LAT'
+        ]
     ],
     'language' => 'ru_RU',
     'params' => $params,

@@ -13,6 +13,7 @@
 
 .contact-us-list {
     list-style-type: none;
+    max-width: 415px;
 }
 
 .contact-us-list-item {
@@ -37,4 +38,30 @@
 
 .footer .link {
     color: #690C52;
+}
+
+.input-consultation-form {
+    width: 350px;
+}
+
+.input-consultation-form label {
+    display: none;
+}
+
+.input-consultation-form .form-control {
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.input-consultation-form #feedbackform-question {
+    height: 100px;
+    resize: none;
+}
+
+.agreement-text {
+    color: #808080;
+    font-size: 12px;
 }

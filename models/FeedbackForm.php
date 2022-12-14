@@ -2,6 +2,8 @@
 
 namespace app\models;
 
+use himiklab\yii2\recaptcha\ReCaptchaValidator2;
+
 /**
  * This is the model class for table "feedback_form".
  *
@@ -13,6 +15,8 @@ namespace app\models;
  */
 class FeedbackForm extends \yii\db\ActiveRecord
 {
+    public $reCaptcha;
+
     /**
      * {@inheritdoc}
      */
@@ -29,7 +33,12 @@ class FeedbackForm extends \yii\db\ActiveRecord
         return [
             [['name', 'tel_number'], 'required'],
             [['name', 'tel_number', 'email', 'question'], 'string', 'max' => 255],
-            [['email'], 'email']
+            [['email'], 'email'],
+            [
+                ['reCaptcha'],
+                ReCaptchaValidator2::class,
+                'uncheckedMessage' => 'Please confirm that you are not a bot.'
+            ]
         ];
     }
 
