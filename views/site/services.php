@@ -15,7 +15,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
         <div class="row services-list mt-3">
             <div class="services-list-container col-4">
                 <div class="services-list-item p-4">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-list-item-name semi-bold-item m-0 mt-3">Банкротство</p>
                     <p class="services-list-item-text mt-3">Защита от звонков коллекторов, снятие ареста с
                         имущества,
@@ -25,7 +25,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
             </div>
             <div class="services-list-container col-4">
                 <div class="services-list-item p-4">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-list-item-name semi-bold-item m-0 mt-3">Банкротство</p>
                     <p class="services-list-item-text mt-3">Защита от звонков коллекторов, снятие ареста с имущества,
                         списание долга через суд.</p>
@@ -34,7 +34,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
             </div>
             <div class="services-list-container col-4">
                 <div class="services-list-item p-4">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-list-item-name semi-bold-item m-0 mt-3">Банкротство</p>
                     <p class="services-list-item-text mt-3">Защита от звонков коллекторов, снятие ареста с имущества,
                         списание долга через суд.</p>
@@ -43,7 +43,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
             </div>
             <div class="services-list-container col-4">
                 <div class="services-list-item p-4">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-list-item-name semi-bold-item m-0 mt-3">Банкротство</p>
                     <p class="services-list-item-text mt-3">Защита от звонков коллекторов, снятие ареста с имущества,
                         списание долга через суд.</p>
@@ -55,7 +55,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
         <div class="row services-list mt-3 mb-4">
             <div class="services-list-container col-4">
                 <div class="services-list-item p-4">
-                    <img src="../images/Vector-2.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector-2.png') ?>" alt="">
                     <p class="services-list-item-name semi-bold-item m-0 mt-3">Сопровождение</p>
                     <p class="services-list-item-text mt-3">Консультации, аудит, разработка шаблонов договров, писем,
                         ответов на претензии</p>
@@ -64,7 +64,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
             </div>
             <div class="services-list-container col-4">
                 <div class="services-list-item p-4 ">
-                    <img src="../images/Vector-2.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector-2.png') ?>" alt="">
                     <p class="services-list-item-name semi-bold-item m-0 mt-3">Сопровождение</p>
                     <p class="services-list-item-text mt-3">Консультации, аудит, разработка шаблонов договров, писем,
                         ответов на претензии</p>
@@ -73,7 +73,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
             </div>
             <div class="services-list-container col-4">
                 <div class="services-list-item p-4">
-                    <img src="../images/Vector-2.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector-2.png') ?>" alt="">
                     <p class="services-list-item-name semi-bold-item m-0 mt-3">Сопровождение</p>
                     <p class="services-list-item-text mt-3">Консультации, аудит, разработка шаблонов договров, писем,
                         ответов на претензии</p>
@@ -82,7 +82,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
             </div>
             <div class="services-list-container col-4">
                 <div class="services-list-item p-4">
-                    <img src="../images/Vector-2.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector-2.png') ?>" alt="">
                     <p class="services-list-item-name semi-bold-item m-0 mt-3">Сопровождение</p>
                     <p class="services-list-item-text mt-3">Консультации, аудит, разработка шаблонов договров, писем,
                         ответов на претензии</p>
@@ -93,4 +93,4 @@ $this->title = 'Услуги | Maxim Консалтинг'
     </div>
 </section>
 
-<script src="../js/change-button.js"></script>
+<script src="<?= Yii::getAlias('@web/js/change-button.js') ?>"></script>

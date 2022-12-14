@@ -97,10 +97,10 @@ $this->beginBody() ?>
                     </li>
                 </ul>
                 <div class="mt-5">
-                    <a class="me-3" href="#"><img src="./images/telegram.png" alt=""></a>
-                    <a class="me-3" href="#"><img src="./images/telegram.png" alt=""></a>
-                    <a class="me-3" href="#"><img src="./images/telegram.png" alt=""></a>
-                    <a class="me-3" href="#"><img src="./images/telegram.png" alt=""></a>
+                    <a class="me-3" href="#"><img src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
+                    <a class="me-3" href="#"><img src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
+                    <a class="me-3" href="#"><img src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
+                    <a class="me-3" href="#"><img src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
                 </div>
             </div>
             <div>
@@ -112,7 +112,7 @@ $this->beginBody() ?>
             <p class="paragraph-main">© 2022 «Maxim Консалтинг»</p>
         </div>
     </div>
-    <img class="position-absolute top-0 end-0" src="./images/half-circle-red.png" alt="">
+    <img class="position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/half-circle-red.png') ?>" alt="">
 </footer>
 
 <?php

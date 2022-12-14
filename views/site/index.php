@@ -16,8 +16,8 @@ $this->title = 'Юридические услуги | Maxim Consulting';
             <li class="list-item position-relative">Сопровождение под ключ</li>
         </ul>
     </div>
-    <img style="height: 100%" src="./images/1D9A2784.png" alt="">
-    <img class="round-main position-absolute top-0 end-0" src="./images/Round.png" alt="">
+    <img src="<?= Yii::getAlias('@web/images/1D9A2784.png') ?>" alt="">
+    <img class="round-main position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/Round.png') ?>" alt="">
 </section>
 <section class="main-services main-background">
     <div class="main-container">
@@ -30,49 +30,49 @@ $this->title = 'Юридические услуги | Maxim Consulting';
         <div class="services row gy-3">
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="./images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4 active">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="./images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="./images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="./images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="./images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="./images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="./images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="./images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
@@ -93,7 +93,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
             простое решение
         </h2>
         <div class="main-company-description d-flex justify-content-between">
-            <img src="../images/1D9A2676-Edit.jpg" alt="">
+            <img src="<?= Yii::getAlias('@web/images/1D9A2676-Edit.jpg') ?>" alt="">
             <div class="main-company-description-text d-flex flex-column justify-content-between align-items-start">
                 <div>
                     <p>
@@ -132,7 +132,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
         </h2>
         <div class="main-stages-work-container">
             <div class="main-stages-work-item d-flex align-items-start">
-                <img src="../images/1.png" alt="">
+                <img src="<?= Yii::getAlias('@web/images/1.png') ?>" alt="">
                 <div class="main-stages-work-text">
                     <p class="paragraph-italic m-0">Заявка</p>
                     <p class="mb-3">Оставьте заявку на сайте или позвоните</p>
@@ -145,14 +145,14 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                 </div>
             </div>
             <div class="main-stages-work-item d-flex align-items-start">
-                <img src="../images/2.png" alt="">
+                <img src="<?= Yii::getAlias('@web/images/2.png') ?>" alt="">
                 <div class="main-stages-work-text">
                     <p class="paragraph-italic m-0">Бесплатная консультация</p>
                     <p>Оценим ситуацию и предложим решение</p>
                 </div>
             </div>
             <div class="main-stages-work-item d-flex align-items-start">
-                <img src="../images/3.png" alt="">
+                <img src="<?= Yii::getAlias('@web/images/3.png') ?>" alt="">
                 <div class="main-stages-work-text">
                     <p class="paragraph-italic m-0">Заключение договора</p>
                     <p>Если решаете доверить вопрос профи, обсуждаем условия и подписываем документы</p>
@@ -167,7 +167,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
         <div class="main-blog-item-list row">
             <div class="main-blog-item-container col-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
-                    <img src="../images/Img.jpg" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
                         <p class="semi-bold-item">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
@@ -181,7 +181,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
             </div>
             <div class="main-blog-item-container col-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
-                    <img src="../images/Img.jpg" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
                         <p class="semi-bold-item">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
@@ -195,7 +195,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
             </div>
             <div class="main-blog-item-container col-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
-                    <img src="../images/Img.jpg" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
                         <p class="semi-bold-item">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
@@ -209,7 +209,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
             </div>
             <div class="main-blog-item-container col-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
-                    <img src="../images/Img.jpg" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
                         <p class="semi-bold-item">
                             Верховный суд рекомендовал не принимать нецензурные жалобы

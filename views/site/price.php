@@ -16,8 +16,9 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
                     <li class="list-item position-relative">доказательная база и стадия судебного процесса.</li>
                 </ul>
             </div>
-            <img src="../images/1D9A2938 .png" alt="">
-            <img class="position-absolute price-container-img top-0 end-0" src="../images/Round.png" alt="">
+            <img src="<?= Yii::getAlias('@web/images/1D9A2938 .png') ?>" alt="">
+            <img class="position-absolute price-container-img top-0 end-0"
+                 src="<?= Yii::getAlias('@web/images/Round.png') ?>" alt="">
         </div>
     </div>
 </section>
@@ -219,49 +220,49 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
         <div class="services row gy-3">
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4 active">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
             <div class="col-4 services-item-container">
                 <div class="services-item d-flex align-items-center p-4 me-1">
-                    <img src="../images/Vector.png" alt="">
+                    <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                     <p class="services-paragraph m-0 ps-4">Банкротство</p>
                 </div>
             </div>
