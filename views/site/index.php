@@ -17,7 +17,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
         </ul>
     </div>
     <img style="height: 100%" src="./images/1D9A2784.png" alt="">
-    <img class="round-main" src="./images/Round.png" alt="">
+    <img class="round-main position-absolute top-0 end-0" src="./images/Round.png" alt="">
 </section>
 <section class="main-services main-background">
     <div class="main-container">

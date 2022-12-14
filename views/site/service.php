@@ -12,7 +12,7 @@
                 списание долга.
             </p>
         </div>
-        <img class="position-absolute half-circle" src="../images/half-circle.png" alt="">
+        <img class="position-absolute top-0 end-0" src="../images/half-circle.png" alt="">
     </div>
 </section>
 <section class="submit-application">

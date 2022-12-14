@@ -17,7 +17,7 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
                 </ul>
             </div>
             <img src="../images/1D9A2938 .png" alt="">
-            <img class="position-absolute price-container-img top end" src="../images/Round.png" alt="">
+            <img class="position-absolute price-container-img top-0 end-0" src="../images/Round.png" alt="">
         </div>
     </div>
 </section>

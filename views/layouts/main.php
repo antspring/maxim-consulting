@@ -33,7 +33,7 @@ $this->beginPage() ?>
 <?php
 $this->beginBody() ?>
 
-<header id="header" class="header">
+<header id="header" class="header fixed-top">
     <div class="w-100 d-flex justify-content-center" style="height: 100px">
         <div class="w-100 h-100 d-flex align-items-center justify-content-between main-container">
             <div class="d-flex align-items-center justify-content-between nav-logo">
@@ -75,7 +75,7 @@ $this->beginBody() ?>
     <?= $content ?>
 </main>
 
-<footer id="footer" class="footer main-background">
+<footer id="footer" class="footer main-background position-relative">
     <div class="main-container">
         <p class="paragraph-heading">Свяжитесь с нами</p>
         <div class="d-flex ">
@@ -96,6 +96,12 @@ $this->beginBody() ?>
                             вопроса.</p>
                     </li>
                 </ul>
+                <div class="mt-5">
+                    <a class="me-3" href="#"><img src="./images/telegram.png" alt=""></a>
+                    <a class="me-3" href="#"><img src="./images/telegram.png" alt=""></a>
+                    <a class="me-3" href="#"><img src="./images/telegram.png" alt=""></a>
+                    <a class="me-3" href="#"><img src="./images/telegram.png" alt=""></a>
+                </div>
             </div>
             <div>
                 <?= ConsultationFeedbackFormWidget::widget() ?>
@@ -106,6 +112,7 @@ $this->beginBody() ?>
             <p class="paragraph-main">© 2022 «Maxim Консалтинг»</p>
         </div>
     </div>
+    <img class="position-absolute top-0 end-0" src="./images/half-circle-red.png" alt="">
 </footer>
 
 <?php
