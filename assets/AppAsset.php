@@ -26,7 +26,8 @@ class AppAsset extends AssetBundle
         'css/main.css',
         'css/services.css',
         'css/service.css',
-        'css/price.css'
+        'css/price.css',
+        'css/blog.css'
     ];
     public $js = [
         'js/header-scroll.js',

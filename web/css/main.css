@@ -163,5 +163,6 @@
 }
 
 .main-blog-item-date {
+    font-size: 14px;
     color: var(--text-grey);
 }

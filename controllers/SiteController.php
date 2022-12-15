@@ -87,4 +87,14 @@ class SiteController extends Controller
     {
         return $this->render('price');
     }
+
+    /**
+     *
+     * @return Response|string
+     */
+
+    public function actionBlog()
+    {
+        return $this->render('blog');
+    }
 }
