@@ -127,4 +127,13 @@ class SiteController extends Controller
 
         return $this->render('contacts');
     }
+
+    /**
+     *
+     * @return Response|string
+     */
+    public function actionPrivacyPolicy()
+    {
+        return $this->render('privacy-policy');
+    }
 }
