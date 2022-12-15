@@ -97,10 +97,14 @@ $this->beginBody() ?>
                     </li>
                 </ul>
                 <div class="mt-5">
-                    <a class="me-3" href="#"><img src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
-                    <a class="me-3" href="#"><img src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
-                    <a class="me-3" href="#"><img src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
-                    <a class="me-3" href="#"><img src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
+                    <a class="me-3" href="tel:89125225131"><img src="<?= Yii::getAlias('@web/images/whatsapp.png') ?>"
+                                                                alt=""></a>
+                    <a class="me-3" href="tel:89125225131"><img src="<?= Yii::getAlias('@web/images/viber.png') ?>"
+                                                                alt=""></a>
+                    <a class="me-3" href="https://t.me/Klevtsur_Oleg"><img
+                                src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
+                    <a class="me-3" href="https://vk.com/legalexpert_kurgan"><img
+                                src="<?= Yii::getAlias('@web/images/vk.png') ?>" alt=""></a>
                 </div>
             </div>
             <div>
