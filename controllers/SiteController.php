@@ -97,4 +97,14 @@ class SiteController extends Controller
     {
         return $this->render('blog');
     }
+
+    /**
+     *
+     * @return Response|string
+     */
+
+    public function actionBlogArticle(int $id)
+    {
+        return $this->render('blog-article');
+    }
 }
