@@ -116,4 +116,15 @@ class SiteController extends Controller
     {
         return $this->render('about-us');
     }
+
+    /**
+     *
+     * @return Response|string
+     */
+    public function actionContacts()
+    {
+        $this->layout = 'contacts';
+
+        return $this->render('contacts');
+    }
 }

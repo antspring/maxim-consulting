@@ -1,0 +1,12 @@
+.contacts .heading {
+    font-size: 40px;
+    line-height: 56px;
+}
+
+.contacts .input-consultation-form {
+    width: 100%;
+}
+
+.contacts .heading-container {
+    max-width: 445px;
+}

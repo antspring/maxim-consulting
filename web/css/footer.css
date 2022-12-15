@@ -65,3 +65,29 @@
     color: var(--text-grey);
     font-size: 12px;
 }
+
+.contacts-info {
+    margin-top: 40px;
+}
+
+.contacts-social-networks {
+    margin-top: 90px;
+}
+
+.contacts-requisites {
+    margin-bottom: 170px;
+}
+
+.contacts-container {
+    padding: 64px 0;
+}
+
+.contacts-select {
+    border: 1px solid var(--text-grey);
+    background-color: var(--bg-white);
+    border-radius: 4px;
+}
+
+.contacts-select option {
+    border-radius: 4px;
+}

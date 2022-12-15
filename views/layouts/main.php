@@ -53,7 +53,7 @@ $this->beginBody() ?>
                             <a class="link" href="<?= Url::toRoute('/site/about-us') ?>">О компании</a>
                         </li>
                         <li class="paragraph-main">
-                            <a class="link" href="#">Контакты</a>
+                            <a class="link" href="<?= Url::toRoute('/site/contacts') ?>">Контакты</a>
                         </li>
                     </ul>
                 </div>
