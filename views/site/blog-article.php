@@ -1,5 +1,7 @@
 <?php
+/** @var yii\web\View $this */
 
+$this->title = 'Юрист по ДТП: законны ли штрафы за «среднюю скорость»?';
 ?>
 
 <div class="main-container">
@@ -165,3 +167,5 @@
         <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Больше новостей</a>
     </div>
 </section>
+
+<script src="<?= Yii::getAlias('@web/js/change-button.js') ?>"></script>

@@ -41,16 +41,16 @@ $this->beginBody() ?>
                 <div class="nav-items">
                     <ul class="d-flex m-0 p-0 nav-items-list ">
                         <li class="paragraph-main">
-                            <a class="link" href="<?= Url::toRoute('site/services') ?>">Услуги</a>
+                            <a class="link" href="<?= Url::toRoute('/site/services') ?>">Услуги</a>
                         </li>
                         <li class="paragraph-main">
                             <a class="link" href="<?= Url::toRoute('/site/price') ?>">Цены</a>
                         </li>
                         <li class="paragraph-main">
-                            <a class="link" href="#">Блог</a>
+                            <a class="link" href="<?= Url::toRoute('site/blog') ?>">Блог</a>
                         </li>
                         <li class="paragraph-main">
-                            <a class="link" href="#">О компании</a>
+                            <a class="link" href="<?= Url::toRoute('/site/about-us') ?>">О компании</a>
                         </li>
                         <li class="paragraph-main">
                             <a class="link" href="#">Контакты</a>

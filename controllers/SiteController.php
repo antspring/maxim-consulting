@@ -107,4 +107,13 @@ class SiteController extends Controller
     {
         return $this->render('blog-article');
     }
+
+    /**
+     *
+     * @return Response|string
+     */
+    public function actionAboutUs()
+    {
+        return $this->render('about-us');
+    }
 }

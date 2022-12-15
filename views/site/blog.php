@@ -1,5 +1,7 @@
 <?php
+/** @var yii\web\View $this */
 
+$this->title = 'Блог | Maxim Консалтинг';
 ?>
 <div class="main-container">
     <section class="blog-container">
@@ -118,3 +120,5 @@
         <?= $this->render('_services') ?>
     </section>
 </div>
+
+<script src="<?= Yii::getAlias('@web/js/change-button.js') ?>"></script>

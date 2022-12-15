@@ -1,5 +1,7 @@
 <?php
+/** @var yii\web\View $this */
 
+$this->title = 'Банкротство физических лиц | Maxim Консалтинг';
 ?>
 
 <section class="service-container">

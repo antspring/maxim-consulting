@@ -1,0 +1,26 @@
+.supervisor {
+    margin-bottom: 64px;
+}
+
+.supervisor-info-text {
+    max-width: 635px;
+    margin-right: 30px;
+}
+
+.supervisor-info-name {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.supervisor-info-grey-text {
+    color: var(--text-grey);
+}
+
+.lawyers-container {
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+
+.lawyers-item-text {
+    font-size: 24px;
+}
