@@ -2,8 +2,6 @@
 
 /** @var yii\web\View $this */
 
-use app\components\ServicesWidget;
-
 $this->title = 'Юридические услуги | Maxim Consulting';
 ?>
 <section class="main-heading d-flex justify-content-between">
@@ -23,14 +21,8 @@ $this->title = 'Юридические услуги | Maxim Consulting';
 </section>
 <section class="main-services main-background">
     <div class="main-container">
-        <?= ServicesWidget::widget() ?>
-        <div class="services-request">
-            <p class="paragraph-italic mb-2">
-                Оставьте заявку на бесплатную консультацию
-            </p>
-            <p class="m-0">Оценим дела и предложим эффективную стратегию</p>
-            <button class="btn-request btn-request-primary btn-request-primary-fill mt-4">Оставить заявку</button>
-        </div>
+        <?= $this->render('_services') ?>
+        <?= $this->render('_send-request') ?>
     </div>
 </section>
 <section class="main-company-info">

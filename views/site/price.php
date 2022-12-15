@@ -1,8 +1,6 @@
 <?php
 /** @var yii\web\View $this */
 
-use app\components\ServicesWidget;
-
 $this->title = 'Стоимость юридических услуг | Maxim Консалтинг'
 ?>
 
@@ -24,15 +22,9 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
         </div>
     </div>
 </section>
-<section class="submit-application">
-    <div class="services-request main-background">
-        <div class="main-container">
-            <p class="paragraph-italic mb-2">
-                Оставьте заявку на бесплатную консультацию
-            </p>
-            <p class="m-0">Оценим дела и предложим эффективную стратегию</p>
-            <button class="btn-request btn-request-primary btn-request-primary-fill mt-4">Оставить заявку</button>
-        </div>
+<section class="submit-application main-background">
+    <div class="main-container">
+        <?= $this->render('_send-request') ?>
     </div>
 </section>
 
@@ -212,6 +204,6 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
         </div>
     </section>
     <section class="services-cards">
-        <?= ServicesWidget::widget() ?>
+        <?= $this->render('_services') ?>
     </section>
 </div>

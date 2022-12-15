@@ -1,6 +1,6 @@
 <?php
 
-use app\components\ServicesWidget; ?>
+?>
 
 <section class="service-container">
     <div class="main-heading">
@@ -15,15 +15,9 @@ use app\components\ServicesWidget; ?>
         <img class="position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/half-circle.png') ?>" alt="">
     </div>
 </section>
-<section class="submit-application">
-    <div class="services-request main-background">
-        <div class="main-container">
-            <p class="paragraph-italic mb-2">
-                Оставьте заявку на бесплатную консультацию
-            </p>
-            <p class="m-0">Оценим дела и предложим эффективную стратегию</p>
-            <button class="btn-request btn-request-primary btn-request-primary-fill mt-4">Оставить заявку</button>
-        </div>
+<section class="submit-application main-background">
+    <div class="main-container">
+        <?= $this->render('_send-request') ?>
     </div>
 </section>
 <div class="main-container">
@@ -119,7 +113,7 @@ use app\components\ServicesWidget; ?>
     </section>
     <section class="services-cards">
         <div class="main-container">
-            <?= ServicesWidget::widget() ?>
+            <?= $this->render('_services') ?>
         </div>
     </section>
 </div>
