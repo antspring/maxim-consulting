@@ -4,7 +4,7 @@
 use yii\widgets\ActiveForm; ?>
 
 <?php
-$form = ActiveForm::begin(['action' => 'form/feedback']); ?>
+$form = ActiveForm::begin(['action' => '/web/form/feedback']); ?>
 <?= $form->field($model, 'name', ['options' => ['class' => 'input-consultation-form']])->input(
     'text',
     ['placeholder' => 'Имя']

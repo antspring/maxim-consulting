@@ -8,6 +8,10 @@
     border: 1px solid var(--accent-purple);
 }
 
+.services-list-item:hover .services-list-item-name{
+    color: var(--accent-purple);
+}
+
 .services-list-item-text {
     font-size: 14px;
     color: var(--text-grey);
@@ -16,4 +20,14 @@
 
 .services-list-item-link {
     color: var(--accent-hover);
+}
+
+@media (max-width: 1024px) {
+    .services-list-item{
+        max-width: 350px;
+    }
+
+    .services-list-container{
+        width: fit-content;
+    }
 }

@@ -34,3 +34,9 @@
 .services-price-list-item-number {
     min-width: 143px;
 }
+
+@media (max-width: 1024px) {
+    .price-image{
+        max-width: 415px;
+    }
+}

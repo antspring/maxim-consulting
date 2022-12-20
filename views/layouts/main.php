@@ -34,7 +34,7 @@ $this->beginPage() ?>
 $this->beginBody() ?>
 
 <header id="header" class="header fixed-top">
-    <div class="w-100 d-flex justify-content-center" style="height: 100px">
+    <div class="w-100 d-flex justify-content-center header-container">
         <div class="w-100 h-100 d-flex align-items-center justify-content-between main-container">
             <div class="d-flex align-items-center justify-content-between nav-logo">
                 <a href="<?= Url::toRoute('/site/index') ?>">
@@ -127,7 +127,7 @@ $this->beginBody() ?>
             <p class="paragraph-main">© 2022 «Maxim Консалтинг»</p>
         </div>
     </div>
-    <img class="position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/half-circle-red.png') ?>" alt="">
+    <img class="position-absolute top-0 end-0 d-none d-xxl-block" src="<?= Yii::getAlias('@web/images/half-circle-red.png') ?>" alt="">
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 

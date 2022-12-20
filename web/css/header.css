@@ -11,6 +11,10 @@
     transition: background-color .3s;
 }
 
+.header-container{
+    height: 100px;
+}
+
 .font-heading {
     font-size: 40px
 }
@@ -25,4 +29,10 @@
 
 .header .paragraph-main {
     font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+    .header-container{
+        height: 82px;
+    }
 }

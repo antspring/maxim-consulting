@@ -144,3 +144,16 @@
     background-color: var(--bg-white);
     color: var(--accent-blue);
 }
+
+.main-company-description-image{
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    .main-container{
+        padding: 0 47px;
+    }
+    .main-company-description-image{
+        max-width: 450px;
+    }
+}

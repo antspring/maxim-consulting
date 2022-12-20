@@ -6,7 +6,7 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
 
 <section class="price-container">
     <div class="main-container">
-        <div class="main-heading d-flex justify-content-between">
+        <div class="main-heading d-flex align-items-end justify-content-between">
             <div class="heading-container">
                 <h1 class="bold-item heading">Стоимость юридических услуг</h1>
                 <p class="sub-heading">Что может влиять на цены:</p>
@@ -16,7 +16,7 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
                     <li class="list-item position-relative">доказательная база и стадия судебного процесса.</li>
                 </ul>
             </div>
-            <img src="<?= Yii::getAlias('@web/images/1D9A2938 .png') ?>" alt="">
+            <img class="price-image" src="<?= Yii::getAlias('@web/images/1D9A2938 .png') ?>" alt="">
             <img class="position-absolute price-container-img top-0 end-0"
                  src="<?= Yii::getAlias('@web/images/Round.png') ?>" alt="">
         </div>

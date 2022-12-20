@@ -4,7 +4,7 @@
 
 $this->title = 'Юридические услуги | Maxim Consulting';
 ?>
-<section class="main-heading d-flex justify-content-between">
+<section class="main-heading main-container d-flex justify-content-between">
     <div class="main-advantage">
         <div class="heading-container">
             <h1 class="bold-item heading">Юридические услуги</h1>
@@ -32,7 +32,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
             простое решение
         </h2>
         <div class="main-company-description d-flex justify-content-between">
-            <img src="<?= Yii::getAlias('@web/images/1D9A2676-Edit.jpg') ?>" alt="">
+            <img class="main-company-description-image" src="<?= Yii::getAlias('@web/images/1D9A2676-Edit.jpg') ?>" alt="">
             <div class="main-company-description-text d-flex flex-column justify-content-between align-items-start">
                 <div>
                     <p>
@@ -58,7 +58,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                         </li>
                     </ul>
                 </div>
-                <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Подробнее о
+                <a class="btn-request btn-request-primary btn-request-primary-outline link mt-xs-3 mt-sm-5 mt-xxl-0" href="<?= Yii::getAlias('/site/about-us') ?>">Подробнее о
                     компании</a>
             </div>
         </div>
@@ -78,7 +78,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                     <div class="d-flex">
                         <button class="btn-request btn-request-primary btn-request-primary-fill me-4"  data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку
                         </button>
-                        <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Контакты и
+                        <a class="btn-request btn-request-primary btn-request-primary-outline link" href="<?= Yii::getAlias('/site/contacts') ?>">Контакты и
                             адреса офиса</a>
                     </div>
                 </div>
@@ -161,6 +161,6 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                 </div>
             </div>
         </div>
-        <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Больше новостей</a>
+        <a class="btn-request btn-request-primary btn-request-primary-outline link" href="<?= Yii::getAlias('/site/blog') ?>">Больше новостей</a>
     </div>
 </section>

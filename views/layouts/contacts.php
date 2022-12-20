@@ -34,7 +34,7 @@ $this->beginPage() ?>
 $this->beginBody() ?>
 
 <header id="header" class="header fixed-top">
-    <div class="w-100 d-flex justify-content-center" style="height: 100px">
+    <div class="w-100 d-flex justify-content-center header-container">
         <div class="w-100 h-100 d-flex align-items-center justify-content-between main-container">
             <div class="d-flex align-items-center justify-content-between nav-logo">
                 <a href="<?= Url::toRoute('/site/index') ?>">
