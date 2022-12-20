@@ -76,7 +76,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                     <p class="paragraph-italic m-0">Заявка</p>
                     <p class="mb-3">Оставьте заявку на сайте или позвоните</p>
                     <div class="d-flex">
-                        <button class="btn-request btn-request-primary btn-request-primary-fill me-4">Оставить заявку
+                        <button class="btn-request btn-request-primary btn-request-primary-fill me-4"  data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку
                         </button>
                         <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Контакты и
                             адреса офиса</a>

@@ -37,7 +37,9 @@ $this->beginBody() ?>
     <div class="w-100 d-flex justify-content-center" style="height: 100px">
         <div class="w-100 h-100 d-flex align-items-center justify-content-between main-container">
             <div class="d-flex align-items-center justify-content-between nav-logo">
-                <img src="<?= Yii::getAlias('@web/images/Logo_maxim.png') ?>" alt="">
+                <a href="<?= Url::toRoute('/site/index') ?>">
+                    <img src="<?= Yii::getAlias('@web/images/Logo_maxim.png') ?>" alt="">
+                </a>
                 <div class="nav-items">
                     <ul class="d-flex m-0 p-0 nav-items-list ">
                         <li class="paragraph-main">
@@ -59,7 +61,7 @@ $this->beginBody() ?>
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary btn-request-secondary-outline">Оставить заявку</button>
+                <button class="btn-request btn-request-secondary btn-request-secondary-outline" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
             </div>
         </div>
     </div>
@@ -73,6 +75,15 @@ $this->beginBody() ?>
     endif ?>
     <?= Alert::widget() ?>
     <?= $content ?>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content feedback-modal align-items-end">
+                <button type="button" class="btn-close m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+                <p class="bold-item heading">Оставьте контакты для связи</p>
+                <?= ConsultationFeedbackFormWidget::widget() ?>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer id="footer" class="footer main-background position-relative">
@@ -118,6 +129,7 @@ $this->beginBody() ?>
     </div>
     <img class="position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/half-circle-red.png') ?>" alt="">
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <?php
 $this->endBody() ?>

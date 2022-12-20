@@ -166,3 +166,12 @@
     font-size: 14px;
     color: var(--text-grey);
 }
+
+.feedback-modal{
+    padding: 24px 40px;
+    width: auto;
+}
+
+.feedback-modal .input-consultation-form{
+    width: 450px;
+}
