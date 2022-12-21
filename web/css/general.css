@@ -33,9 +33,82 @@
     --outline-accent: #CED6EC;
 }
 
-* {
+.header-xl-700 {
+    font-size: 56px;
+    font-family: "Lato-Bold", serif;
+}
+
+.header-l-700 {
+    font-size: 40px;
+    font-family: "Lato-Bold", serif;
+}
+
+.header-m-600 {
+    font-size: 24px;
+    font-family: "Lato-SemiBold", serif;
+}
+
+.header-m-400 {
+    font-size: 24px;
     font-family: "Lato-Regular", serif;
+}
+
+.header-m-600-italic {
+    font-size: 24px;
+    font-family: "Lato-SemiBoldItalic", serif;
+}
+
+.subheader-xl-600 {
+    font-size: 32px;
+    font-family: "Lato-SemiBold", serif;
+}
+
+.body-xl-400 {
+    font-size: 20px;
+    font-family: "Lato-Regular", serif;
+}
+
+.body-xl-600 {
+    font-size: 20px;
+    font-family: "Lato-SemiBold", serif;
+}
+
+.body-l-400 {
+    font-size: 18px;
+    font-family: "Lato-Regular", serif;
+}
+
+.body-m-600-italic {
     font-size: 16px;
+    font-family: "Lato-SemiBoldItalic", serif;
+}
+
+.body-m-400 {
+    font-size: 16px;
+    font-family: "Lato-Regular", serif;
+}
+
+.body-m-600 {
+    font-size: 16px;
+    font-family: "Lato-SemiBold", serif;
+}
+
+.body-s-400 {
+    font-size: 14px;
+    font-family: "Lato-Regular", serif;
+}
+
+.body-s-600 {
+    font-size: 14px;
+    font-family: "Lato-SemiBold", serif;
+}
+
+.caption-400 {
+    font-size: 12px;
+    font-family: "Lato-Regular", serif;
+}
+
+* {
     color: var(--text-black);
 }
 
@@ -47,20 +120,13 @@
     font-family: "Lato-Bold", serif;
 }
 
-.paragraph-italic {
-    font-family: "Lato-SemiBoldItalic", serif;
-    font-size: 24px;
-    line-height: 32px;
-}
-
 .heading {
     color: var(--accent-blue);
-    font-size: 40px;
     line-height: 56px;
     padding-top: 65px;
 }
 
-.feedback-modal .heading{
+.feedback-modal .heading {
     padding-top: 8px;
 }
 
@@ -70,7 +136,6 @@
 }
 
 .paragraph-main {
-    font-size: 16px;
     color: var(--text-black);
 }
 
@@ -84,7 +149,6 @@
 }
 
 .paragraph-heading {
-    font-size: 40px;
     color: var(--accent-blue);
 }
 
@@ -145,15 +209,16 @@
     color: var(--accent-blue);
 }
 
-.main-company-description-image{
+.main-company-description-image {
     height: 100%;
 }
 
 @media (max-width: 1024px) {
-    .main-container{
+    .main-container {
         padding: 0 47px;
     }
-    .main-company-description-image{
+
+    .main-company-description-image {
         max-width: 450px;
     }
 }

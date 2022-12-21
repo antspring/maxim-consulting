@@ -3,24 +3,16 @@
 }
 
 .heading-container h1 {
-    font-size: 56px;
     line-height: 80px;
     padding-top: 40px;
 }
 
 .heading-container-paragraph {
-    font-size: 32px;
-    line-height: 48px;
     color: var(--accent-blue);
 }
 
 .small-description-list {
     margin-top: 65px;
-}
-
-.small-description-list .list-item {
-    font-size: 20px;
-    line-height: 32px;
 }
 
 .list-item {
@@ -53,11 +45,9 @@
 }
 
 .services-switcher-button {
-    font-size: 24px;
     background: none;
     border: none;
     color: var(--text-grey);
-    line-height: 32px;
 }
 
 .services-switcher-button:not(:last-child)::after {
@@ -90,10 +80,6 @@
     border-radius: 4px;
     background: var(--bg-white);
     cursor: pointer;
-}
-
-.services-paragraph {
-    line-height: 24px;
 }
 
 .services-request {
@@ -145,7 +131,6 @@
 }
 
 .main-blog-item-text .link {
-    font-size: 14px;
     color: var(--accent-purple);
 }
 
@@ -158,21 +143,20 @@
 }
 
 .main-blog-item-date {
-    font-size: 14px;
     color: var(--text-grey);
 }
 
-.feedback-modal{
+.feedback-modal {
     padding: 24px 40px;
     width: auto;
 }
 
-.feedback-modal .input-consultation-form{
+.feedback-modal .input-consultation-form {
     width: 450px;
 }
 
-@media (max-width: 1024px){
-    .services-item{
+@media (max-width: 1024px) {
+    .services-item {
         max-width: 350px;
     }
 }

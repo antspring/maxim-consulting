@@ -6,8 +6,8 @@ $this->title = 'О компании | Maxim Консалтинг';
 <div class="main-container">
     <section class="about-us">
         <div class="main-heading d-flex">
-            <div class="heading-container">
-                <h1 class="bold-item heading">
+            <div class="heading-container body-m-400">
+                <h1 class="heading header-xl-700">
                     О компании
                 </h1>
                 <p class="mt-5">
@@ -29,10 +29,10 @@ $this->title = 'О компании | Maxim Консалтинг';
         </div>
     </section>
     <section class="supervisor">
-        <h2 class="bold-item heading">Руководитель</h2>
+        <h2 class="heading header-l-700">Руководитель</h2>
         <div class="supervisor-info d-flex">
-            <div class="supervisor-info-text">
-                <p class="supervisor-info-name semi-bold-item">Олег Клевцур</p>
+            <div class="supervisor-info-text body-m-400">
+                <p class="supervisor-info-name header-m-600">Олег Клевцур</p>
                 <p class="supervisor-info-grey-text">
                     Специализация — банкротство, юридическое сопровождение и защита
                     бизнеса, досудебное урегулирование, арбитражные споры, споры в судах.
@@ -54,23 +54,23 @@ $this->title = 'О компании | Maxim Консалтинг';
         </div>
     </section>
     <section class="lawyers">
-        <h2 class="bold-item heading">Наши юристы</h2>
-        <div class="lawyers-container row">
+        <h2 class="heading header-l-700">Наши юристы</h2>
+        <div class="lawyers-container row header-m-600">
             <div class="lawyers-item col-md-3 col-sm-6 col-xs-12">
                 <img class="lawyers-image" src="<?= Yii::getAlias('@web/images/1D9A2979.jpg') ?>" alt="">
-                <p class="lawyers-item-text semi-bold-item mt-3">Виктор Карпухин</p>
+                <p class="lawyers-item-text mt-3">Виктор Карпухин</p>
             </div>
             <div class="lawyers-item col-md-3 col-sm-6 col-xs-12">
                 <img class="lawyers-image" src="<?= Yii::getAlias('@web/images/1D9A2689.jpg') ?>" alt="">
-                <p class="lawyers-item-text semi-bold-item mt-3">Елена Сорокун</p>
+                <p class="lawyers-item-text mt-3">Елена Сорокун</p>
             </div>
             <div class="lawyers-item col-md-3 col-sm-6 col-xs-12">
                 <img class="lawyers-image" src="<?= Yii::getAlias('@web/images/1D9A2879.jpg') ?>" alt="">
-                <p class="lawyers-item-text semi-bold-item mt-3">Марина Коюшкова</p>
+                <p class="lawyers-item-text mt-3">Марина Коюшкова</p>
             </div>
             <div class="lawyers-item col-md-3 col-sm-6 col-xs-12">
                 <img class="lawyers-image" src="<?= Yii::getAlias('@web/images/1D9A2751.jpg') ?>" alt="">
-                <p class="lawyers-item-text semi-bold-item mt-3">Олеся Подрядова</p>
+                <p class="lawyers-item-text mt-3">Олеся Подрядова</p>
             </div>
 
         </div>
@@ -78,19 +78,21 @@ $this->title = 'О компании | Maxim Консалтинг';
 </div>
 <section class="main-stages-work main-background">
     <div class="main-container">
-        <h2 class="bold-item heading">
+        <h2 class="heading header-l-700">
             Этапы работы
         </h2>
-        <div class="main-stages-work-container">
+        <div class="main-stages-work-container body-m-400">
             <div class="main-stages-work-item d-flex align-items-start">
                 <img src="<?= Yii::getAlias('@web/images/1.png') ?>" alt="">
                 <div class="main-stages-work-text">
-                    <p class="paragraph-italic m-0">Заявка</p>
+                    <p class="m-0 header-m-600-italic">Заявка</p>
                     <p class="mb-3">Оставьте заявку на сайте или позвоните</p>
                     <div class="d-flex">
-                        <button class="btn-request btn-request-primary btn-request-primary-fill me-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку
+                        <button class="btn-request btn-request-primary btn-request-primary-fill me-4"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку
                         </button>
-                        <a class="btn-request btn-request-primary btn-request-primary-outline link" href="<?= Yii::getAlias('/site/contacts') ?>">Контакты и
+                        <a class="btn-request btn-request-primary btn-request-primary-outline link"
+                           href="<?= Yii::getAlias('/site/contacts') ?>">Контакты и
                             адреса офиса</a>
                     </div>
                 </div>
@@ -98,14 +100,14 @@ $this->title = 'О компании | Maxim Консалтинг';
             <div class="main-stages-work-item d-flex align-items-start">
                 <img src="<?= Yii::getAlias('@web/images/2.png') ?>" alt="">
                 <div class="main-stages-work-text">
-                    <p class="paragraph-italic m-0">Бесплатная консультация</p>
+                    <p class="m-0 header-m-600-italic">Бесплатная консультация</p>
                     <p>Оценим ситуацию и предложим решение</p>
                 </div>
             </div>
             <div class="main-stages-work-item d-flex align-items-start">
                 <img src="<?= Yii::getAlias('@web/images/3.png') ?>" alt="">
                 <div class="main-stages-work-text">
-                    <p class="paragraph-italic m-0">Заключение договора</p>
+                    <p class="m-0 header-m-600-italic">Заключение договора</p>
                     <p>Если решаете доверить вопрос профи, обсуждаем условия и подписываем документы</p>
                 </div>
             </div>

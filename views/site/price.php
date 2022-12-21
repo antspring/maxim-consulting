@@ -7,8 +7,8 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
 <section class="price-container">
     <div class="main-container">
         <div class="main-heading d-flex align-items-end justify-content-between">
-            <div class="heading-container">
-                <h1 class="bold-item heading">Стоимость юридических услуг</h1>
+            <div class="heading-container body-xl-400">
+                <h1 class="heading header-xl-700">Стоимость юридических услуг</h1>
                 <p class="sub-heading">Что может влиять на цены:</p>
                 <ul class="list-group" style="margin-bottom: 120px">
                     <li class="list-item position-relative">сложность дела,</li>
@@ -31,17 +31,17 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
 <div class="main-container">
     <section class="services-price">
         <div>
-            <h2 class="bold-item heading">Цены на услуги</h2>
-            <div class="services-switcher my-5">
-                <button class="semi-bold-item services-switcher-button pe-5 active position-relative">
+            <h2 class="heading header-l-700">Цены на услуги</h2>
+            <div class="services-switcher my-5 header-m-600">
+                <button class="services-switcher-button pe-5 active position-relative">
                     Для частных лиц
                 </button>
-                <button class="semi-bold-item services-switcher-button">Для бизнеса</button>
+                <button class="services-switcher-button">Для бизнеса</button>
             </div>
         </div>
-        <div class="d-flex justify-content-between">
+        <div class="d-flex justify-content-between body-m-400">
             <div class="services-price-category me-3">
-                <div class="services-price-category-item px-4 py-3 mb-3 main-background">
+                <div class="services-price-category-item px-4 py-3 mb-3 main-background body-m-600">
                     По гражданским делам
                 </div>
                 <div class="services-price-category-item p-4 py-3 mb-3">
@@ -56,7 +56,7 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
             </div>
             <div class="services-price-list-container">
                 <div class="services-price-list ms-3">
-                    <div class="services-price-list-title semi-bold-item main-background p-3">
+                    <div class="services-price-list-title main-background p-3 body-m-600">
                         По гражданским делам
                     </div>
                     <div class="services-price-list-item d-flex align-items-center justify-content-between">
@@ -102,7 +102,7 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
                     </div>
                 </div>
                 <div class="services-price-list ms-3">
-                    <div class="services-price-list-title semi-bold-item main-background p-3">
+                    <div class="services-price-list-title main-background p-3 body-m-600">
                         По административным делам
                     </div>
                     <div class="services-price-list-item d-flex align-items-center justify-content-between">
@@ -157,7 +157,7 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
                     </div>
                 </div>
                 <div class="services-price-list ms-3">
-                    <div class="services-price-list-title semi-bold-item main-background p-3">
+                    <div class="services-price-list-title main-background p-3 body-m-600">
                         Делопроизводство по товарным знакам
                     </div>
                     <div class="services-price-list-item d-flex align-items-center justify-content-between">

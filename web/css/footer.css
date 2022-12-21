@@ -1,11 +1,3 @@
-.footer .paragraph-main {
-    font-size: 14px;
-}
-
-.contact-us > .paragraph-main {
-    font-size: 18px;
-}
-
 .contact-us {
     width: 496px;
     margin-right: 74px;
@@ -63,7 +55,6 @@
 
 .agreement-text {
     color: var(--text-grey);
-    font-size: 12px;
 }
 
 .contacts-info {

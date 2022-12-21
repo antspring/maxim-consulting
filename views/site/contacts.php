@@ -9,7 +9,7 @@ $this->title = 'Контакты | Maxim Консалтинг';
 <section class="contacts">
     <div class="main-heading main-container d-flex justify-content-between">
         <div class="heading-container">
-            <h1 class="bold-item heading">Оставьте заявку на консультацию</h1>
+            <h1 class="heading header-l-700">Оставьте заявку на консультацию</h1>
             <?= ConsultationFeedbackFormWidget::widget() ?>
         </div>
         <img src="<?= Yii::getAlias('@web/images/1D9A2765.png') ?>" alt="">

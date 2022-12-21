@@ -7,16 +7,16 @@ $this->title = 'Политики конфиденциальности | Maxim К
     <section class="privacy-policy">
         <div class="main-heading mb-5">
             <div class="heading-container">
-                <h1 class="bold-item heading">Политика конфиденциальности</h1>
+                <h1 class="heading header-xl-700">Политика конфиденциальности</h1>
             </div>
         </div>
-        <div class="policy-text">
+        <div class="policy-text body-m-400">
             <p>
                 Настоящая политика регламентирует порядок сбора и обработки персональных и иных конфиденциальных данных
                 пользователей сайта https://максимстрахование.рф с использованием средств автоматизации посредством сети
                 Интернет
             </p>
-            <p class="semi-bold-item">
+            <p class="body-m-600">
                 1. Термины и определения
             </p>
             <p>

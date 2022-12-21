@@ -41,7 +41,7 @@ $this->beginBody() ?>
                     <img src="<?= Yii::getAlias('@web/images/Logo_maxim.png') ?>" alt="">
                 </a>
                 <div class="nav-items">
-                    <ul class="d-flex m-0 p-0 nav-items-list ">
+                    <ul class="d-flex m-0 p-0 nav-items-list body-m-400">
                         <li class="paragraph-main">
                             <a class="link" href="<?= Url::toRoute('/site/services') ?>">Услуги</a>
                         </li>
@@ -61,7 +61,10 @@ $this->beginBody() ?>
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary btn-request-secondary-outline" data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку</button>
+                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Оставить заявку
+                </button>
             </div>
         </div>
     </div>
@@ -89,14 +92,14 @@ $this->beginBody() ?>
 <footer id="footer" class="footer position-relative">
     <div class="main-background contacts-container">
         <div class="main-container mt-0">
-            <p class="paragraph-heading">Контакты</p>
-            <select class="contacts-select py-2 px-3" name="" id="">
+            <p class="paragraph-heading header-l-700">Контакты</p>
+            <select class="contacts-select py-2 px-3 body-m-400" name="" id="">
                 <option value="#">Курган</option>
                 <option value="#">Тюмень</option>
                 <option value="#">Набережные Челны</option>
                 <option value="#">Краснодар</option>
             </select>
-            <div class="d-flex justify-content-between contacts-info">
+            <div class="d-flex justify-content-between contacts-info body-m-400">
                 <div>
                     <div class="d-flex align-items-center mb-4">
                         <img class="me-3" src="<?= Yii::getAlias('@web/images/icons/address.png') ?>" alt="">
@@ -138,12 +141,12 @@ $this->beginBody() ?>
             </div>
         </div>
     </div>
-    <div class="main-container contacts-requisites">
-        <p class="paragraph-heading">Реквизиты</p>
-        <p class="blog-content-item-title">Наименование</p>
+    <div class="main-container contacts-requisites body-m-400 ">
+        <p class="paragraph-heading header-xl-700">Реквизиты</p>
+        <p class="blog-content-item-title header-m-600">Наименование</p>
         <p>ООО «УПРАВЛЕНИЕ РЕГИОНАМИ»</p>
         <p>ОГРН 1104501004740</p>
-        <p class="blog-content-item-title">Банковские реквизиты</p>
+        <p class="blog-content-item-title header-m-600">Банковские реквизиты</p>
         <p>
             Банк: Курганское отделение № 8599 ПАО Сбербанк
         </p>
@@ -173,7 +176,9 @@ $this->beginBody() ?>
         </p>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 <?php
 $this->endBody() ?>
 </body>

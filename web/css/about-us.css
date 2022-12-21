@@ -8,7 +8,6 @@
 }
 
 .supervisor-info-name {
-    font-size: 24px;
     line-height: 32px;
 }
 
@@ -26,10 +25,11 @@
 }
 
 @media (max-width: 1024px) {
-    .about-us-image{
+    .about-us-image {
         max-width: 390px;
     }
-    .lawyers-image{
+
+    .lawyers-image {
         max-width: 210px;
     }
 }

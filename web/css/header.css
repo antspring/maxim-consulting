@@ -11,12 +11,8 @@
     transition: background-color .3s;
 }
 
-.header-container{
+.header-container {
     height: 100px;
-}
-
-.font-heading {
-    font-size: 40px
 }
 
 .nav-items-list li:not(:last-child) {
@@ -27,12 +23,8 @@
     min-width: 637px;
 }
 
-.header .paragraph-main {
-    font-size: 16px;
-}
-
 @media (max-width: 1024px) {
-    .header-container{
+    .header-container {
         height: 82px;
     }
 }

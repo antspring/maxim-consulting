@@ -7,7 +7,6 @@
 }
 
 .blog-switcher-button {
-    font-size: 20px;
     background: none;
     border: none;
     color: var(--text-grey);
@@ -47,12 +46,7 @@
 }
 
 .blog-content-item .link {
-    font-size: 14px;
     color: var(--accent-purple);
-}
-
-.blog-content-item-title {
-    font-size: 24px;
 }
 
 .blog-content-item-text {

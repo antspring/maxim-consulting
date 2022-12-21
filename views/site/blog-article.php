@@ -5,10 +5,10 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
 ?>
 
 <div class="main-container">
-    <section class="blog-container blog-article">
+    <section class="blog-container blog-article body-m-400">
         <div class="main-heading">
             <div class="heading-container">
-                <h1 class="bold-item heading">
+                <h1 class="heading header-l-700">
                     Юрист по ДТП: законны ли штрафы за «среднюю скорость»?
                 </h1>
             </div>
@@ -22,7 +22,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
             обсуждалась Верховным судом. Законодательная инициатива пока официально не принята. На правомерность
             рассматриваемых штрафов есть определенная юридическая точка зрения.
         </p>
-        <p class="blog-content-item-title">
+        <p class="blog-content-item-title header-m-600">
             Штрафы за какую среднюю скорость считаются законными?
         </p>
         <p class="blog-article-text">
@@ -40,7 +40,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
             контролирующие органы могут использовать любые методы фиксации нормы скорости, установленные законом, —
             список способов отслеживания не ограничен.
         </p>
-        <p class="blog-content-item-title">
+        <p class="blog-content-item-title header-m-600">
             Как нарушители оспаривают выписанные им штрафы «за среднюю скорость»?
         </p>
         <p class="blog-article-text">
@@ -50,7 +50,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
             доказательством превышения установленной скорости не может являться расчет, нужно конкретное уведомление о
             времени и месте.
         </p>
-        <h3 class="bold-item sub-heading">
+        <h3 class="sub-heading header-l-700">
             Основные аргументы истцов
         </h3>
         <p class="blog-article-text">
@@ -69,7 +69,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
             Стоит помнить, что Верховный суд РФ всегда инициирует индивидуальный подход при рассмотрении протокола,
             заявления и обжалования определенного решения.
         </p>
-        <h3 class="bold-item sub-heading">
+        <h3 class="sub-heading header-l-700">
             Итоги
         </h3>
         <p class="blog-article-text">
@@ -86,7 +86,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
             лиц, ответственных за это. Если проблем нет, то необходимую информацию довольно легко получить. Также
             следует отметить, что говорить о скорой отмене штрафов за превышение скорости пока не приходится.
         </p>
-        <p class="blog-content-item-title">
+        <p class="blog-content-item-title header-m-600">
             Дальнейшие действия
         </p>
         <p class="blog-article-text">
@@ -105,18 +105,18 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
 </section>
 <section class="main-blog">
     <div class="main-container">
-        <h2 class="bold-item heading">Читай также</h2>
+        <h2 class="heading header-l-700">Читай также</h2>
         <div class="main-blog-item-list row">
             <div class="main-blog-item-container col-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
-                        <p class="semi-bold-item">
+                        <p class="body-m-600">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
                         </p>
                         <div class="d-flex justify-content-between">
-                            <a class="link" href="#">Новости</a>
-                            <p class="m-0 main-blog-item-date">20.06.2022</p>
+                            <a class="link body-s-400" href="#">Новости</a>
+                            <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
                         </div>
                     </div>
                 </div>
@@ -125,12 +125,12 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
-                        <p class="semi-bold-item">
+                        <p class="body-m-600">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
                         </p>
                         <div class="d-flex justify-content-between">
-                            <a class="link" href="#">Новости</a>
-                            <p class="m-0 main-blog-item-date">20.06.2022</p>
+                            <a class="link body-s-400" href="#">Новости</a>
+                            <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
                         </div>
                     </div>
                 </div>
@@ -139,12 +139,12 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
-                        <p class="semi-bold-item">
+                        <p class="body-m-600">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
                         </p>
                         <div class="d-flex justify-content-between">
-                            <a class="link" href="#">Новости</a>
-                            <p class="m-0 main-blog-item-date">20.06.2022</p>
+                            <a class="link body-s-400" href="#">Новости</a>
+                            <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
                         </div>
                     </div>
                 </div>
@@ -153,18 +153,19 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
-                        <p class="semi-bold-item">
+                        <p class="body-m-600">
                             Верховный суд рекомендовал не принимать нецензурные жалобы
                         </p>
                         <div class="d-flex justify-content-between">
-                            <a class="link" href="#">Новости</a>
-                            <p class="m-0 main-blog-item-date">20.06.2022</p>
+                            <a class="link body-s-400" href="#">Новости</a>
+                            <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <a class="btn-request btn-request-primary btn-request-primary-outline link" href="#">Больше новостей</a>
+        <a class="btn-request btn-request-primary btn-request-primary-outline link body-m-400" href="#">Больше
+            новостей</a>
     </div>
 </section>
 

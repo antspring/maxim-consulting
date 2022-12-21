@@ -8,12 +8,11 @@
     border: 1px solid var(--accent-purple);
 }
 
-.services-list-item:hover .services-list-item-name{
+.services-list-item:hover .services-list-item-name {
     color: var(--accent-purple);
 }
 
 .services-list-item-text {
-    font-size: 14px;
     color: var(--text-grey);
     margin-bottom: 40px;
 }
@@ -23,11 +22,11 @@
 }
 
 @media (max-width: 1024px) {
-    .services-list-item{
+    .services-list-item {
         max-width: 350px;
     }
 
-    .services-list-container{
+    .services-list-container {
         width: fit-content;
     }
 }

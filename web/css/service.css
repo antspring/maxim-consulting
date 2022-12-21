@@ -7,7 +7,6 @@
 }
 
 .sub-heading {
-    font-size: 20px;
     margin-top: 64px;
     line-height: 32px;
 }
@@ -23,7 +22,6 @@
 
 .service-sub-heading {
     margin: 40px 0 15px;
-    font-size: 32px;
     line-height: 48px;
 }
 
@@ -31,6 +29,6 @@
     margin-bottom: 65px;
 }
 
-.services-questions{
+.services-questions {
     max-width: 635px;
 }

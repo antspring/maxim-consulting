@@ -3,13 +3,11 @@
 }
 
 .blog-article .heading {
-    font-size: 40px;
     line-height: 56px;
 }
 
 .blog-article .sub-heading {
     color: var(--accent-blue);
-    font-size: 40px;
     line-height: 56px;
 }
 
