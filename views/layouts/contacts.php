@@ -82,7 +82,7 @@ $this->beginBody() ?>
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content feedback-modal align-items-end">
                 <button type="button" class="btn-close m-3" data-bs-dismiss="modal" aria-label="Close"></button>
-                <p class="bold-item heading">Оставьте контакты для связи</p>
+                <p class="heading header-l-700">Оставьте контакты для связи</p>
                 <?= ConsultationFeedbackFormWidget::widget() ?>
             </div>
         </div>
@@ -93,7 +93,7 @@ $this->beginBody() ?>
     <div class="main-background contacts-container">
         <div class="main-container mt-0">
             <p class="paragraph-heading header-l-700">Контакты</p>
-            <select class="contacts-select py-2 px-3 body-m-400" name="" id="">
+            <select class="contacts-select py-2 px-3 body-m-400 form-select" name="" id="">
                 <option value="#">Курган</option>
                 <option value="#">Тюмень</option>
                 <option value="#">Набережные Челны</option>

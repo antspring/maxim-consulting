@@ -155,6 +155,10 @@
     width: 450px;
 }
 
+.success-modal {
+    padding: 48px 40px;
+}
+
 @media (max-width: 1024px) {
     .services-item {
         max-width: 350px;

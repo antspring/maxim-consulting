@@ -27,7 +27,7 @@ $this->title = 'Блог | Maxim Консалтинг';
                     <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
                 </div>
                 <a class="link" href="#">
-                    <p class="blog-content-item-title semi-bold-item mt-3 header-m-600">
+                    <p class="blog-content-item-title mt-3 header-m-600">
                         Юрист по ДТП: законны ли штрафы за «среднюю
                         скорость»?
                     </p>
@@ -46,7 +46,7 @@ $this->title = 'Блог | Maxim Консалтинг';
                     <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
                 </div>
                 <a class="link" href="#">
-                    <p class="blog-content-item-title semi-bold-item mt-3">
+                    <p class="blog-content-item-title mt-3 header-m-600">
                         Юрист по ДТП: законны ли штрафы за «среднюю
                         скорость»?
                     </p>
@@ -65,7 +65,7 @@ $this->title = 'Блог | Maxim Консалтинг';
                     <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
                 </div>
                 <a class="link" href="#">
-                    <p class="blog-content-item-title semi-bold-item mt-3">
+                    <p class="blog-content-item-title mt-3 header-m-600">
                         Юрист по ДТП: законны ли штрафы за «среднюю
                         скорость»?
                     </p>
@@ -83,7 +83,7 @@ $this->title = 'Блог | Maxim Консалтинг';
                     <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
                 </div>
                 <a class="link" href="#">
-                    <p class="blog-content-item-title semi-bold-item mt-3">
+                    <p class="blog-content-item-title mt-3 header-m-600">
                         Юрист по ДТП: законны ли штрафы за «среднюю
                         скорость»?
                     </p>
