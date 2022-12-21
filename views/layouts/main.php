@@ -87,6 +87,23 @@ $this->beginBody() ?>
             </div>
         </div>
     </div>
+    <?php
+    if (Yii::$app->session->get('send_form')) { ?>
+        <div class="modal fade" id="successModal" tabindex="-1" aria-modal="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content success-modal d-flex flex-column align-items-start">
+                    <p class="header-l-700">Заявка принята</p>
+                    <p class="body-m-400">Скоро мы свяжемся</p>
+                    <button type="button"
+                            class="btn-request btn-request-primary btn-request-primary-fill body-m-400 mt-5"
+                            data-bs-dismiss="modal">Понятно
+                    </button>
+                </div>
+            </div>
+        </div>
+        <?php
+        Yii::$app->session->remove('send_form');
+    } ?>
 </main>
 
 <footer id="footer" class="footer main-background position-relative">
@@ -139,7 +156,13 @@ $this->beginBody() ?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+<script>
+    let successModel = new bootstrap.Modal(document.getElementById('successModal'), {
+        keyboard: false
+    });
 
+    successModel.show();
+</script>
 <?php
 $this->endBody() ?>
 </body>

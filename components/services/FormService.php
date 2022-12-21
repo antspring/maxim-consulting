@@ -10,5 +10,7 @@ class FormService
     {
         $model->load($data);
         $model->save();
+
+        return $model;
     }
 }

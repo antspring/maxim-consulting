@@ -18,7 +18,13 @@ class FormController extends \yii\web\Controller
 
     public function actionFeedback()
     {
-        $this->formService->saveForm(new FeedbackForm(), Yii::$app->request->post());
-        $this->goBack();
+        $model = $this->formService->saveForm(new FeedbackForm(), Yii::$app->request->post());
+        Yii::$app->mailer->compose()->setFrom($model->email)->setTo(
+            'myemail@yourserver.com'
+        )->setSubject($model->name)->setTextBody($model->question)->send();
+
+        Yii::$app->session->set('send_form', 'true');
+
+        return $this->goBack(Yii::$app->request->referrer);
     }
 }
