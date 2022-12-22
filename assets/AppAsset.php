@@ -35,7 +35,8 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
         'js/header-scroll.js',
-        'js/header-links.js'
+        'js/header-links.js',
+        'js/burger-menu.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

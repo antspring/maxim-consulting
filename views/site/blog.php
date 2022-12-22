@@ -96,7 +96,7 @@ $this->title = 'Блог | Maxim Консалтинг';
                 </p>
             </div>
         </div>
-        <div class="blog-pagination d-flex justify-content-center body-l-400">
+        <div class="blog-pagination d-flex body-l-400">
             <a class="link" href="#">Назад</a>
             <a class="link m-0" href="#">
                 <p class="blog-pagination-number me-3 current-pagination-number">1</p>

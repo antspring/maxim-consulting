@@ -32,3 +32,9 @@
 .services-questions {
     max-width: 635px;
 }
+
+@media (max-width: 992px) {
+    .service-container .main-heading {
+        margin-bottom: 64px;
+    }
+}

@@ -5,18 +5,18 @@ $this->title = 'О компании | Maxim Консалтинг';
 ?>
 <div class="main-container">
     <section class="about-us">
-        <div class="main-heading d-flex">
+        <div class="main-heading d-flex flex-column flex-lg-row align-items-end">
             <div class="heading-container body-m-400">
                 <h1 class="heading header-xl-700">
                     О компании
                 </h1>
-                <p class="mt-5">
+                <p class="mt-5 price-paragraph">
                     Главная задача — качественные и профессиональные юридические услуги.
                     В нашей команде нет менеджеров и стажеров, только эксперты
                     с многолетним опытом в своей области. Мы стараемся решить вопросы клиента, сэкономив его время и
                     деньги.
                 </p>
-                <p class="">
+                <p class="price-paragraph">
                     Не даем гарантии успеха, пока не изучим вопрос, прогноз решения делаем только после детального
                     рассмотрения документов.
                     На все время работы с вами остается персональный юрист: за его плечами опыт в похожей ситуации. Он
@@ -24,13 +24,14 @@ $this->title = 'О компании | Maxim Консалтинг';
                 </p>
             </div>
             <img class="about-us-image" src="<?= Yii::getAlias('@web/images/1D9A2676-Edit.png') ?>" alt="">
-            <img class="round-main position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/Round.png') ?>"
-                 alt="">
+            <!--            <img class="round-main position-absolute top-0 end-0" src="--><?php
+            //= Yii::getAlias('@web/images/Round.png') ?><!--"-->
+            <!--                 alt="">-->
         </div>
     </section>
     <section class="supervisor">
         <h2 class="heading header-l-700">Руководитель</h2>
-        <div class="supervisor-info d-flex">
+        <div class="supervisor-info d-flex flex-column-reverse flex-lg-row">
             <div class="supervisor-info-text body-m-400">
                 <p class="supervisor-info-name header-m-600">Олег Клевцур</p>
                 <p class="supervisor-info-grey-text">
@@ -50,25 +51,25 @@ $this->title = 'О компании | Maxim Консалтинг';
                     организации. Такого, возможно, нет нигде».
                 </p>
             </div>
-            <img src="<?= Yii::getAlias('@web/images/1D9A3007.jpg') ?>" alt="">
+            <img class="supervisor-image my-3 my-lg-0" src="<?= Yii::getAlias('@web/images/1D9A3007.jpg') ?>" alt="">
         </div>
     </section>
     <section class="lawyers">
         <h2 class="heading header-l-700">Наши юристы</h2>
         <div class="lawyers-container row header-m-600">
-            <div class="lawyers-item col-md-3 col-sm-6 col-xs-12">
+            <div class="lawyers-item col-lg-3 col-sm-6 col-xs-12">
                 <img class="lawyers-image" src="<?= Yii::getAlias('@web/images/1D9A2979.jpg') ?>" alt="">
                 <p class="lawyers-item-text mt-3">Виктор Карпухин</p>
             </div>
-            <div class="lawyers-item col-md-3 col-sm-6 col-xs-12">
+            <div class="lawyers-item col-lg-3 col-sm-6 col-xs-12">
                 <img class="lawyers-image" src="<?= Yii::getAlias('@web/images/1D9A2689.jpg') ?>" alt="">
                 <p class="lawyers-item-text mt-3">Елена Сорокун</p>
             </div>
-            <div class="lawyers-item col-md-3 col-sm-6 col-xs-12">
+            <div class="lawyers-item col-lg-3 col-sm-6 col-xs-12">
                 <img class="lawyers-image" src="<?= Yii::getAlias('@web/images/1D9A2879.jpg') ?>" alt="">
                 <p class="lawyers-item-text mt-3">Марина Коюшкова</p>
             </div>
-            <div class="lawyers-item col-md-3 col-sm-6 col-xs-12">
+            <div class="lawyers-item col-lg-3 col-sm-6 col-xs-12">
                 <img class="lawyers-image" src="<?= Yii::getAlias('@web/images/1D9A2751.jpg') ?>" alt="">
                 <p class="lawyers-item-text mt-3">Олеся Подрядова</p>
             </div>

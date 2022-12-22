@@ -41,27 +41,33 @@ $this->beginBody() ?>
                     <img src="<?= Yii::getAlias('@web/images/Logo_maxim.png') ?>" alt="">
                 </a>
                 <div class="nav-items">
-                    <ul class="d-flex m-0 p-0 nav-items-list body-m-400">
-                        <li class="paragraph-main">
+                    <ul class="d-flex m-0 p-0 nav-items-list d-none d-lg-flex">
+                        <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/services') ?>">Услуги</a>
                         </li>
-                        <li class="paragraph-main">
+                        <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/price') ?>">Цены</a>
                         </li>
-                        <li class="paragraph-main">
+                        <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('site/blog') ?>">Блог</a>
                         </li>
-                        <li class="paragraph-main">
+                        <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/about-us') ?>">О компании</a>
                         </li>
-                        <li class="paragraph-main">
+                        <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/contacts') ?>">Контакты</a>
                         </li>
+                        <li class="d-lg-none burger-menu-close position-absolute">
+                            <button class="btn-close"></button>
+                        </li>
                     </ul>
+                    <button class="btn burger-menu-open d-block d-lg-none">
+                        <img src="<?= Yii::getAlias('@web/images/icons/icon_menu.png') ?>" alt="">
+                    </button>
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400"
+                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Оставить заявку
                 </button>
@@ -93,7 +99,7 @@ $this->beginBody() ?>
     <div class="main-background contacts-container">
         <div class="main-container mt-0">
             <p class="paragraph-heading header-l-700">Контакты</p>
-            <select class="contacts-select py-2 px-3 body-m-400 form-select" name="" id="">
+            <select class="contacts-select py-2 px-3 body-m-400" name="" id="">
                 <option value="#">Курган</option>
                 <option value="#">Тюмень</option>
                 <option value="#">Набережные Челны</option>
@@ -129,20 +135,20 @@ $this->beginBody() ?>
                                     src="<?= Yii::getAlias('@web/images/vk.png') ?>" alt=""></a>
                     </div>
                 </div>
-                <div style="position:relative;overflow:hidden;"><a
-                            href="https://yandex.ru/maps/53/kurgan/?utm_medium=mapframe&utm_source=maps"
-                            style="color:#eee;font-size:12px;position:absolute;top:0px;">Курган</a><a
-                            href="https://yandex.ru/maps/53/kurgan/house/ulitsa_radionova_17/YkwYdQZiQUMBQFtvfXhyeH1ibQ==/?ll=65.312866%2C55.439119&utm_medium=mapframe&utm_source=maps&z=17.21"
-                            style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Радионова, 17 —
+                <div class="contacts-map" style="position:relative;overflow:hidden;">
+                    <a href="https://yandex.ru/maps/53/kurgan/?utm_medium=mapframe&utm_source=maps"
+                       style="color:#eee;font-size:12px;position:absolute;top:0px;">Курган</a>
+                    <a href="https://yandex.ru/maps/53/kurgan/house/ulitsa_radionova_17/YkwYdQZiQUMBQFtvfXhyeH1ibQ==/?ll=65.312866%2C55.439119&utm_medium=mapframe&utm_source=maps&z=17.21"
+                       style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Радионова, 17 —
                         Яндекс Карты</a>
-                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUn5KvVGC" width="635" height="303" frameborder="1"
+                    <iframe src="https://yandex.ru/map-widget/v1/-/CCUn5KvVGC" class="w-100 h-100" frameborder="1"
                             allowfullscreen="true" style="position:relative;"></iframe>
                 </div>
             </div>
         </div>
     </div>
     <div class="main-container contacts-requisites body-m-400 ">
-        <p class="paragraph-heading header-xl-700">Реквизиты</p>
+        <p class="paragraph-heading header-l-700">Реквизиты</p>
         <p class="blog-content-item-title header-m-600">Наименование</p>
         <p>ООО «УПРАВЛЕНИЕ РЕГИОНАМИ»</p>
         <p>ОГРН 1104501004740</p>

@@ -6,49 +6,61 @@
 </div>
 <div class="services row gy-3">
     <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
-        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-md-5">
-            <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
+        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-lg-5 me-md-3">
+            <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="img-svg-fill"
+                      d="M29.5836 13.83C28.9894 10.7089 27.3212 7.86106 24.8385 5.72982C22.3559 3.59858 19.1981 2.30345 15.8566 2.046V0H13.7423V2.046C10.4008 2.30345 7.243 3.59858 4.76035 5.72982C2.2777 7.86106 0.609466 10.7089 0.0152961 13.83C-0.0189139 14.0182 0.00453608 14.2117 0.0828661 14.3876C0.161206 14.5636 0.291166 14.7147 0.457376 14.823C0.623586 14.9313 0.819106 14.9924 1.02084 14.9989C1.22256 15.0055 1.42205 14.9573 1.59573 14.86C2.3726 14.3493 3.28357 14.0517 4.22802 14C5.12567 14.0206 6.00199 14.2631 6.76981 14.7034C7.53762 15.1438 8.17022 15.7666 8.60462 16.51C8.70542 16.6502 8.84092 16.765 8.99942 16.8444C9.15792 16.9237 9.33442 16.9652 9.51372 16.9652C9.69302 16.9652 9.86962 16.9237 10.028 16.8444C10.1865 16.765 10.322 16.6502 10.4229 16.51C10.7774 15.9213 11.2543 15.4066 11.8248 14.9969C12.3953 14.5871 13.0475 14.2909 13.7423 14.126V23.5C13.7423 24.163 13.4638 24.7989 12.9682 25.2678C12.4726 25.7366 11.8004 26 11.0994 26C10.3985 26 9.72632 25.7366 9.23062 25.2678C8.73502 24.7989 8.45662 24.163 8.45662 23.5V23H6.3423V23.5C6.3423 24.6935 6.8435 25.8381 7.73562 26.682C8.62782 27.5259 9.83782 28 11.0994 28C12.3611 28 13.5711 27.5259 14.4632 26.682C15.3554 25.8381 15.8566 24.6935 15.8566 23.5V14.125C16.5515 14.2901 17.2039 14.5867 17.7743 14.9967C18.3448 15.4068 18.8216 15.9219 19.176 16.511C19.2696 16.6602 19.4026 16.7838 19.562 16.8697C19.7214 16.9556 19.9017 17.0007 20.0851 17.0007C20.2686 17.0007 20.4488 16.9556 20.6082 16.8697C20.7676 16.7838 20.9007 16.6602 20.9943 16.511C21.4285 15.7674 22.061 15.1444 22.8289 14.7039C23.5967 14.2633 24.4731 14.0207 25.3709 14C26.3153 14.0517 27.2263 14.3493 28.0031 14.86C28.1768 14.9576 28.3765 15.006 28.5784 14.9996C28.7803 14.9932 28.976 14.9322 29.1424 14.8238C29.3088 14.7155 29.4389 14.5643 29.5172 14.3881C29.5956 14.212 29.6179 14.0183 29.5836 13.83ZM4.22802 12C3.69044 12 3.15554 12.0717 2.63913 12.213C3.35676 10.3221 4.5478 8.6238 6.11042 7.26319C7.67302 5.90258 9.56072 4.92019 11.6121 4.4C9.51662 6.95552 8.38332 10.0998 8.39212 13.334C7.19434 12.4729 5.73246 12.0045 4.22802 12ZM14.7994 12C13.2408 12.0068 11.7301 12.5106 10.5117 13.43C10.5508 11.21 11.1544 6.94 14.7994 4.254C18.4254 6.931 19.0375 11.204 19.083 13.427C17.8652 12.5095 16.3562 12.0069 14.7994 12ZM25.3709 12C23.8665 12.0042 22.4047 12.4722 21.2068 13.333C21.2155 10.0988 20.0822 6.95452 17.9867 4.399C20.0382 4.91928 21.926 5.90183 23.4886 7.26262C25.0513 8.6234 26.2423 10.3219 26.9597 12.213C26.4433 12.0717 25.9084 12 25.3709 12Z"/>
+            </svg>
             <p class="services-paragraph m-0 ps-4 active body-m-400">Банкротство</p>
         </div>
     </div>
     <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
-        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-md-5">
+        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-lg-5 me-md-3">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="img-svg-stroke"
+                      d="M28.714 14.4057C28.2712 13.8498 26.6264 13.4669 25.9305 12.4664C25.2345 11.4658 24.6649 9.29889 22.8937 8.46631C21.1225 7.63374 17.7373 7.40002 15.8042 7.40002C13.8712 7.40002 10.4883 7.6286 8.71472 8.4646C6.94114 9.3006 6.37391 11.4658 5.678 12.4646C4.98211 13.4635 3.33719 13.8498 2.8944 14.4057C2.45161 14.9617 2.1399 18.4766 2.32958 20.2C2.51927 21.9235 2.87326 22.9429 2.87326 22.9429H8.06836C8.9189 22.9429 9.19559 22.6406 10.9353 22.4857C12.8442 22.3143 14.7169 22.2572 15.8042 22.2572C16.8916 22.2572 18.8247 22.3143 20.7323 22.4857C22.4721 22.6417 22.7578 22.9429 23.5993 22.9429H28.734C28.734 22.9429 29.088 21.9235 29.2777 20.2C29.4673 18.4766 29.1544 14.9617 28.714 14.4057ZM24.503 22.9429H27.8859V23.8572H24.503V22.9429ZM3.72259 22.9429H7.10545V23.8572H3.72259V22.9429Z"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="img-svg-fill"
+                      d="M22.3566 18.6663C21.9996 18.276 20.8361 17.9503 19.2957 17.732C17.7553 17.5137 17.1935 17.4571 15.8162 17.4571C14.4389 17.4571 13.8124 17.5508 12.3361 17.732C10.8597 17.9131 9.75124 18.2354 9.27581 18.6663C8.56238 19.32 9.60743 20.0537 10.4278 20.1428C11.2228 20.2285 12.8121 20.1971 15.8228 20.1971C18.8336 20.1971 20.4229 20.2285 21.2178 20.1428C22.037 20.0486 23.0072 19.3657 22.3566 18.6663ZM26.41 14.8885C26.4066 14.8432 26.3856 14.8006 26.351 14.7689C26.3165 14.7373 26.2707 14.7188 26.2227 14.7171C25.5093 14.6931 24.785 14.7411 23.5001 15.0994C22.8445 15.2804 22.229 15.572 21.683 15.96C21.5453 16.0616 21.5943 16.3366 21.767 16.3656C22.8261 16.4832 23.8914 16.5424 24.9577 16.5428C25.5975 16.5428 26.2578 16.3714 26.3804 15.832C26.4429 15.5209 26.4529 15.2025 26.41 14.8885ZM5.19825 14.8885C5.20164 14.8432 5.22263 14.8006 5.25719 14.7689C5.29175 14.7373 5.33745 14.7188 5.38551 14.7171C6.09894 14.6931 6.82322 14.7411 8.10811 15.0994C8.76363 15.2804 9.37922 15.572 9.92523 15.96C10.0629 16.0616 10.014 16.3366 9.84121 16.3656C8.78216 16.4832 7.71677 16.5424 6.65046 16.5428C6.01073 16.5428 5.35047 16.3714 5.22785 15.832C5.16533 15.5209 5.15534 15.2025 5.19825 14.8885Z"/>
+                <path class="img-svg-stroke"
+                      d="M5.05152 13.0571C5.05152 13.0571 7.85144 12.3714 15.8042 12.3714C23.7569 12.3714 26.5568 13.0571 26.5568 13.0571M26.436 11.9714H27.4025H26.436ZM4.20581 11.9714H5.17234H4.20581Z"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <p class="services-paragraph m-0 ps-4 body-m-400">Автоюрист</p>
+        </div>
+    </div>
+    <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
+        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-lg-5 me-md-3">
             <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
             <p class="services-paragraph m-0 ps-4 body-m-400">Банкротство</p>
         </div>
     </div>
     <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
-        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-md-5">
+        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-lg-5 me-md-3">
             <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
             <p class="services-paragraph m-0 ps-4 body-m-400">Банкротство</p>
         </div>
     </div>
     <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
-        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-md-5">
+        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-lg-5 me-md-3">
             <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
             <p class="services-paragraph m-0 ps-4 body-m-400">Банкротство</p>
         </div>
     </div>
     <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
-        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-md-5">
+        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-lg-5 me-md-3">
             <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
             <p class="services-paragraph m-0 ps-4 body-m-400">Банкротство</p>
         </div>
     </div>
     <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
-        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-md-5">
+        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-lg-5 me-md-3">
             <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
             <p class="services-paragraph m-0 ps-4 body-m-400">Банкротство</p>
         </div>
     </div>
     <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
-        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-md-5">
-            <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
-            <p class="services-paragraph m-0 ps-4 body-m-400">Банкротство</p>
-        </div>
-    </div>
-    <div class="col-xl-4 col-sm-6 col-xs-12 services-item-container">
-        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-md-5">
+        <div class="services-item d-flex align-items-center p-4 me-xl-1 me-lg-5 me-md-3">
             <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
             <p class="services-paragraph m-0 ps-4 body-m-400">Банкротство</p>
         </div>

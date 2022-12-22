@@ -1,7 +1,7 @@
 .services-list-item {
     border: 1px solid var(--outline-accent);
     border-radius: 4px;
-    margin: 12px 0;
+    height: 100%;
 }
 
 .services-list-item:hover {
@@ -21,12 +21,28 @@
     color: var(--accent-hover);
 }
 
-@media (max-width: 1024px) {
-    .services-list-item {
-        max-width: 350px;
-    }
+.services-list-container {
+    margin: 12px 0;
+}
 
+.img-svg-stroke {
+    stroke: #0B2052;
+}
+
+.img-svg-fill {
+    fill: #0B2052;
+}
+
+.services-list-item:hover .img-svg-stroke {
+    stroke: #690C52;
+}
+
+.services-list-item:hover .img-svg-fill {
+    fill: #690C52;
+}
+
+@media (max-width: 1024px) {
     .services-list-container {
-        width: fit-content;
+        max-width: 350px;
     }
 }

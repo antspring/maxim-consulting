@@ -75,6 +75,14 @@
     color: var(--accent-hover);
 }
 
+.services-item:hover .img-svg-fill {
+    fill: #690C52;
+}
+
+.services-item:hover .img-svg-stroke {
+    stroke: #690C52;
+}
+
 .services-item {
     border: 1px solid var(--outline-accent);
     border-radius: 4px;

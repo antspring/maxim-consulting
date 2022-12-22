@@ -205,6 +205,10 @@
     height: 100%;
 }
 
+.section-main {
+    justify-content: space-between;
+}
+
 @media (max-width: 1024px) {
     .main-container {
         padding: 0 47px;
@@ -212,5 +216,32 @@
 
     .main-company-description-image {
         max-width: 450px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-container {
+        padding: 0 40px;
+    }
+
+    .main-heading-image {
+        width: 400px;
+    }
+
+    .main-advantage {
+        width: 100%;
+    }
+
+    .section-main {
+        align-items: end;
+    }
+
+    .main-company-description-image {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .main-blog-item-container {
+        max-width: 540px;
     }
 }

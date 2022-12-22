@@ -4,7 +4,7 @@
 
 $this->title = 'Юридические услуги | Maxim Consulting';
 ?>
-<section class="main-heading main-container d-flex justify-content-between">
+<section class="section-main main-heading main-container d-flex flex-column flex-lg-row">
     <div class="main-advantage">
         <div class="heading-container">
             <h1 class="heading header-xl-700">Юридические услуги</h1>
@@ -15,8 +15,13 @@ $this->title = 'Юридические услуги | Maxim Consulting';
             <li class="list-item position-relative">Подготовка документов</li>
             <li class="list-item position-relative">Сопровождение под ключ</li>
         </ul>
+        <button class="btn-request btn-request-primary btn-request-primary-outline body-m-400 d-block d-lg-none mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Оставить заявку
+        </button>
     </div>
-    <img src="<?= Yii::getAlias('@web/images/1D9A2784.png') ?>" alt="">
+    <img class="main-heading-image"
+         src="<?= Yii::getAlias('@web/images/1D9A2784.png') ?>" alt="">
     <img class="round-main position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/Round.png') ?>" alt="">
 </section>
 <section class="main-services main-background">
@@ -27,15 +32,15 @@ $this->title = 'Юридические услуги | Maxim Consulting';
 </section>
 <section class="main-company-info">
     <div class="main-container">
-        <h2 class="heading header-xl-700">
+        <h2 class="heading header-l-700">
             Сложные проблемы -
             простое решение
         </h2>
-        <div class="main-company-description d-flex justify-content-between">
+        <div class="main-company-description d-flex justify-content-between flex-column flex-lg-row">
             <img class="main-company-description-image" src="<?= Yii::getAlias('@web/images/1D9A2676-Edit.jpg') ?>"
                  alt="">
             <div class="main-company-description-text d-flex flex-column justify-content-between align-items-start body-m-400">
-                <div>
+                <div class="mt-4 mt-lg-0">
                     <p>
                         «Maxim Консалтинг» — это эксперты в разных сферах, от банкротства физлиц до правового
                         сопровождения
@@ -68,7 +73,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
 </section>
 <section class="main-stages-work main-background">
     <div class="main-container">
-        <h2 class="heading header-xl-700">
+        <h2 class="heading header-l-700">
             Этапы работы
         </h2>
         <div class="main-stages-work-container">
@@ -107,9 +112,9 @@ $this->title = 'Юридические услуги | Maxim Consulting';
 </section>
 <section class="main-blog">
     <div class="main-container">
-        <h2 class="heading header-xl-700">Блог</h2>
+        <h2 class="heading header-l-700">Блог</h2>
         <div class="main-blog-item-list row">
-            <div class="main-blog-item-container col-6">
+            <div class="main-blog-item-container col-12 col-lg-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
@@ -123,7 +128,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                     </div>
                 </div>
             </div>
-            <div class="main-blog-item-container col-6">
+            <div class="main-blog-item-container col-12 col-lg-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
@@ -137,7 +142,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                     </div>
                 </div>
             </div>
-            <div class="main-blog-item-container col-6">
+            <div class="main-blog-item-container col-12 col-lg-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
@@ -151,7 +156,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                     </div>
                 </div>
             </div>
-            <div class="main-blog-item-container col-6">
+            <div class="main-blog-item-container col-12 col-lg-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">

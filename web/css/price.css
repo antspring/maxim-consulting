@@ -20,6 +20,7 @@
 }
 
 .services-price-list-item {
+    align-items: center;
     border-bottom: 1px solid var(--outline-accent);
 }
 
@@ -34,5 +35,22 @@
 @media (max-width: 1024px) {
     .price-image {
         max-width: 415px;
+    }
+}
+
+@media (max-width: 992px) {
+    .price-container .heading-container {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .services-price-category {
+        max-width: 350px;
+        min-width: unset;
+    }
+
+    .services-price-list-item {
+        align-items: start;
+        width: 450px;
     }
 }

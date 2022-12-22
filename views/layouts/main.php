@@ -41,7 +41,7 @@ $this->beginBody() ?>
                     <img src="<?= Yii::getAlias('@web/images/Logo_maxim.png') ?>" alt="">
                 </a>
                 <div class="nav-items">
-                    <ul class="d-flex m-0 p-0 nav-items-list ">
+                    <ul class="d-flex m-0 p-0 nav-items-list d-none d-lg-flex">
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/services') ?>">Услуги</a>
                         </li>
@@ -57,11 +57,17 @@ $this->beginBody() ?>
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/contacts') ?>">Контакты</a>
                         </li>
+                        <li class="d-lg-none burger-menu-close position-absolute">
+                            <button class="btn-close"></button>
+                        </li>
                     </ul>
+                    <button class="btn burger-menu-open d-block d-lg-none">
+                        <img src="<?= Yii::getAlias('@web/images/icons/icon_menu.png') ?>" alt="">
+                    </button>
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 "
+                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Оставить заявку
                 </button>
@@ -108,7 +114,7 @@ $this->beginBody() ?>
 <footer id="footer" class="footer main-background position-relative">
     <div class="main-container">
         <p class="paragraph-heading header-l-700">Свяжитесь с нами</p>
-        <div class="d-flex ">
+        <div class="d-flex flex-column flex-lg-row">
             <div class="contact-us">
                 <p class="paragraph-main body-xl-600">Оставьте заявку и получите бесплатную юридическую консультацию
                     по телефону</p>
@@ -140,11 +146,11 @@ $this->beginBody() ?>
                                 src="<?= Yii::getAlias('@web/images/vk.png') ?>" alt=""></a>
                 </div>
             </div>
-            <div>
+            <div class="mt-lg-0 mt-5">
                 <?= ConsultationFeedbackFormWidget::widget() ?>
             </div>
         </div>
-        <div class="w-100 d-flex justify-content-between footer-info body-s-400 ">
+        <div class="w-100 d-flex flex-column flex-lg-row justify-content-between footer-info body-s-400 ">
             <p class="paragraph-main"><a href="#" class="link">Правовая информация</a></p>
             <p class="paragraph-main">© 2022 «Maxim Консалтинг»</p>
         </div>

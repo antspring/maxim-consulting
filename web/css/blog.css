@@ -55,6 +55,7 @@
 
 .blog-pagination {
     margin-top: 40px;
+    justify-content: center;
 }
 
 .blog-pagination .link {
@@ -72,4 +73,10 @@
 
 .current-pagination-number {
     color: var(--text-grey);
+}
+
+@media (max-width: 992px) {
+    .blog-pagination {
+        justify-content: flex-start;
+    }
 }

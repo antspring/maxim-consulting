@@ -107,7 +107,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
     <div class="main-container">
         <h2 class="heading header-l-700">Читай также</h2>
         <div class="main-blog-item-list row">
-            <div class="main-blog-item-container col-6">
+            <div class="main-blog-item-container col-12 col-lg-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
@@ -121,7 +121,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                     </div>
                 </div>
             </div>
-            <div class="main-blog-item-container col-6">
+            <div class="main-blog-item-container col-12 col-lg-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
@@ -135,7 +135,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                     </div>
                 </div>
             </div>
-            <div class="main-blog-item-container col-6">
+            <div class="main-blog-item-container col-12 col-lg-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
@@ -149,7 +149,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                     </div>
                 </div>
             </div>
-            <div class="main-blog-item-container col-6">
+            <div class="main-blog-item-container col-12 col-lg-6">
                 <div class="main-blog-item d-flex align-items-center me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
