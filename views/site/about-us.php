@@ -3,32 +3,38 @@
 
 $this->title = 'О компании | Maxim Консалтинг';
 ?>
-<div class="main-container">
-    <section class="about-us">
-        <div class="main-heading d-flex flex-column flex-lg-row align-items-end">
-            <div class="heading-container body-m-400">
-                <h1 class="heading header-xl-700">
-                    О компании
-                </h1>
-                <p class="mt-5 price-paragraph">
-                    Главная задача — качественные и профессиональные юридические услуги.
-                    В нашей команде нет менеджеров и стажеров, только эксперты
-                    с многолетним опытом в своей области. Мы стараемся решить вопросы клиента, сэкономив его время и
-                    деньги.
-                </p>
-                <p class="price-paragraph">
-                    Не даем гарантии успеха, пока не изучим вопрос, прогноз решения делаем только после детального
-                    рассмотрения документов.
-                    На все время работы с вами остается персональный юрист: за его плечами опыт в похожей ситуации. Он
-                    сообщает даже о небольших промежуточных итогах, потому что мы понимаем, как важна обратная связь.
-                </p>
+<div class="round-container position-relative">
+    <div class="main-container">
+        <section class="about-us">
+            <div class="main-heading d-flex flex-column flex-lg-row align-items-end">
+                <div class="heading-container body-m-400">
+                    <h1 class="heading header-xl-700">
+                        О компании
+                    </h1>
+                    <p class="mt-5 price-paragraph">
+                        Главная задача — качественные и профессиональные юридические услуги.
+                        В нашей команде нет менеджеров и стажеров, только эксперты
+                        с многолетним опытом в своей области. Мы стараемся решить вопросы клиента, сэкономив его время и
+                        деньги.
+                    </p>
+                    <p class="price-paragraph">
+                        Не даем гарантии успеха, пока не изучим вопрос, прогноз решения делаем только после детального
+                        рассмотрения документов.
+                        На все время работы с вами остается персональный юрист: за его плечами опыт в похожей ситуации.
+                        Он
+                        сообщает даже о небольших промежуточных итогах, потому что мы понимаем, как важна обратная
+                        связь.
+                    </p>
+                </div>
+                <img class="about-us-image" src="<?= Yii::getAlias('@web/images/1D9A2676-Edit.png') ?>" alt="">
+                <img class="round-main position-absolute bottom-0 end-0"
+                     src="<?= Yii::getAlias('@web/images/Round.png') ?>"
+                     alt="">
             </div>
-            <img class="about-us-image" src="<?= Yii::getAlias('@web/images/1D9A2676-Edit.png') ?>" alt="">
-            <!--            <img class="round-main position-absolute top-0 end-0" src="--><?php
-            //= Yii::getAlias('@web/images/Round.png') ?><!--"-->
-            <!--                 alt="">-->
-        </div>
-    </section>
+        </section>
+    </div>
+</div>
+<div class="main-container">
     <section class="supervisor">
         <h2 class="heading header-l-700">Руководитель</h2>
         <div class="supervisor-info d-flex flex-column-reverse flex-lg-row">

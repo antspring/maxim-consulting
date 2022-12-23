@@ -3,20 +3,23 @@
 
 $this->title = 'Банкротство физических лиц | Maxim Консалтинг';
 ?>
-
-<section class="service-container">
-    <div class="main-heading main-container">
-        <div class="heading-container">
-            <h1 class="heading header-xl-700">Банкротство физических лиц</h1>
-            <p class="sub-heading body-xl-400">
-                Защита от звонков коллекторов, снятие ареста с имущества, сопровождение дела в
-                суде и
-                списание долга.
-            </p>
+<div class="round-container position-relative">
+    <section class="service-container">
+        <div class="main-heading main-container">
+            <div class="heading-container">
+                <h1 class="heading header-xl-700">Банкротство физических лиц</h1>
+                <p class="sub-heading body-xl-400">
+                    Защита от звонков коллекторов, снятие ареста с имущества, сопровождение дела в
+                    суде и
+                    списание долга.
+                </p>
+            </div>
+            <img class="position-absolute bottom-0 end-0 half-circle d-none d-lg-block"
+                 src="<?= Yii::getAlias('@web/images/half-circle.png') ?>"
+                 alt="">
         </div>
-        <img class="position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/half-circle.png') ?>" alt="">
-    </div>
-</section>
+    </section>
+</div>
 <section class="submit-application main-background">
     <div class="main-container">
         <?= $this->render('_send-request') ?>

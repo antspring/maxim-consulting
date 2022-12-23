@@ -125,14 +125,15 @@ $this->beginBody() ?>
                     </div>
                     <div class="contacts-social-networks">
                         <a class="me-3" href="tel:89125225131"><img
-                                    src="<?= Yii::getAlias('@web/images/whatsapp.png') ?>"
+                                    src="<?= Yii::getAlias('@web/images/icons/whatsapp.png') ?>"
                                     alt=""></a>
-                        <a class="me-3" href="tel:89125225131"><img src="<?= Yii::getAlias('@web/images/viber.png') ?>"
-                                                                    alt=""></a>
+                        <a class="me-3" href="tel:89125225131"><img
+                                    src="<?= Yii::getAlias('@web/images/icons/viber.png') ?>"
+                                    alt=""></a>
                         <a class="me-3" href="https://t.me/Klevtsur_Oleg"><img
-                                    src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
+                                    src="<?= Yii::getAlias('@web/images/icons/telegram.png') ?>" alt=""></a>
                         <a class="me-3" href="https://vk.com/legalexpert_kurgan"><img
-                                    src="<?= Yii::getAlias('@web/images/vk.png') ?>" alt=""></a>
+                                    src="<?= Yii::getAlias('@web/images/icons/vk.png') ?>" alt=""></a>
                     </div>
                 </div>
                 <div class="contacts-map" style="position:relative;overflow:hidden;">

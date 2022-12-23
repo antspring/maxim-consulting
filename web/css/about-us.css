@@ -32,6 +32,10 @@
     .lawyers-image {
         max-width: 210px;
     }
+
+    .about-us .round-main {
+        top: unset;
+    }
 }
 
 @media (max-width: 992px) {
@@ -45,5 +49,10 @@
 
     .supervisor-image {
         max-width: 350px;
+    }
+
+    .about-us .round-main {
+        max-height: 540px;
+        width: unset;
     }
 }

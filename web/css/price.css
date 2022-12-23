@@ -1,5 +1,6 @@
 .price-container-img {
     z-index: -1;
+    width: 800px;
 }
 
 .price-container .heading-container {
@@ -32,9 +33,18 @@
     min-width: 143px;
 }
 
+.price-list {
+    margin-bottom: 120px;
+}
+
 @media (max-width: 1024px) {
     .price-image {
         max-width: 415px;
+    }
+
+    .price-container-img {
+        width: 400px;
+        top: -170px;
     }
 }
 
@@ -52,5 +62,23 @@
     .services-price-list-item {
         align-items: start;
         width: 450px;
+    }
+
+    .price-container-img {
+        width: 400px;
+        top: unset;
+    }
+
+    .price-list {
+        max-width: 350px;
+    }
+
+    .price-image {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .price-container .heading-container {
+        padding-bottom: 360px;
     }
 }

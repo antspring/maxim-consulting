@@ -3,7 +3,7 @@
 }
 
 .service-container .main-heading {
-    margin-bottom: 232px;
+    padding-bottom: 232px;
 }
 
 .sub-heading {
@@ -33,8 +33,22 @@
     max-width: 635px;
 }
 
+.half-circle {
+    width: 625px;
+}
+
+@media (max-width: 1024px) {
+    .service-container .main-heading {
+        padding-bottom: 120px;
+    }
+
+    .half-circle {
+        width: 380px;
+    }
+}
+
 @media (max-width: 992px) {
     .service-container .main-heading {
-        margin-bottom: 64px;
+        padding-bottom: 64px;
     }
 }

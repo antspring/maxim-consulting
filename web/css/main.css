@@ -38,6 +38,7 @@
 .round-main {
     z-index: -1;
     width: 778px;
+    bottom: 0;
 }
 
 .main-background {
@@ -170,5 +171,26 @@
 @media (max-width: 1024px) {
     .services-item {
         max-width: 350px;
+    }
+
+    .round-main {
+        width: 355px;
+        top: -150px;
+    }
+}
+
+@media (max-width: 992px) {
+    .round-main {
+        top: 250px;
+        width: 400px;
+    }
+
+    .main-heading-image {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .main-advantage {
+        margin-bottom: 500px;
     }
 }

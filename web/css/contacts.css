@@ -10,6 +10,17 @@
     max-width: 445px;
 }
 
+.contacts-map {
+    width: 635px;
+}
+
+@media (max-width: 1024px) {
+    .contacts .round-main {
+        width: 430px;
+        top: -140px;
+    }
+}
+
 @media (max-width: 992px) {
     .contacts .input-consultation-form {
         max-width: 350px;
@@ -32,5 +43,10 @@
     .contacts-map {
         width: 400px;
         height: 300px;
+    }
+
+    .contacts .round-main {
+        width: 400px;
+        top: unset;
     }
 }

@@ -4,26 +4,29 @@
 
 $this->title = 'Юридические услуги | Maxim Consulting';
 ?>
-<section class="section-main main-heading main-container d-flex flex-column flex-lg-row">
-    <div class="main-advantage">
-        <div class="heading-container">
-            <h1 class="heading header-xl-700">Юридические услуги</h1>
-            <p class="heading-container-paragraph subheader-xl-600">для частных лиц и бизнеса</p>
+<div class="round-container position-relative">
+    <section class="section-main main-heading main-container d-flex flex-column flex-lg-row">
+        <div class="main-advantage">
+            <div class="heading-container">
+                <h1 class="heading header-xl-700">Юридические услуги</h1>
+                <p class="heading-container-paragraph subheader-xl-600">для частных лиц и бизнеса</p>
+            </div>
+            <ul class="small-description-list p-0 list-group body-xl-400">
+                <li class="list-item position-relative">Консультация и аудит</li>
+                <li class="list-item position-relative">Подготовка документов</li>
+                <li class="list-item position-relative">Сопровождение под ключ</li>
+            </ul>
+            <button class="btn-request btn-request-primary btn-request-primary-outline body-m-400 d-block d-lg-none mt-5"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Оставить заявку
+            </button>
         </div>
-        <ul class="small-description-list p-0 list-group body-xl-400">
-            <li class="list-item position-relative">Консультация и аудит</li>
-            <li class="list-item position-relative">Подготовка документов</li>
-            <li class="list-item position-relative">Сопровождение под ключ</li>
-        </ul>
-        <button class="btn-request btn-request-primary btn-request-primary-outline body-m-400 d-block d-lg-none mt-5"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal">Оставить заявку
-        </button>
-    </div>
-    <img class="main-heading-image"
-         src="<?= Yii::getAlias('@web/images/1D9A2784.png') ?>" alt="">
-    <img class="round-main position-absolute top-0 end-0" src="<?= Yii::getAlias('@web/images/Round.png') ?>" alt="">
-</section>
+        <img class="main-heading-image"
+             src="<?= Yii::getAlias('@web/images/1D9A2784.png') ?>" alt="">
+        <img class="round-main position-absolute end-0" src="<?= Yii::getAlias('@web/images/Round.png') ?>"
+             alt="">
+    </section>
+</div>
 <section class="main-services main-background">
     <div class="main-container">
         <?= $this->render('_services') ?>
@@ -33,7 +36,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
 <section class="main-company-info">
     <div class="main-container">
         <h2 class="heading header-l-700">
-            Сложные проблемы -
+            Сложные проблемы — <br>
             простое решение
         </h2>
         <div class="main-company-description d-flex justify-content-between flex-column flex-lg-row">
