@@ -14,7 +14,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
         <h2 class="heading header-l-700">Для частных лиц</h2>
         <div class="row services-list mt-3">
             <div class="services-list-container col-xxl-4 col-sm-6 col-xs-12">
-                <div class="services-list-item p-4 d-flex flex-column justify-content-between">
+                <div class="services-list-item d-flex flex-column justify-content-between">
                     <div>
                         <svg width="30" height="28" viewBox="0 0 30 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="img-svg-fill"
@@ -30,7 +30,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
                 </div>
             </div>
             <div class="services-list-container col-xxl-4 col-sm-6 col-xs-12">
-                <div class="services-list-item p-4 d-flex flex-column justify-content-between">
+                <div class="services-list-item d-flex flex-column justify-content-between">
                     <div>
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="img-svg-stroke"
@@ -51,7 +51,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
                 </div>
             </div>
             <div class="services-list-container col-xxl-4 col-sm-6 col-xs-12">
-                <div class="services-list-item p-4 d-flex flex-column justify-content-between">
+                <div class="services-list-item d-flex flex-column justify-content-between">
                     <div>
                         <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                         <p class="services-list-item-name m-0 mt-3 body-m-600">Банкротство</p>
@@ -64,7 +64,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
                 </div>
             </div>
             <div class="services-list-container col-xxl-4 col-sm-6 col-xs-12">
-                <div class="services-list-item p-4 d-flex flex-column justify-content-between">
+                <div class="services-list-item d-flex flex-column justify-content-between">
                     <div>
                         <img src="<?= Yii::getAlias('@web/images/Vector.png') ?>" alt="">
                         <p class="services-list-item-name m-0 mt-3 body-m-600">Банкротство</p>
@@ -80,7 +80,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
         <h2 class="heading header-l-700">Для бизнеса</h2>
         <div class="row services-list mt-3 mb-4">
             <div class="services-list-container col-xxl-4 col-sm-6 col-xs-12">
-                <div class="services-list-item p-4 d-flex flex-column justify-content-between">
+                <div class="services-list-item d-flex flex-column justify-content-between">
                     <div>
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="img-svg-fill" fill-rule="evenodd" clip-rule="evenodd"
@@ -96,7 +96,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
                 </div>
             </div>
             <div class="services-list-container col-xxl-4 col-sm-6 col-xs-12">
-                <div class="services-list-item p-4 d-flex flex-column justify-content-between">
+                <div class="services-list-item d-flex flex-column justify-content-between">
                     <div>
                         <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path class="img-svg-fill" fill-rule="evenodd" clip-rule="evenodd"
@@ -111,7 +111,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
                 </div>
             </div>
             <div class="services-list-container col-xxl-4 col-sm-6 col-xs-12">
-                <div class="services-list-item p-4 d-flex flex-column justify-content-between">
+                <div class="services-list-item d-flex flex-column justify-content-between">
                     <div>
                         <img src="<?= Yii::getAlias('@web/images/Vector-2.png') ?>" alt="">
                         <p class="services-list-item-name m-0 mt-3 body-m-600">Сопровождение</p>
@@ -123,7 +123,7 @@ $this->title = 'Услуги | Maxim Консалтинг'
                 </div>
             </div>
             <div class="services-list-container col-xxl-4 col-sm-6 col-xs-12">
-                <div class="services-list-item p-4 d-flex flex-column justify-content-between">
+                <div class="services-list-item d-flex flex-column justify-content-between">
                     <div>
                         <img src="<?= Yii::getAlias('@web/images/Vector-2.png') ?>" alt="">
                         <p class="services-list-item-name m-0 mt-3 body-m-600">Сопровождение</p>

@@ -38,7 +38,7 @@ $this->beginBody() ?>
         <div class="w-100 h-100 d-flex align-items-center justify-content-between main-container">
             <div class="d-flex align-items-center justify-content-between nav-logo">
                 <a href="<?= Url::toRoute('/site/index') ?>">
-                    <img src="<?= Yii::getAlias('@web/images/Logo_maxim.png') ?>" alt="">
+                    <img class="logo" src="<?= Yii::getAlias('@web/images/Logo_maxim.png') ?>" alt="">
                 </a>
                 <div class="nav-items">
                     <ul class="d-flex m-0 p-0 nav-items-list d-none d-lg-flex">
@@ -57,17 +57,22 @@ $this->beginBody() ?>
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/contacts') ?>">Контакты</a>
                         </li>
+                        <li class="d-lg-none paragraph-main paragraph-main-link body-m-400">
+                            <a class="link link-burger-menu" href="#exampleModal" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal">Оставить заявку</a>
+                        </li>
                         <li class="d-lg-none burger-menu-close position-absolute">
                             <button class="btn-close"></button>
                         </li>
                     </ul>
                     <button class="btn burger-menu-open d-block d-lg-none">
-                        <img src="<?= Yii::getAlias('@web/images/icons/icon_menu.png') ?>" alt="">
+                        <img class="burger-menu-open-image"
+                             src="<?= Yii::getAlias('@web/images/icons/icon_menu.png') ?>" alt="">
                     </button>
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block"
+                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block mb-sm-3"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Оставить заявку
                 </button>
@@ -118,7 +123,7 @@ $this->beginBody() ?>
             <div class="contact-us">
                 <p class="paragraph-main body-xl-600">Оставьте заявку и получите бесплатную юридическую консультацию
                     по телефону</p>
-                <ul class="contact-us-list p-0 body-s-400 ">
+                <ul class="contact-us-list p-0 body-s-400 d-none d-sm-block">
                     <li class="contact-us-list-item">
                         <p class="paragraph-main">В команде нет менеджеров. По заявке перезвонит профильный
                             специалист -
@@ -136,14 +141,16 @@ $this->beginBody() ?>
                     </li>
                 </ul>
                 <div class="mt-5">
-                    <a class="me-3" href="tel:89125225131"><img src="<?= Yii::getAlias('@web/images/whatsapp.png') ?>"
-                                                                alt=""></a>
-                    <a class="me-3" href="tel:89125225131"><img src="<?= Yii::getAlias('@web/images/viber.png') ?>"
-                                                                alt=""></a>
+                    <a class="me-3" href="tel:89125225131"><img
+                                src="<?= Yii::getAlias('@web/images/icons/whatsapp.png') ?>"
+                                alt=""></a>
+                    <a class="me-3" href="tel:89125225131"><img
+                                src="<?= Yii::getAlias('@web/images/icons/viber.png') ?>"
+                                alt=""></a>
                     <a class="me-3" href="https://t.me/Klevtsur_Oleg"><img
-                                src="<?= Yii::getAlias('@web/images/telegram.png') ?>" alt=""></a>
+                                src="<?= Yii::getAlias('@web/images/icons/telegram.png') ?>" alt=""></a>
                     <a class="me-3" href="https://vk.com/legalexpert_kurgan"><img
-                                src="<?= Yii::getAlias('@web/images/vk.png') ?>" alt=""></a>
+                                src="<?= Yii::getAlias('@web/images/icons/vk.png') ?>" alt=""></a>
                 </div>
             </div>
             <div class="mt-lg-0 mt-5">

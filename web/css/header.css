@@ -59,3 +59,22 @@
         min-width: 100%;
     }
 }
+
+@media (max-width: 576px) {
+    .header-container {
+        height: 64px;
+    }
+
+    .nav-items-list-active li:not(:last-child) {
+        margin-bottom: 25px;
+    }
+
+    .nav-items-list-active {
+        padding: 56px 15px;
+    }
+
+    .burger-menu-close {
+        right: 25px;
+        top: 25px;
+    }
+}

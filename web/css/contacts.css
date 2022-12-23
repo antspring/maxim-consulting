@@ -1,5 +1,5 @@
-.contacts .heading {
-    line-height: 56px;
+.contacts .main-heading {
+    justify-content: space-between;
 }
 
 .contacts .input-consultation-form {
@@ -48,5 +48,61 @@
     .contacts .round-main {
         width: 400px;
         top: unset;
+    }
+}
+
+@media (max-width: 576px) {
+    .contacts .main-heading {
+        height: 200px;
+        align-items: center;
+    }
+
+    .contacts .heading-container {
+        margin-top: 200px;
+        z-index: 10;
+        background-color: var(--bg-grey);
+        max-height: 670px;
+    }
+
+    .contacts .input-consultation-form {
+        max-width: 290px;
+    }
+
+    .contacts .heading {
+        line-height: 48px;
+    }
+
+    .contacts-image {
+        width: 172px;
+        right: unset;
+    }
+
+    .contacts .round-main {
+        width: 216px;
+    }
+
+    .contacts .main-container {
+        padding: 0;
+    }
+
+    .contacts .heading-container {
+        padding: 0 15px;
+    }
+
+    .contacts-footer {
+        margin-top: 670px;
+    }
+
+    .contacts-container {
+        background-color: var(--bg-white);
+    }
+
+    .contacts-map {
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .contacts-social-networks {
+        margin-top: 30px;
     }
 }

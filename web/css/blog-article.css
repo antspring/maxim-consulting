@@ -14,3 +14,21 @@
 .blog-article-text {
     margin-top: 16px;
 }
+
+.blog-container .link {
+    color: var(--accent-purple);
+}
+
+@media (max-width: 576px) {
+    .blog-article .heading {
+        line-height: 32px;
+    }
+
+    .blog-container-image {
+        width: 100%;
+    }
+
+    .blog-article .sub-heading {
+        line-height: 32px;
+    }
+}

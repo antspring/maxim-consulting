@@ -55,4 +55,56 @@
         max-height: 540px;
         width: unset;
     }
+
+    .about-us .main-heading {
+        align-items: flex-end;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us .main-heading {
+        height: 200px;
+    }
+
+    .about-us-image {
+        position: absolute;
+        bottom: 0;
+        width: 206px;
+    }
+
+    .about-us .main-heading {
+        align-items: center;
+    }
+
+    .about-us .heading-container {
+        margin-top: 200px;
+        padding: 0 15px;
+        background-color: var(--bg-grey);
+    }
+
+    .supervisor {
+        margin-top: 552px;
+        margin-bottom: 0;
+    }
+
+    .about-us .round-main {
+        width: 216px;
+    }
+
+    .about-us .main-container {
+        padding: 0;
+    }
+
+    .lawyers-image {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .about-us-services {
+        margin-top: 40px;
+    }
+
+    .supervisor .heading {
+        padding-top: 0;
+    }
 }

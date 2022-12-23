@@ -7,7 +7,7 @@ $this->title = 'Контакты | Maxim Консалтинг';
 ?>
 
 <section class="contacts position-relative">
-    <div class="main-heading main-container d-flex justify-content-between">
+    <div class="main-heading main-container d-flex flex-column flex-sm-row">
         <div class="heading-container">
             <h1 class="heading header-l-700 w-100 mb-5 mb-lg-0">Оставьте заявку <br> на консультацию</h1>
             <?= ConsultationFeedbackFormWidget::widget() ?>

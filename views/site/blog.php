@@ -10,7 +10,7 @@ $this->title = 'Блог | Maxim Консалтинг';
                 <h1 class="heading header-xl-700">
                     Блог
                 </h1>
-                <div class="blog-switcher d-flex justify-content-between">
+                <div class="blog-switcher d-flex justify-content-between d-none d-sm-block">
                     <button class="blog-switcher-button active position-relative p-0 body-xl-600">Все материалы
                     </button>
                     <button class="blog-switcher-button position-relative p-0 body-xl-400">Новости</button>
@@ -21,7 +21,7 @@ $this->title = 'Блог | Maxim Консалтинг';
             </div>
         </div>
         <div class="blog-content">
-            <div class="blog-content-item py-3 px-4">
+            <div class="blog-content-item">
                 <div class="d-flex justify-content-between">
                     <a class="link body-s-400" href="#">Новости</a>
                     <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
@@ -38,9 +38,9 @@ $this->title = 'Блог | Maxim Консалтинг';
                     скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
                     продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
                 </p>
-                <img src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
+                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
             </div>
-            <div class="blog-content-item py-3 px-4 mt-4">
+            <div class="blog-content-item mt-4">
                 <div class="d-flex justify-content-between">
                     <a class="link body-s-400" href="#">Новости</a>
                     <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
@@ -57,9 +57,9 @@ $this->title = 'Блог | Maxim Консалтинг';
                     скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
                     продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
                 </p>
-                <img src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
+                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
             </div>
-            <div class="blog-content-item py-3 px-4 mt-4">
+            <div class="blog-content-item mt-4">
                 <div class="d-flex justify-content-between">
                     <a class="link body-s-400" href="#">Новости</a>
                     <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
@@ -77,7 +77,7 @@ $this->title = 'Блог | Maxim Консалтинг';
                     продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
                 </p>
             </div>
-            <div class="blog-content-item py-3 px-4 mt-4">
+            <div class="blog-content-item mt-4">
                 <div class="d-flex justify-content-between">
                     <a class="link body-s-400" href="#">Новости</a>
                     <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
@@ -98,21 +98,23 @@ $this->title = 'Блог | Maxim Консалтинг';
         </div>
         <div class="blog-pagination d-flex body-l-400">
             <a class="link" href="#">Назад</a>
-            <a class="link m-0" href="#">
-                <p class="blog-pagination-number me-3 current-pagination-number">1</p>
-            </a>
-            <a class="link m-0" href="#">
-                <p class="blog-pagination-number me-3">2</p>
-            </a>
-            <a class="link m-0" href="#">
-                <p class="blog-pagination-number me-3">3</p>
-            </a>
-            <a class="link m-0" href="#">
-                <p class="blog-pagination-number me-3">4</p>
-            </a>
-            <a class="link m-0" href="#">
-                <p class="blog-pagination-number">5</p>
-            </a>
+            <div class="d-flex blog-pagination-number-container">
+                <a class="link m-0" href="#">
+                    <p class="blog-pagination-number me-3 current-pagination-number">1</p>
+                </a>
+                <a class="link m-0" href="#">
+                    <p class="blog-pagination-number me-3">2</p>
+                </a>
+                <a class="link m-0" href="#">
+                    <p class="blog-pagination-number me-3">3</p>
+                </a>
+                <a class="link m-0" href="#">
+                    <p class="blog-pagination-number me-3">4</p>
+                </a>
+                <a class="link m-0" href="#">
+                    <p class="blog-pagination-number">5</p>
+                </a>
+            </div>
             <a class="link active" href="#">Дальше</a>
         </div>
     </section>

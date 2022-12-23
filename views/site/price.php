@@ -6,23 +6,23 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
 
 <section class="price-container position-relative">
     <div class="main-container">
-        <div class="main-heading d-flex flex-column flex-lg-row align-items-end justify-content-between">
+        <div class="main-heading d-flex flex-column flex-lg-row justify-content-between">
             <div class="heading-container body-xl-400">
                 <h1 class="heading header-xl-700">Стоимость <br> юридических услуг</h1>
                 <p class="sub-heading">Что может влиять на цены:</p>
-                <ul class="list-group price-list" style="margin-bottom: 120px">
+                <ul class="list-group price-list">
                     <li class="list-item position-relative">сложность дела,</li>
                     <li class="list-item position-relative">правовая отрасль,</li>
                     <li class="list-item position-relative">доказательная база и стадия судебного процесса.</li>
                 </ul>
             </div>
             <img class="price-image" src="<?= Yii::getAlias('@web/images/1D9A2938 .png') ?>" alt="">
-            <img class="position-absolute price-container-img bottom-0 end-0"
-                 src="<?= Yii::getAlias('@web/images/Round.png') ?>" alt="">
+            <img class="round-main position-absolute end-0" src="<?= Yii::getAlias('@web/images/Round.png') ?>"
+                 alt="">
         </div>
     </div>
 </section>
-<section class="submit-application main-background">
+<section class="price-submit-application main-background">
     <div class="main-container">
         <?= $this->render('_send-request') ?>
     </div>
@@ -32,11 +32,12 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
     <section class="services-price">
         <div>
             <h2 class="heading header-l-700">Цены на услуги</h2>
-            <div class="services-switcher my-5 header-m-600">
-                <button class="services-switcher-button pe-5 active position-relative">
-                    Для частных лиц
+            <div class="services-switcher my-4 my-sm-5 d-flex">
+                <button class="d-flex services-switcher-button pe-4 pe-sm-5 active position-relative header-m-600">Для
+                    частных
+                    лиц
                 </button>
-                <button class="services-switcher-button">Для бизнеса</button>
+                <button class="d-flex services-switcher-button header-m-600">Для бизнеса</button>
             </div>
         </div>
         <div class="d-flex justify-content-between body-m-400">

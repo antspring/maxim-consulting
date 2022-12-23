@@ -7,13 +7,17 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
 <div class="main-container">
     <section class="blog-container blog-article body-m-400">
         <div class="main-heading">
+            <div class="d-flex justify-content-between">
+                <a class="link body-s-400" href="#">Спроси юриста</a>
+                <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
+            </div>
             <div class="heading-container">
                 <h1 class="heading header-l-700">
                     Юрист по ДТП: законны ли штрафы за «среднюю скорость»?
                 </h1>
             </div>
         </div>
-        <img class="mb-4" src="<?= Yii::getAlias('@web/images/Rectangle%202.jpg') ?>" alt="">
+        <img class="mb-4 blog-container-image" src="<?= Yii::getAlias('@web/images/Rectangle%202.jpg') ?>" alt="">
         <p class="blog-article-text">
             Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает споры. СМИ с завидной периодичностью
             публикуют информацию об отмене любого штрафа по «средней скорости» через суд, сославшись на неправомерность
@@ -105,10 +109,10 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
 </section>
 <section class="main-blog">
     <div class="main-container">
-        <h2 class="heading header-l-700">Читай также</h2>
+        <h2 class="heading header-l-700">Блог</h2>
         <div class="main-blog-item-list row">
             <div class="main-blog-item-container col-12 col-lg-6">
-                <div class="main-blog-item d-flex align-items-center me-1">
+                <div class="main-blog-item d-flex flex-column flex-md-row me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
                         <p class="body-m-600">
@@ -122,7 +126,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                 </div>
             </div>
             <div class="main-blog-item-container col-12 col-lg-6">
-                <div class="main-blog-item d-flex align-items-center me-1">
+                <div class="main-blog-item d-flex flex-column flex-md-row me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
                         <p class="body-m-600">
@@ -136,7 +140,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                 </div>
             </div>
             <div class="main-blog-item-container col-12 col-lg-6">
-                <div class="main-blog-item d-flex align-items-center me-1">
+                <div class="main-blog-item d-flex flex-column flex-md-row me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
                         <p class="body-m-600">
@@ -150,7 +154,7 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                 </div>
             </div>
             <div class="main-blog-item-container col-12 col-lg-6">
-                <div class="main-blog-item d-flex align-items-center me-1">
+                <div class="main-blog-item d-flex flex-column flex-md-row me-1">
                     <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
                     <div class="main-blog-item-text">
                         <p class="body-m-600">
@@ -164,8 +168,8 @@ $this->title = 'Юрист по ДТП: законны ли штрафы за «
                 </div>
             </div>
         </div>
-        <a class="btn-request btn-request-primary btn-request-primary-outline link body-m-400" href="#">Больше
-            новостей</a>
+        <a class="btn-request btn-request-primary btn-request-primary-outline link body-m-400"
+           href="<?= Yii::getAlias('/site/blog') ?>">Больше новостей</a>
     </div>
 </section>
 

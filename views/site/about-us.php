@@ -4,9 +4,9 @@
 $this->title = 'О компании | Maxim Консалтинг';
 ?>
 <div class="round-container position-relative">
-    <div class="main-container">
-        <section class="about-us">
-            <div class="main-heading d-flex flex-column flex-lg-row align-items-end">
+    <section class="about-us">
+        <div class="main-container">
+            <div class="main-heading d-flex flex-column flex-lg-row">
                 <div class="heading-container body-m-400">
                     <h1 class="heading header-xl-700">
                         О компании
@@ -31,8 +31,8 @@ $this->title = 'О компании | Maxim Консалтинг';
                      src="<?= Yii::getAlias('@web/images/Round.png') ?>"
                      alt="">
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </div>
 <div class="main-container">
     <section class="supervisor">
@@ -88,41 +88,41 @@ $this->title = 'О компании | Maxim Консалтинг';
         <h2 class="heading header-l-700">
             Этапы работы
         </h2>
-        <div class="main-stages-work-container body-m-400">
-            <div class="main-stages-work-item d-flex align-items-start">
+        <div class="main-stages-work-container">
+            <div class="main-stages-work-item d-flex flex-column flex-md-row align-items-start">
                 <img src="<?= Yii::getAlias('@web/images/1.png') ?>" alt="">
                 <div class="main-stages-work-text">
                     <p class="m-0 header-m-600-italic">Заявка</p>
-                    <p class="mb-3">Оставьте заявку на сайте или позвоните</p>
+                    <p class="mb-3 body-m-400">Оставьте заявку на сайте или позвоните</p>
                     <div class="d-flex">
-                        <button class="btn-request btn-request-primary btn-request-primary-fill me-4"
+                        <button class="btn-request btn-request-primary btn-request-primary-fill me-1 me-sm-4 body-m-400"
                                 data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку
                         </button>
-                        <a class="btn-request btn-request-primary btn-request-primary-outline link"
-                           href="<?= Yii::getAlias('/site/contacts') ?>">Контакты и
-                            адреса офиса</a>
+                        <a class="btn-request btn-request-primary btn-request-primary-outline link body-m-400"
+                           href="<?= Yii::getAlias('/site/contacts') ?>">Контакты</a>
                     </div>
                 </div>
             </div>
-            <div class="main-stages-work-item d-flex align-items-start">
+            <div class="main-stages-work-item d-flex flex-column flex-md-row align-items-start">
                 <img src="<?= Yii::getAlias('@web/images/2.png') ?>" alt="">
                 <div class="main-stages-work-text">
-                    <p class="m-0 header-m-600-italic">Бесплатная консультация</p>
-                    <p>Оценим ситуацию и предложим решение</p>
+                    <p class="m-0 header-m-600-italic ">Бесплатная консультация</p>
+                    <p class="body-m-400">Оценим ситуацию и предложим решение</p>
                 </div>
             </div>
-            <div class="main-stages-work-item d-flex align-items-start">
+            <div class="main-stages-work-item d-flex flex-column flex-md-row align-items-start">
                 <img src="<?= Yii::getAlias('@web/images/3.png') ?>" alt="">
                 <div class="main-stages-work-text">
-                    <p class="m-0 header-m-600-italic">Заключение договора</p>
-                    <p>Если решаете доверить вопрос профи, обсуждаем условия и подписываем документы</p>
+                    <p class="m-0 header-m-600-italic ">Заключение договора</p>
+                    <p class="body-m-400">Если решаете доверить вопрос профи, обсуждаем условия и подписываем
+                        документы</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <div class="main-container">
-    <section class="services-cards">
+    <section class="services-cards about-us-services">
         <?= $this->render('_services') ?>
     </section>
 </div>

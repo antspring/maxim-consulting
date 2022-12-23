@@ -89,6 +89,7 @@
     border-radius: 4px;
     background: var(--bg-white);
     cursor: pointer;
+    padding: 27px;
 }
 
 .services-request {
@@ -129,6 +130,7 @@
     border: 1px solid var(--outline-accent);
     border-radius: 4px;
     padding: 24px 16px;
+    align-items: center;
 }
 
 .main-blog-item-text {
@@ -192,5 +194,112 @@
 
     .main-advantage {
         margin-bottom: 500px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo {
+        max-width: 80px;
+    }
+
+    .round-main {
+        width: 215px;
+        top: -150px;
+    }
+
+    .heading-container h1 {
+        padding-top: 25px;
+        line-height: 48px;
+    }
+
+    .small-description-list {
+        margin-top: 40px;
+    }
+
+    .main-advantage {
+        margin-top: 200px;
+    }
+
+    .main-services {
+        margin-top: 400px;
+    }
+
+    .main-advantage {
+        background-color: var(--bg-grey);
+    }
+
+    .main-advantage .btn-request {
+        margin-bottom: 24px;
+    }
+
+    .services-switcher-button {
+        display: flex;
+        align-items: center;
+    }
+
+    .services-switcher-button:not(:last-child)::after {
+        height: 16px;
+        right: 10px;
+    }
+
+    .services-switcher-button {
+        padding: 0;
+    }
+
+    .adaptive-white-background {
+        background-color: var(--bg-white);
+    }
+
+    .services-item {
+        padding: 15px 27px;
+    }
+
+    .main-services .main-container {
+        padding: 0;
+    }
+
+    .services-request, .main-services .services-main-container {
+        padding: 0 15px;
+    }
+
+    .main-services .services-main-container {
+        padding-bottom: 48px;
+    }
+
+    .services-request {
+        margin-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .main-company-description-text {
+        padding: 0;
+    }
+
+    .main-company-description-list {
+        margin-bottom: 24px;
+    }
+
+    .main-stages-work-text {
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .main-blog-item {
+        align-items: start;
+        border-width: 0;
+        padding: 0;
+    }
+
+    .main-blog-item-text {
+        margin-top: 8px;
+        margin-left: 0;
+    }
+
+    .feedback-modal .input-consultation-form {
+        max-width: 290px;
+    }
+
+    .feedback-modal {
+        padding: 56px 15px;
     }
 }

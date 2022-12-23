@@ -37,6 +37,10 @@
     margin-bottom: 120px;
 }
 
+.price-container .main-heading {
+    align-items: flex-end;
+}
+
 @media (max-width: 1024px) {
     .price-image {
         max-width: 415px;
@@ -80,5 +84,38 @@
 
     .price-container .heading-container {
         padding-bottom: 360px;
+    }
+}
+
+@media (max-width: 576px) {
+    .price-image {
+        max-width: 160px;
+    }
+
+    .price-container .heading-container {
+        padding-bottom: 0;
+        margin-top: 200px;
+        background-color: var(--bg-grey);
+    }
+
+    .price-container .main-heading {
+        align-items: center;
+        height: 200px;
+    }
+
+    .price-list {
+        margin-bottom: 24px;
+    }
+
+    .price-container .main-container {
+        padding: 0;
+    }
+
+    .price-container .heading-container {
+        padding: 0 15px;
+    }
+
+    .price-submit-application {
+        margin-top: 370px;
     }
 }

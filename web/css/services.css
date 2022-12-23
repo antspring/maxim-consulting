@@ -2,6 +2,7 @@
     border: 1px solid var(--outline-accent);
     border-radius: 4px;
     height: 100%;
+    padding: 24px;
 }
 
 .services-list-item:hover {
@@ -44,5 +45,15 @@
 @media (max-width: 1024px) {
     .services-list-container {
         max-width: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-container .heading {
+        padding-top: 40px;
+    }
+
+    .services-list-item {
+        padding: 26px 18px;
     }
 }

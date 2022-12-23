@@ -82,3 +82,13 @@
 .contacts-select option {
     border-radius: 4px;
 }
+
+@media (max-width: 576px) {
+    .input-consultation-form {
+        width: 290px;
+    }
+
+    .contact-us {
+        max-width: 290px;
+    }
+}
