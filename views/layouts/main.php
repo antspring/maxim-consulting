@@ -158,7 +158,7 @@ $this->beginBody() ?>
             </div>
         </div>
         <div class="w-100 d-flex flex-column flex-lg-row justify-content-between footer-info body-s-400 ">
-            <p class="paragraph-main"><a href="#" class="link">Правовая информация</a></p>
+            <p class="paragraph-main"><a href="<?= Url::toRoute('site/privacy-policy') ?>" class="link">Правовая информация</a></p>
             <p class="paragraph-main">© 2022 «Maxim Консалтинг»</p>
         </div>
     </div>
