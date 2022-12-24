@@ -131,10 +131,6 @@
     color: var(--text-black);
 }
 
-.paragraph-main-link .link-burger-menu {
-    color: var(--accent-purple)
-}
-
 .paragraph-main:hover .link {
     color: var(--text-black);
 }

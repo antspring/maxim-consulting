@@ -72,7 +72,7 @@ $this->beginBody() ?>
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block mb-sm-3"
+                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Оставить заявку
                 </button>
@@ -90,9 +90,9 @@ $this->beginBody() ?>
     <?= Alert::widget() ?>
     <?= $content ?>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content feedback-modal align-items-end">
-                <button type="button" class="btn-close m-3" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-dialog feedback-modal-container modal-dialog-centered">
+            <div class="modal-content feedback-modal">
+                <button type="button" class="btn-close m-3 position-absolute end-0" data-bs-dismiss="modal" aria-label="Close"></button>
                 <p class="heading header-l-700">Оставьте контакты для связи</p>
                 <?= ConsultationFeedbackFormWidget::widget() ?>
             </div>
@@ -101,12 +101,12 @@ $this->beginBody() ?>
     <?php
     if (Yii::$app->session->hasFlash('send_form')) { ?>
         <div class="modal fade" id="successModal" tabindex="-1" aria-modal="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog success-modal-container modal-dialog-centered">
                 <div class="modal-content success-modal d-flex flex-column align-items-start">
                     <p class="header-l-700">Заявка принята</p>
                     <p class="body-m-400">Скоро мы свяжемся</p>
                     <button type="button"
-                            class="btn-request btn-request-primary btn-request-primary-fill body-m-400 mt-5"
+                            class="btn-request btn-request-primary btn-request-primary-fill body-m-400 mt-4 mt-sm-5"
                             data-bs-dismiss="modal">Понятно
                     </button>
                 </div>

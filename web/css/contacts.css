@@ -62,6 +62,8 @@
         z-index: 10;
         background-color: var(--bg-grey);
         max-height: 670px;
+        width: 100%;
+        padding: 0 15px;
     }
 
     .contacts .input-consultation-form {
@@ -83,10 +85,6 @@
 
     .contacts .main-container {
         padding: 0;
-    }
-
-    .contacts .heading-container {
-        padding: 0 15px;
     }
 
     .contacts-footer {
