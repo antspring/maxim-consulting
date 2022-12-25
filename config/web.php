@@ -60,6 +60,9 @@ $config = [
             'class' => 'himiklab\yii2\recaptcha\ReCaptchaConfig',
             'siteKeyV2' => '6LemKXsjAAAAALo1lKK_fHMWpjM79NZYxkirTBI6',
             'secretV2' => '6LemKXsjAAAAAHtZ1dBZEvGo7UaQh32ANa6b5LAT'
+        ],
+        'formatter' => [
+            'dateFormat' => 'dd.MM.yyyy'
         ]
     ],
     'language' => 'ru_RU',

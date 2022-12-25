@@ -77,10 +77,25 @@
     color: var(--text-grey);
 }
 
-@media (max-width: 992px) {
-    .blog-pagination {
-        justify-content: flex-start;
-    }
+.pagination li a {
+    color: var(--accent-purple);
+    text-decoration: none;
+}
+
+.pagination li {
+    margin-right: 16px;
+}
+
+.pagination .active a {
+    color: var(--text-grey);
+}
+
+.pagination .disabled span {
+    color: var(--text-grey);
+}
+
+.blog-image {
+    width: 100%;
 }
 
 @media (max-width: 576px) {

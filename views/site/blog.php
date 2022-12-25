@@ -1,6 +1,17 @@
 <?php
 /** @var yii\web\View $this */
 
+/** @var app\Models\News $articles
+ * @var app\Models\News $news
+ * @var app\Models\News $lawyers
+ * @var app\Models\News $cases
+ * @var yii\data\Pagination $pages
+ */
+
+use yii\helpers\StringHelper;
+use yii\helpers\Url;
+use yii\widgets\LinkPager;
+
 $this->title = 'Блог | Maxim Консалтинг';
 ?>
 <div class="main-container">
@@ -21,329 +32,121 @@ $this->title = 'Блог | Maxim Консалтинг';
             </div>
         </div>
         <div id="1" class="blog-content">
-            <div class="blog-content-item">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
+            <?php
+            foreach ($articles as $article) { ?>
+                <div class="blog-content-item">
+                    <div class="d-flex justify-content-between">
+                        <a class="link body-s-400" href="#"><?= $article->categoryText ?></a>
+                        <p class="m-0 main-blog-item-date body-s-400"><?= Yii::$app->formatter->asDate(
+                                $article->created_at
+                            ) ?></p>
+                    </div>
+                    <a class="link" href="<?= Url::toRoute('/site/blog-article?id=' . $article->id) ?>">
+                        <p class="blog-content-item-title mt-3 header-m-600">
+                            <?= $article->title ?>
+                        </p>
+                    </a>
+                    <div class="blog-content-item-text mb-4 body-m-400">
+                        <?= StringHelper::truncate($article->text, 450, '...') ?>
+                    </div>
+                    <img class="blog-image" src="<?= Yii::getAlias('@web/' . $article->image) ?>" alt="">
                 </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-            </div>
+                <?php
+            } ?>
         </div>
         <div id="2" class="blog-content d-none">
-            <div class="blog-content-item">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
+            <?php
+            foreach ($news as $new) { ?>
+                <div class="blog-content-item">
+                    <div class="d-flex justify-content-between">
+                        <a class="link body-s-400" href="#"><?= $new->categoryText ?></a>
+                        <p class="m-0 main-blog-item-date body-s-400"><?= Yii::$app->formatter->asDate(
+                                $new->created_at
+                            ) ?></p>
+                    </div>
+                    <a class="link" href="<?= Url::toRoute('/site/blog-article?id=' . $new->id) ?>">
+                        <p class="blog-content-item-title mt-3 header-m-600">
+                            <?= $new->title ?>
+                        </p>
+                    </a>
+                    <div class="blog-content-item-text mb-4 body-m-400">
+                        <?= StringHelper::truncate($new->text, 450, '...') ?>
+                    </div>
+                    <img class="blog-image" src="<?= Yii::getAlias('@web/' . $new->image) ?>" alt="">
                 </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-            </div>
+                <?php
+            } ?>
         </div>
         <div id="3" class="blog-content d-none">
-            <div class="blog-content-item">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
+            <?php
+            foreach ($lawyers as $lawyer) { ?>
+                <div class="blog-content-item">
+                    <div class="d-flex justify-content-between">
+                        <a class="link body-s-400" href="#"><?= $lawyer->categoryText ?></a>
+                        <p class="m-0 main-blog-item-date body-s-400"><?= Yii::$app->formatter->asDate(
+                                $lawyer->created_at
+                            ) ?></p>
+                    </div>
+                    <a class="link" href="<?= Url::toRoute('/site/blog-article?id=' . $lawyer->id) ?>">
+                        <p class="blog-content-item-title mt-3 header-m-600">
+                            <?= $lawyer->title ?>
+                        </p>
+                    </a>
+                    <div class="blog-content-item-text mb-4 body-m-400">
+                        <?= StringHelper::truncate($lawyer->text, 450, '...') ?>
+                    </div>
+                    <img class="blog-image" src="<?= Yii::getAlias('@web/' . $lawyer->image) ?>" alt="">
                 </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-            </div>
+                <?php
+            } ?>
         </div>
         <div id="4" class="blog-content d-none">
-            <div class="blog-content-item">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
+            <?php
+            foreach ($cases as $case) { ?>
+                <div class="blog-content-item">
+                    <div class="d-flex justify-content-between">
+                        <a class="link body-s-400" href="#"><?= $case->categoryText ?></a>
+                        <p class="m-0 main-blog-item-date body-s-400"><?= Yii::$app->formatter->asDate(
+                                $case->created_at
+                            ) ?></p>
+                    </div>
+                    <a class="link" href="<?= Url::toRoute('/site/blog-article?id=' . $case->id) ?>">
+                        <p class="blog-content-item-title mt-3 header-m-600">
+                            <?= $case->title ?>
+                        </p>
+                    </a>
+                    <div class="blog-content-item-text mb-4 body-m-400">
+                        <?= StringHelper::truncate($case->text, 450, '...') ?>
+                    </div>
+                    <img class="blog-image" src="<?= Yii::getAlias('@web/' . $case->image) ?>" alt="">
                 </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-                <img class="blog-image" src="<?= Yii::getAlias('@web/images/blog.jpg') ?>" alt="">
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-            </div>
-            <div class="blog-content-item mt-4">
-                <div class="d-flex justify-content-between">
-                    <a class="link body-s-400" href="#">Новости</a>
-                    <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                </div>
-                <a class="link" href="#">
-                    <p class="blog-content-item-title mt-3 header-m-600">
-                        Юрист по ДТП: законны ли штрафы за «среднюю
-                        скорость»?
-                    </p>
-                </a>
-                <p class="blog-content-item-text mb-4 body-m-400">
-                    Вопрос, касающийся штрафов за «среднюю скорость», до сих пор вызывает
-                    споры. СМИ с завидной периодичностью публикуют информацию об отмене любого штрафа по «средней
-                    скорости» через суд, сославшись на неправомерность подобных взысканий. Общественная дискуссия
-                    продолжается и по сей день, однако вышестоящие инстанции не торопятся решать данный вопрос.
-                </p>
-            </div>
+                <?php
+            } ?>
         </div>
         <div class="blog-pagination d-flex body-l-400">
-            <a class="link" href="#">Назад</a>
-            <div class="d-flex blog-pagination-number-container">
-                <a class="link m-0" href="#">
-                    <p class="blog-pagination-number me-3 current-pagination-number">1</p>
-                </a>
-                <a class="link m-0" href="#">
-                    <p class="blog-pagination-number me-3">2</p>
-                </a>
-                <a class="link m-0" href="#">
-                    <p class="blog-pagination-number me-3">3</p>
-                </a>
-                <a class="link m-0" href="#">
-                    <p class="blog-pagination-number me-3">4</p>
-                </a>
-                <a class="link m-0" href="#">
-                    <p class="blog-pagination-number">5</p>
-                </a>
-            </div>
-            <a class="link active" href="#">Дальше</a>
+            <?php
+            echo LinkPager::widget([
+                'pagination' => $pages,
+            ]); ?>
+            <!--            <a class="link" href="#">Назад</a>-->
+            <!--            <div class="d-flex blog-pagination-number-container">-->
+            <!--                <a class="link m-0" href="#">-->
+            <!--                    <p class="blog-pagination-number me-3 current-pagination-number">1</p>-->
+            <!--                </a>-->
+            <!--                <a class="link m-0" href="#">-->
+            <!--                    <p class="blog-pagination-number me-3">2</p>-->
+            <!--                </a>-->
+            <!--                <a class="link m-0" href="#">-->
+            <!--                    <p class="blog-pagination-number me-3">3</p>-->
+            <!--                </a>-->
+            <!--                <a class="link m-0" href="#">-->
+            <!--                    <p class="blog-pagination-number me-3">4</p>-->
+            <!--                </a>-->
+            <!--                <a class="link m-0" href="#">-->
+            <!--                    <p class="blog-pagination-number">5</p>-->
+            <!--                </a>-->
+            <!--            </div>-->
+            <!--            <a class="link active" href="#">Дальше</a>-->
         </div>
     </section>
     <section class="services-cards">
@@ -355,14 +158,14 @@ $this->title = 'Блог | Maxim Консалтинг';
     let buttons_blog = document.querySelectorAll('.blog-switcher-button'),
         blocks_blog = document.querySelectorAll('.blog-content');
     buttons_blog.forEach(button => {
-        button.onclick = function (event){
-            buttons_blog.forEach(item =>{
+        button.onclick = function (event) {
+            buttons_blog.forEach(item => {
                 item.classList.remove('active');
             })
             event.target.classList.add('active');
             blocks_blog.forEach(block_blog => {
                 block_blog.classList.add('d-none')
-                if (event.target.id === block_blog.id){
+                if (event.target.id === block_blog.id) {
                     block_blog.classList.remove('d-none');
                 }
             })
