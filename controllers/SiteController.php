@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\Contacts;
 use app\models\LoginForm;
 use app\models\News;
+use app\models\Prices;
 use Yii;
 use yii\data\Pagination;
 use yii\filters\VerbFilter;
@@ -84,7 +85,17 @@ class SiteController extends Controller
      */
     public function actionPrice()
     {
-        return $this->render('price');
+        $query = Prices::find();
+
+        for ($i = 1; $i <= count(Prices::getCategories()); $i++) {
+            for ($j = 1; $j < count(Prices::getCategoriesPrice()); $j++) {
+                $categories[$i][$j] = $query->where(['category' => $i])->andWhere(['category_price_id' => $j])->all();
+            }
+        }
+
+        return $this->render('price', [
+            'categories' => $categories
+        ]);
     }
 
     /**

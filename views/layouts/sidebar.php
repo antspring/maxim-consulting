@@ -38,6 +38,14 @@
                     [
                         'label' => 'Контакты',
                         'url' => ['/contacts']
+                    ],
+                    [
+                        'label' => 'Цены на услуги',
+                        'url' => ['/prices']
+                    ],
+                    [
+                        'label' => 'Категории цен на услуги',
+                        'url' => ['/service-price-categories']
                     ]
                 ],
             ]);
