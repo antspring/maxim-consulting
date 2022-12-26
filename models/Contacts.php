@@ -2,8 +2,6 @@
 
 namespace app\models;
 
-use Yii;
-
 /**
  * This is the model class for table "contacts".
  *
@@ -40,9 +38,9 @@ class Contacts extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'address' => 'Address',
-            'time' => 'Time',
-            'tel_number' => 'Tel Number',
+            'address' => 'Адрес',
+            'time' => 'Время работы',
+            'tel_number' => 'Номер телефона',
             'email' => 'Email',
         ];
     }

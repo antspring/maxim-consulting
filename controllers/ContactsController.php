@@ -2,18 +2,17 @@
 
 namespace app\controllers;
 
-use app\models\News;
-use app\models\NewsSearch;
+use app\models\Contacts;
+use app\models\ContactsSearch;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\web\UploadedFile;
 
 /**
- * NewsController implements the CRUD actions for News model.
+ * ContactsController implements the CRUD actions for Contacts model.
  */
-class NewsController extends Controller
+class ContactsController extends Controller
 {
     /**
      * @inheritDoc
@@ -43,13 +42,13 @@ class NewsController extends Controller
     }
 
     /**
-     * Lists all News models.
+     * Lists all Contacts models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new NewsSearch();
+        $searchModel = new ContactsSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -59,7 +58,7 @@ class NewsController extends Controller
     }
 
     /**
-     * Displays a single News model.
+     * Displays a single Contacts model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -72,17 +71,15 @@ class NewsController extends Controller
     }
 
     /**
-     * Creates a new News model.
+     * Creates a new Contacts model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new News();
+        $model = new Contacts();
 
         if ($this->request->isPost) {
-            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
-            $model->upload();
             if ($model->load($this->request->post()) && $model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
@@ -96,7 +93,7 @@ class NewsController extends Controller
     }
 
     /**
-     * Updates an existing News model.
+     * Updates an existing Contacts model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -116,7 +113,7 @@ class NewsController extends Controller
     }
 
     /**
-     * Deletes an existing News model.
+     * Deletes an existing Contacts model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -130,15 +127,15 @@ class NewsController extends Controller
     }
 
     /**
-     * Finds the News model based on its primary key value.
+     * Finds the Contacts model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return News the loaded model
+     * @return Contacts the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = News::findOne(['id' => $id])) !== null) {
+        if (($model = Contacts::findOne(['id' => $id])) !== null) {
             return $model;
         }
 
