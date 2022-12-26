@@ -1,13 +1,13 @@
 <?php
 
-namespace app\Models;
+namespace app\models;
 
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use app\Models\News;
+use app\models\News;
 
 /**
- * NewsSearch represents the model behind the search form of `app\Models\News`.
+ * NewsSearch represents the model behind the search form of `app\models\News`.
  */
 class NewsSearch extends News
 {

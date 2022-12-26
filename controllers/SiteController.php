@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Contacts;
 use app\models\LoginForm;
 use app\models\News;
 use Yii;
@@ -52,7 +53,11 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('general');
+        $news = News::find()->orderBy(['id' => SORT_DESC])->limit(4)->all();
+
+        return $this->render('general', [
+            'news' => $news
+        ]);
     }
 
     /**
@@ -90,17 +95,28 @@ class SiteController extends Controller
     public function actionBlog()
     {
         $articles = News::find();
-        $news = News::find()->where(['category_id' => News::NEWS])->all();
-        $lawyers = News::find()->where(['category_id' => News::LAWYER])->all();
-        $cases = News::find()->where(['category_id' => News::CASE])->all();
         $pages = new Pagination(['totalCount' => $articles->count(), 'pageSize' => 4]);
         $articles = $articles->offset($pages->offset)->limit($pages->limit)->all();
 
         return $this->render('blog', [
             'articles' => $articles,
-            'news' => $news,
-            'lawyers' => $lawyers,
-            'cases' => $cases,
+            'pages' => $pages
+        ]);
+    }
+
+    public function actionBlogRubric(int $id)
+    {
+        if ($id !== 0) {
+            $articles = News::find()->where(['category_id' => $id]);
+        } else {
+            $articles = News::find();
+        }
+
+        $pages = new Pagination(['totalCount' => $articles->count(), 'pageSize' => 4]);
+        $articles = $articles->offset($pages->offset)->limit($pages->limit)->all();
+
+        return $this->renderAjax('_blog-rubric', [
+            'articles' => $articles,
             'pages' => $pages
         ]);
     }
@@ -144,6 +160,11 @@ class SiteController extends Controller
     public function actionPrivacyPolicy()
     {
         return $this->render('privacy-policy');
+    }
+
+    public function actionGetContacts(int $id)
+    {
+        return $this->asJson(Contacts::findOne($id));
     }
 
     /**

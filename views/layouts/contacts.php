@@ -100,29 +100,29 @@ $this->beginBody() ?>
         <div class="main-background contacts-container">
             <div class="main-container mt-0">
                 <p class="paragraph-heading header-l-700">Контакты</p>
-                <select class="contacts-select py-2 px-3 body-m-400" name="" id="">
-                    <option value="#">Курган</option>
-                    <option value="#">Тюмень</option>
-                    <option value="#">Набережные Челны</option>
-                    <option value="#">Краснодар</option>
+                <select class="contacts-select py-2 px-3 body-m-400" name="city" id="">
+                    <option value="1">Курган</option>
+                    <option value="2">Тюмень</option>
+                    <option value="3">Набережные Челны</option>
+                    <option value="4">Краснодар</option>
                 </select>
                 <div class="d-flex flex-column flex-sm-row justify-content-between contacts-info body-m-400">
                     <div>
                         <div class="d-flex align-items-center mb-4">
                             <img class="me-3" src="<?= Yii::getAlias('@web/images/icons/address.png') ?>" alt="">
-                            <p class="m-0">Курган, ул. Радионова, 17</p>
+                            <p class="m-0 contact-address">Курган, ул. Радионова, 17</p>
                         </div>
                         <div class="d-flex align-items-center mb-4">
                             <img class="me-3" src="<?= Yii::getAlias('@web/images/icons/time.png') ?>" alt="">
-                            <p class="m-0">Пн. - пт. - с 9:00 до 18:00</p>
+                            <p class="m-0 contact-time">Пн. - пт. - с 9:00 до 18:00</p>
                         </div>
                         <div class="d-flex align-items-center mb-4">
                             <img class="me-3" src="<?= Yii::getAlias('@web/images/icons/phone.png') ?>" alt="">
-                            <p class="m-0">+7 3522 200-444</p>
+                            <p class="m-0 contact-tel">+7 3522 200-444</p>
                         </div>
                         <div class="d-flex align-items-center mb-4">
                             <img class="me-3" src="<?= Yii::getAlias('@web/images/icons/email.png') ?>" alt="">
-                            <p class="m-0">consult@maxim.company</p>
+                            <p class="m-0 contact-email">consult@maxim.company</p>
                         </div>
                         <div class="contacts-social-networks">
                             <a class="me-3" href="tel:89125225131"><img
@@ -185,6 +185,27 @@ $this->beginBody() ?>
         </div>
     </footer>
 </div>
+<script>
+    let select = document.querySelector('.contacts-select'),
+        address = document.querySelector('.contact-address'),
+        time = document.querySelector('.contact-time'),
+        tel_number = document.querySelector('.contact-tel'),
+        email = document.querySelector('.contact-email');
+
+    select.onchange = function (event) {
+        async function getContacts() {
+            await fetch('/site/get-contacts?id=' + event.target.value).then(async (response) => {
+                response = JSON.parse(await response.text());
+                address.innerHTML = response.address;
+                time.innerHTML = response.time;
+                tel_number.innerHTML = response.tel_number;
+                email.innerHTML = response.email;
+            })
+        }
+
+        getContacts();
+    }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

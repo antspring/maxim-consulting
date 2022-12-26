@@ -1,9 +1,7 @@
 <?php
 
-use yii\helpers\Html;
-
 /** @var yii\web\View $this */
-/** @var app\Models\News $model */
+/** @var app\models\News $model */
 
 $this->title = 'Create News';
 $this->params['breadcrumbs'][] = ['label' => 'News', 'url' => ['index']];

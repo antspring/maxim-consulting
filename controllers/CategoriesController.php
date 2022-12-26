@@ -3,11 +3,11 @@
 namespace app\controllers;
 
 use app\models\Categories;
-use app\Models\CategoriesSearch;
+use app\models\CategoriesSearch;
 use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
-use yii\filters\VerbFilter;
 
 /**
  * CategoriesController implements the CRUD actions for Categories model.

@@ -2,6 +2,8 @@
 
 /** @var yii\web\View $this */
 
+/** @var app\models\News $news */
+
 $this->title = 'Юридические услуги | Maxim Consulting';
 ?>
 <div class="round-container position-relative">
@@ -116,62 +118,26 @@ $this->title = 'Юридические услуги | Maxim Consulting';
     <div class="main-container">
         <h2 class="heading header-l-700">Блог</h2>
         <div class="main-blog-item-list row">
-            <div class="main-blog-item-container col-12 col-lg-6">
-                <div class="main-blog-item d-flex flex-column flex-md-row me-1">
-                    <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
-                    <div class="main-blog-item-text">
-                        <p class="body-m-600">
-                            Верховный суд рекомендовал не принимать нецензурные жалобы
-                        </p>
-                        <div class="d-flex justify-content-between">
-                            <a class="link body-s-400" href="#">Новости</a>
-                            <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
+            <?php
+            foreach ($news as $new) { ?>
+                <div class="main-blog-item-container col-12 col-lg-6">
+                    <div class="main-blog-item d-flex flex-column flex-md-row me-1">
+                        <img class="main-blog-image" src="<?= Yii::getAlias('@web/' . $new->image) ?>" alt="">
+                        <div class="main-blog-item-text">
+                            <a class="link" href="<?= \yii\helpers\Url::toRoute('site/blog-article?id=' . $new->id) ?>">
+                                <p class="body-m-600">
+                                    <?= $new->title ?>
+                                </p>
+                            </a>
+                            <div class="d-flex justify-content-between">
+                                <p class="link body-s-400" href="#"><?= $new->categoryText ?></p>
+                                <p class="m-0 main-blog-item-date body-s-400"><?= $new->created_at ?></p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="main-blog-item-container col-12 col-lg-6">
-                <div class="main-blog-item d-flex flex-column flex-md-row me-1">
-                    <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
-                    <div class="main-blog-item-text">
-                        <p class="body-m-600">
-                            Верховный суд рекомендовал не принимать нецензурные жалобы
-                        </p>
-                        <div class="d-flex justify-content-between">
-                            <a class="link body-s-400" href="#">Новости</a>
-                            <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-blog-item-container col-12 col-lg-6">
-                <div class="main-blog-item d-flex flex-column flex-md-row me-1">
-                    <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
-                    <div class="main-blog-item-text">
-                        <p class="body-m-600">
-                            Верховный суд рекомендовал не принимать нецензурные жалобы
-                        </p>
-                        <div class="d-flex justify-content-between">
-                            <a class="link body-s-400" href="#">Новости</a>
-                            <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="main-blog-item-container col-12 col-lg-6">
-                <div class="main-blog-item d-flex flex-column flex-md-row me-1">
-                    <img src="<?= Yii::getAlias('@web/images/Img.jpg') ?>" alt="">
-                    <div class="main-blog-item-text">
-                        <p class="body-m-600">
-                            Верховный суд рекомендовал не принимать нецензурные жалобы
-                        </p>
-                        <div class="d-flex justify-content-between">
-                            <a class="link body-s-400" href="#">Новости</a>
-                            <p class="m-0 main-blog-item-date body-s-400">20.06.2022</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <?php
+            } ?>
         </div>
         <a class="btn-request btn-request-primary btn-request-primary-outline link body-m-400"
            href="<?= Yii::getAlias('/site/blog') ?>">Больше новостей</a>

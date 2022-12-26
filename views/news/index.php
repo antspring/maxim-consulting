@@ -1,13 +1,13 @@
 <?php
 
-use app\Models\News;
+use app\models\News;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
 use yii\helpers\Html;
 use yii\helpers\Url;
 
 /** @var yii\web\View $this */
-/** @var app\Models\NewsSearch $searchModel */
+/** @var app\models\NewsSearch $searchModel */
 /** @var yii\data\ActiveDataProvider $dataProvider */
 
 $this->title = 'News';

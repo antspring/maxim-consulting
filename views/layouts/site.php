@@ -92,7 +92,8 @@ $this->beginBody() ?>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog feedback-modal-container modal-dialog-centered">
             <div class="modal-content feedback-modal">
-                <button type="button" class="btn-close m-3 position-absolute end-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close m-3 position-absolute end-0" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 <p class="heading header-l-700">Оставьте контакты для связи</p>
                 <?= ConsultationFeedbackFormWidget::widget() ?>
             </div>
@@ -158,7 +159,10 @@ $this->beginBody() ?>
             </div>
         </div>
         <div class="w-100 d-flex flex-column flex-lg-row justify-content-between footer-info body-s-400 ">
-            <p class="paragraph-main"><a href="<?= Url::toRoute('site/privacy-policy') ?>" class="link">Правовая информация</a></p>
+            <p class="paragraph-main"><a
+                        href="<?= Url::toRoute('@web/files/Политика конфиденциальности Maxim Консалтинг.pdf') ?>"
+                        class="link">Правовая информация</a>
+            </p>
             <p class="paragraph-main">© 2022 «Maxim Консалтинг»</p>
         </div>
     </div>
