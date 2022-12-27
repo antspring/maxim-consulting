@@ -41,28 +41,28 @@
     align-items: flex-end;
 }
 
-.price-submit-application{
+.price-submit-application {
     padding-top: 64px;
 }
 
-.price-submit-application .services-request{
+.price-submit-application .services-request {
     margin-top: 0;
 }
 
-.services-price-list-item-button{
+.services-price-list-item-button {
     background-image: url("../images/icons/info.png");
     background-repeat: no-repeat;
     padding: 8px;
 }
 
-.services-price-list-item-info::after{
+.services-price-list-item-info::after {
     content: url("../images/Polygon.png");
     position: absolute;
     bottom: -20px;
     left: 10px;
 }
 
-.services-price-list-item-info{
+.services-price-list-item-info {
     width: 370px;
     height: fit-content;
     background-color: var(--bg-grey);
@@ -72,7 +72,7 @@
     bottom: 200%;
 }
 
-.services-price-category-item-button-active{
+.services-price-category-item-button-active {
     transform: rotate(180deg) translateX(10px);
 }
 
@@ -86,12 +86,12 @@
         top: -170px;
     }
 
-    .services-price-list-item-info{
+    .services-price-list-item-info {
         right: -15px;
         left: unset;
     }
 
-    .services-price-list-item-info::after{
+    .services-price-list-item-info::after {
         right: 10px;
         left: unset;
     }
@@ -110,7 +110,7 @@
 
     .services-price-list-item {
         align-items: start;
-        width: 450px;
+        max-width: 450px;
     }
 
     .price-container-img {
@@ -131,7 +131,7 @@
         padding-bottom: 360px;
     }
 
-    .services-price-list-item-info{
+    .services-price-list-item-info {
         right: 0;
     }
 }
@@ -168,20 +168,19 @@
         padding-top: 370px;
     }
 
-    .services-price-category-item-button{
+    .services-price-category-item-button {
         background-image: url("../images/Vector(2).png");
         background-repeat: no-repeat;
     }
 
-    .services-price-list-container{
-        max-width: 290px;
-    }
-
-    .services-price-list-item{
+    /*.services-price-list-container{*/
+    /*    max-width: 290px;*/
+    /*}*/
+    .services-price-list-item {
         width: 100%;
     }
 
-    .services-price-list-item-info{
+    .services-price-list-item-info {
         width: 293px;
     }
 }
