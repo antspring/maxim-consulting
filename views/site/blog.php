@@ -33,7 +33,14 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Блог']);
                 </div>
             </div>
         </div>
-        <div class="blog-container-fetch">
+        <?php
+        \yii\widgets\Pjax::begin([
+            'id' => 'pjax-block',
+            'scrollTo' => true,
+            'linkSelector' => '.pagination a',
+            'timeout' => 3000
+        ]) ?>
+        <div id="pjax-block">
             <div id="0" class="blog-content">
                 <?php
                 foreach ($articles as $article) { ?>
@@ -64,6 +71,8 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Блог']);
                 </div>
             </div>
         </div>
+        <?php
+        \yii\widgets\Pjax::end() ?>
     </section>
     <section class="services-cards">
         <?= ServicesWidget::widget() ?>
@@ -72,7 +81,7 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Блог']);
 
 <script>
     let buttons_blog = document.querySelectorAll('.blog-switcher-button'),
-        blog_container = document.querySelector('.blog-container-fetch');
+        blog_container = document.querySelector('#pjax-block');
     buttons_blog.forEach(button => {
         button.onclick = function (event) {
             buttons_blog.forEach(item => {
