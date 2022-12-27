@@ -30,32 +30,32 @@
                     [
                         'label' => 'Новости',
                         'icon' => 'pencil-alt',
-                        'url' => ['/news']
+                        'url' => ['/admin/news']
                     ],
                     [
                         'label' => 'Категории',
                         'icon' => 'pencil-alt',
-                        'url' => ['/categories']
+                        'url' => ['/admin/categories']
                     ],
                     [
                         'label' => 'Контакты',
                         'icon' => 'pencil-alt',
-                        'url' => ['/contacts']
+                        'url' => ['/admin/contacts']
                     ],
                     [
                         'label' => 'Цены на услуги',
                         'icon' => 'pencil-alt',
-                        'url' => ['/prices']
+                        'url' => ['/admin/prices']
                     ],
                     [
                         'label' => 'Категории цен на услуги',
                         'icon' => 'pencil-alt',
-                        'url' => ['/service-price-categories']
+                        'url' => ['/admin/service-price-categories']
                     ],
                     [
                         'label' => 'Услуги',
                         'icon' => 'pencil-alt',
-                        'url' => ['/services']
+                        'url' => ['/admin/services']
                     ]
                 ],
             ]);

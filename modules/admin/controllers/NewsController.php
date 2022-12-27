@@ -1,18 +1,18 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\ServicePriceCategories;
-use app\models\ServicePriceCategoriesSearch;
-use yii\filters\AccessControl;
+use app\models\News;
+use app\models\NewsSearch;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use yii\web\UploadedFile;
 
 /**
- * ServicePriceCategoriesController implements the CRUD actions for ServicePriceCategories model.
+ * NewsController implements the CRUD actions for News model.
  */
-class ServicePriceCategoriesController extends Controller
+class NewsController extends Controller
 {
     /**
      * @inheritDoc
@@ -22,15 +22,6 @@ class ServicePriceCategoriesController extends Controller
         return array_merge(
             parent::behaviors(),
             [
-                'access' => [
-                    'class' => AccessControl::class,
-                    'rules' => [
-                        [
-                            'allow' => true,
-                            'roles' => ['@']
-                        ]
-                    ],
-                ],
                 'verbs' => [
                     'class' => VerbFilter::className(),
                     'actions' => [
@@ -42,13 +33,13 @@ class ServicePriceCategoriesController extends Controller
     }
 
     /**
-     * Lists all ServicePriceCategories models.
+     * Lists all News models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new ServicePriceCategoriesSearch();
+        $searchModel = new NewsSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -58,7 +49,7 @@ class ServicePriceCategoriesController extends Controller
     }
 
     /**
-     * Displays a single ServicePriceCategories model.
+     * Displays a single News model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -71,15 +62,17 @@ class ServicePriceCategoriesController extends Controller
     }
 
     /**
-     * Creates a new ServicePriceCategories model.
+     * Creates a new News model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new ServicePriceCategories();
+        $model = new News();
 
         if ($this->request->isPost) {
+            $model->imageFile = UploadedFile::getInstance($model, 'imageFile');
+            $model->upload();
             if ($model->load($this->request->post()) && $model->save()) {
                 return $this->redirect(['view', 'id' => $model->id]);
             }
@@ -93,7 +86,7 @@ class ServicePriceCategoriesController extends Controller
     }
 
     /**
-     * Updates an existing ServicePriceCategories model.
+     * Updates an existing News model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -113,7 +106,7 @@ class ServicePriceCategoriesController extends Controller
     }
 
     /**
-     * Deletes an existing ServicePriceCategories model.
+     * Deletes an existing News model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -127,15 +120,15 @@ class ServicePriceCategoriesController extends Controller
     }
 
     /**
-     * Finds the ServicePriceCategories model based on its primary key value.
+     * Finds the News model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return ServicePriceCategories the loaded model
+     * @return News the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = ServicePriceCategories::findOne(['id' => $id])) !== null) {
+        if (($model = News::findOne(['id' => $id])) !== null) {
             return $model;
         }
 

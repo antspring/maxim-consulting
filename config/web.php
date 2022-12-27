@@ -65,6 +65,11 @@ $config = [
             'dateFormat' => 'dd.MM.yyyy'
         ]
     ],
+    'modules' => [
+        'admin' => [
+            'class' => 'app\modules\admin\Module',
+        ],
+    ],
     'language' => 'ru_RU',
     'params' => $params,
 ];

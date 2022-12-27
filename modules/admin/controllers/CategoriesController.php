@@ -1,18 +1,17 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\Services;
-use app\models\ServicesSearch;
-use yii\filters\AccessControl;
+use app\models\Categories;
+use app\models\CategoriesSearch;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
 /**
- * ServicesController implements the CRUD actions for Services model.
+ * CategoriesController implements the CRUD actions for Categories model.
  */
-class ServicesController extends Controller
+class CategoriesController extends Controller
 {
     /**
      * @inheritDoc
@@ -22,15 +21,6 @@ class ServicesController extends Controller
         return array_merge(
             parent::behaviors(),
             [
-                'access' => [
-                    'class' => AccessControl::class,
-                    'rules' => [
-                        [
-                            'allow' => true,
-                            'roles' => ['@']
-                        ]
-                    ],
-                ],
                 'verbs' => [
                     'class' => VerbFilter::className(),
                     'actions' => [
@@ -42,13 +32,13 @@ class ServicesController extends Controller
     }
 
     /**
-     * Lists all Services models.
+     * Lists all Categories models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new ServicesSearch();
+        $searchModel = new CategoriesSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -58,7 +48,7 @@ class ServicesController extends Controller
     }
 
     /**
-     * Displays a single Services model.
+     * Displays a single Categories model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -71,13 +61,13 @@ class ServicesController extends Controller
     }
 
     /**
-     * Creates a new Services model.
+     * Creates a new Categories model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Services();
+        $model = new Categories();
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
@@ -93,7 +83,7 @@ class ServicesController extends Controller
     }
 
     /**
-     * Updates an existing Services model.
+     * Updates an existing Categories model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -113,7 +103,7 @@ class ServicesController extends Controller
     }
 
     /**
-     * Deletes an existing Services model.
+     * Deletes an existing Categories model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -127,15 +117,15 @@ class ServicesController extends Controller
     }
 
     /**
-     * Finds the Services model based on its primary key value.
+     * Finds the Categories model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return Services the loaded model
+     * @return Categories the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Services::findOne(['id' => $id])) !== null) {
+        if (($model = Categories::findOne(['id' => $id])) !== null) {
             return $model;
         }
 

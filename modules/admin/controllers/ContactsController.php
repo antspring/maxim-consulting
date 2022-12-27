@@ -1,18 +1,17 @@
 <?php
 
-namespace app\controllers;
+namespace app\modules\admin\controllers;
 
-use app\models\Prices;
-use app\models\PricesSearch;
-use yii\filters\AccessControl;
+use app\models\Contacts;
+use app\models\ContactsSearch;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
 /**
- * PricesController implements the CRUD actions for Prices model.
+ * ContactsController implements the CRUD actions for Contacts model.
  */
-class PricesController extends Controller
+class ContactsController extends Controller
 {
     /**
      * @inheritDoc
@@ -22,15 +21,6 @@ class PricesController extends Controller
         return array_merge(
             parent::behaviors(),
             [
-                'access' => [
-                    'class' => AccessControl::class,
-                    'rules' => [
-                        [
-                            'allow' => true,
-                            'roles' => ['@']
-                        ]
-                    ],
-                ],
                 'verbs' => [
                     'class' => VerbFilter::className(),
                     'actions' => [
@@ -42,13 +32,13 @@ class PricesController extends Controller
     }
 
     /**
-     * Lists all Prices models.
+     * Lists all Contacts models.
      *
      * @return string
      */
     public function actionIndex()
     {
-        $searchModel = new PricesSearch();
+        $searchModel = new ContactsSearch();
         $dataProvider = $searchModel->search($this->request->queryParams);
 
         return $this->render('index', [
@@ -58,7 +48,7 @@ class PricesController extends Controller
     }
 
     /**
-     * Displays a single Prices model.
+     * Displays a single Contacts model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -71,13 +61,13 @@ class PricesController extends Controller
     }
 
     /**
-     * Creates a new Prices model.
+     * Creates a new Contacts model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return string|\yii\web\Response
      */
     public function actionCreate()
     {
-        $model = new Prices();
+        $model = new Contacts();
 
         if ($this->request->isPost) {
             if ($model->load($this->request->post()) && $model->save()) {
@@ -93,7 +83,7 @@ class PricesController extends Controller
     }
 
     /**
-     * Updates an existing Prices model.
+     * Updates an existing Contacts model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
@@ -113,7 +103,7 @@ class PricesController extends Controller
     }
 
     /**
-     * Deletes an existing Prices model.
+     * Deletes an existing Contacts model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param int $id ID
      * @return \yii\web\Response
@@ -127,15 +117,15 @@ class PricesController extends Controller
     }
 
     /**
-     * Finds the Prices model based on its primary key value.
+     * Finds the Contacts model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param int $id ID
-     * @return Prices the loaded model
+     * @return Contacts the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Prices::findOne(['id' => $id])) !== null) {
+        if (($model = Contacts::findOne(['id' => $id])) !== null) {
             return $model;
         }
 
