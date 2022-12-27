@@ -67,6 +67,8 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Блог']);
                     <?php
                     echo LinkPager::widget([
                         'pagination' => $pages,
+                        'prevPageLabel' => 'Назад',
+                        'nextPageLabel' => 'Дальше'
                     ]); ?>
                 </div>
             </div>

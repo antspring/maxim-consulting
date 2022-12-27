@@ -38,7 +38,8 @@ if (isset($articles[0])) {
         <?php
         echo LinkPager::widget([
             'pagination' => $pages,
-            'registerLinkTags' => true
+            'prevPageLabel' => 'Назад',
+            'nextPageLabel' => 'Дальше'
         ]); ?>
     </div>
 </div>
