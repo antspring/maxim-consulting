@@ -18,3 +18,5 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Контакты']);
              alt="">
     </div>
 </section>
+
+<script src="<?= Yii::getAlias('@web/js/change-burger-button.js') ?>"></script>

@@ -115,6 +115,7 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Стоимость юр
         <?= ServicesWidget::widget() ?>
     </section>
 </div>
+<script src="<?= Yii::getAlias('@web/js/change-burger-button.js') ?>"></script>
 <script>
     let buttons_category = document.querySelectorAll('.btn-service-price'),
         buttons_info = document.querySelectorAll('.services-price-list-item-button'),

@@ -148,3 +148,5 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Юридические 
            href="<?= Yii::getAlias('/site/blog') ?>">Больше новостей</a>
     </div>
 </section>
+
+<script src="<?= Yii::getAlias('@web/js/change-burger-button.js') ?>"></script>

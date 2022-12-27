@@ -129,3 +129,5 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'О компании']);
         <?= ServicesWidget::widget() ?>
     </section>
 </div>
+
+<script src="<?= Yii::getAlias('@web/js/change-burger-button.js') ?>"></script>
