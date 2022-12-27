@@ -48,6 +48,10 @@
     top: 35px;
 }
 
+.nav-items-list-active .link-burger-menu {
+    color: var(--accent-purple);
+}
+
 @media (max-width: 1024px) {
     .header-container {
         height: 82px;
@@ -71,10 +75,6 @@
 
     .nav-items-list-active {
         padding: 56px 15px;
-    }
-
-    .nav-items-list-active .link-burger-menu{
-        color: var(--accent-purple);
     }
 
     .burger-menu-close {
