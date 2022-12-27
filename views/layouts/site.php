@@ -16,7 +16,12 @@ AppAsset::register($this);
 $this->registerCsrfMetaTags();
 $this->registerMetaTag(['charset' => Yii::$app->charset], 'charset');
 $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no']);
-$this->registerMetaTag(['name' => 'description', 'content' => $this->params['meta_description'] ?? '']);
+$this->registerMetaTag(
+    [
+        'name' => 'description',
+        'content' => $this->params['meta_description'] ?? 'Главная задача — качественные и профессиональные юридические услуги. В нашей команде нет менеджеров и стажеров, только эксперты с многолетним опытом в своей области. Мы стараемся решить вопросы клиента, сэкономив его время и деньги.'
+    ]
+);
 $this->registerMetaTag(['name' => 'keywords', 'content' => $this->params['meta_keywords'] ?? '']);
 $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii::getAlias('@web/favicon.ico')]);
 ?>

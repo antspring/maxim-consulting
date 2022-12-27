@@ -1,5 +1,6 @@
 <?php
 
+use app\components\ServicesWidget;
 use app\models\Prices;
 
 /** @var yii\web\View $this */
@@ -7,7 +8,8 @@ use app\models\Prices;
 /** @var app\models\Prices $prices */
 /** @var app\models\Prices $categories */
 
-$this->title = 'Стоимость юридических услуг | Maxim Консалтинг'
+$this->title = 'Стоимость юридических услуг | Maxim Консалтинг';
+$this->registerMetaTag(['name' => 'title', 'content' => 'Стоимость юридических услуг'])
 ?>
 
 <section class="price-container position-relative">
@@ -39,7 +41,9 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
         <div>
             <h2 class="heading header-l-700">Цены на услуги</h2>
             <div class="services-switcher my-4 my-sm-5 d-flex">
-                <button id="1" class="d-flex price-switchers services-switcher-button pe-4 pe-sm-5 active position-relative header-m-600">Для
+                <button id="1"
+                        class="d-flex price-switchers services-switcher-button pe-4 pe-sm-5 active position-relative header-m-600">
+                    Для
                     частных
                     лиц
                 </button>
@@ -108,7 +112,7 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
         } ?>
     </section>
     <section class="services-cards">
-        <?= $this->render('_services') ?>
+        <?= ServicesWidget::widget() ?>
     </section>
 </div>
 <script>
@@ -135,10 +139,10 @@ $this->title = 'Стоимость юридических услуг | Maxim К�
     });
 
     buttons_info.forEach(button => {
-        button.onclick = function(event){
+        button.onclick = function (event) {
             blocks_info.forEach(block => {
                 block.classList.add('d-none');
-                if (block.id === event.target.id){
+                if (block.id === event.target.id) {
                     block.classList.remove('d-none');
                 }
             })

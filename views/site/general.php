@@ -1,10 +1,13 @@
 <?php
 
+use app\components\ServicesWidget;
+
 /** @var yii\web\View $this */
 
 /** @var app\models\News $news */
 
 $this->title = 'Юридические услуги | Maxim Consulting';
+$this->registerMetaTag(['name' => 'title', 'content' => 'Юридические услуги']);
 ?>
 <div class="round-container position-relative">
     <section class="section-main main-heading main-container d-flex flex-lg-row flex-column">
@@ -31,7 +34,7 @@ $this->title = 'Юридические услуги | Maxim Consulting';
 </div>
 <section class="main-services main-background">
     <div class="main-container">
-        <?= $this->render('_services') ?>
+        <?= ServicesWidget::widget() ?>
         <?= $this->render('_send-request') ?>
     </div>
 </section>
@@ -131,7 +134,9 @@ $this->title = 'Юридические услуги | Maxim Consulting';
                             </a>
                             <div class="d-flex justify-content-between">
                                 <p class="link body-s-400" href="#"><?= $new->categoryText ?></p>
-                                <p class="m-0 main-blog-item-date body-s-400"><?= $new->created_at ?></p>
+                                <p class="m-0 main-blog-item-date body-s-400"><?= Yii::$app->formatter->asDate(
+                                        $new->created_at
+                                    ) ?></p>
                             </div>
                         </div>
                     </div>

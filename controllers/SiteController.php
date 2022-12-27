@@ -2,12 +2,10 @@
 
 namespace app\controllers;
 
+use app\components\services\SiteService;
 use app\models\Contacts;
 use app\models\LoginForm;
-use app\models\News;
-use app\models\Prices;
 use Yii;
-use yii\data\Pagination;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
 use yii\web\Response;
@@ -15,6 +13,7 @@ use yii\web\Response;
 class SiteController extends Controller
 {
     public $layout = 'site';
+    public $siteService;
 
     /**
      * {@inheritdoc}
@@ -47,6 +46,13 @@ class SiteController extends Controller
         ];
     }
 
+    public function __construct($id, $module, $config = [])
+    {
+        $this->siteService = Yii::$container->get(SiteService::class);
+
+        parent::__construct($id, $module, $config);
+    }
+
     /**
      * Displays homepage.
      *
@@ -54,10 +60,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $news = News::find()->orderBy(['id' => SORT_DESC])->limit(4)->all();
-
         return $this->render('general', [
-            'news' => $news
+            'news' => $this->siteService->getFourLastBlogs()
         ]);
     }
 
@@ -67,7 +71,9 @@ class SiteController extends Controller
      */
     public function actionServices()
     {
-        return $this->render('services');
+        return $this->render('services', [
+            'categories' => $this->siteService->getServices()
+        ]);
     }
 
     /**
@@ -76,7 +82,9 @@ class SiteController extends Controller
      */
     public function actionService(int $id)
     {
-        return $this->render('service');
+        return $this->render('service', [
+            'service' => $this->siteService->getService($id)
+        ]);
     }
 
     /**
@@ -85,16 +93,8 @@ class SiteController extends Controller
      */
     public function actionPrice()
     {
-        $query = Prices::find();
-
-        for ($i = 1; $i <= count(Prices::getCategories()); $i++) {
-            for ($j = 1; $j < count(Prices::getCategoriesPrice()); $j++) {
-                $categories[$i][$j] = $query->where(['category' => $i])->andWhere(['category_price_id' => $j])->all();
-            }
-        }
-
         return $this->render('price', [
-            'categories' => $categories
+            'categories' => $this->siteService->getPrices()
         ]);
     }
 
@@ -105,31 +105,16 @@ class SiteController extends Controller
 
     public function actionBlog()
     {
-        $articles = News::find();
-        $pages = new Pagination(['totalCount' => $articles->count(), 'pageSize' => 4]);
-        $articles = $articles->offset($pages->offset)->limit($pages->limit)->all();
+        $data = $this->siteService->getBlogs();
 
-        return $this->render('blog', [
-            'articles' => $articles,
-            'pages' => $pages
-        ]);
+        return $this->render('blog', $data);
     }
 
     public function actionBlogRubric(int $id)
     {
-        if ($id !== 0) {
-            $articles = News::find()->where(['category_id' => $id]);
-        } else {
-            $articles = News::find();
-        }
+        $data = $this->siteService->getBlogRubric($id);
 
-        $pages = new Pagination(['totalCount' => $articles->count(), 'pageSize' => 4]);
-        $articles = $articles->offset($pages->offset)->limit($pages->limit)->all();
-
-        return $this->renderAjax('_blog-rubric', [
-            'articles' => $articles,
-            'pages' => $pages
-        ]);
+        return $this->renderAjax('_blog-rubric', $data);
     }
 
     /**
@@ -139,9 +124,13 @@ class SiteController extends Controller
 
     public function actionBlogArticle(int $id)
     {
-        $article = News::find($id)->one();
-
-        return $this->render('blog-article', ['article' => $article]);
+        return $this->render(
+            'blog-article',
+            [
+                'article' => $this->siteService->getBlogArticles($id),
+                'blogs' => $this->siteService->getFourLastBlogs()
+            ]
+        );
     }
 
     /**

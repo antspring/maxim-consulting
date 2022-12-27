@@ -1,6 +1,8 @@
 <?php
+/** @var yii\web\View $this */
 
 $this->title = 'Политики конфиденциальности | Maxim Консалтинг';
+$this->registerMetaTag(['name' => 'title', 'content' => 'Политика конфиденциальности'])
 ?>
 
 <div class="main-container">

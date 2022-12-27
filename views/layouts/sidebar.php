@@ -29,23 +29,33 @@
                 'items' => [
                     [
                         'label' => 'Новости',
+                        'icon' => 'pencil-alt',
                         'url' => ['/news']
                     ],
                     [
                         'label' => 'Категории',
+                        'icon' => 'pencil-alt',
                         'url' => ['/categories']
                     ],
                     [
                         'label' => 'Контакты',
+                        'icon' => 'pencil-alt',
                         'url' => ['/contacts']
                     ],
                     [
                         'label' => 'Цены на услуги',
+                        'icon' => 'pencil-alt',
                         'url' => ['/prices']
                     ],
                     [
                         'label' => 'Категории цен на услуги',
+                        'icon' => 'pencil-alt',
                         'url' => ['/service-price-categories']
+                    ],
+                    [
+                        'label' => 'Услуги',
+                        'icon' => 'pencil-alt',
+                        'url' => ['/services']
                     ]
                 ],
             ]);

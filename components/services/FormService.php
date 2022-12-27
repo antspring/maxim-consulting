@@ -14,7 +14,7 @@ class FormService
         $model->save();
 
         Yii::$app->mailer->compose()->setFrom($model->email)->setTo(
-            'myemail@yourserver.com'
+            'consult@maxim.company'
         )->setSubject($model->name)->setTextBody($model->question)->send();
 
         Yii::$app->session->setFlash('send_form', 'true');

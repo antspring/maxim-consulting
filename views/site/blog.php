@@ -8,11 +8,13 @@
  * @var yii\data\Pagination $pages
  */
 
+use app\components\ServicesWidget;
 use yii\helpers\StringHelper;
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 
 $this->title = 'Блог | Maxim Консалтинг';
+$this->registerMetaTag(['name' => 'title', 'content' => 'Блог']);
 ?>
 <div class="main-container">
     <section class="blog-container">
@@ -64,7 +66,7 @@ $this->title = 'Блог | Maxim Консалтинг';
         </div>
     </section>
     <section class="services-cards">
-        <?= $this->render('_services') ?>
+        <?= ServicesWidget::widget() ?>
     </section>
 </div>
 

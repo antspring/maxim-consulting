@@ -1,17 +1,20 @@
 <?php
 /** @var yii\web\View $this */
 
+/** @var app\models\Services $service */
+
+use app\components\ServicesWidget;
+
 $this->title = 'Банкротство физических лиц | Maxim Консалтинг';
+$this->registerMetaTag(['name' => 'title', 'content' => $service->title])
 ?>
 <div class="round-container position-relative">
     <section class="service-container">
         <div class="main-heading main-container">
             <div class="heading-container">
-                <h1 class="heading header-xl-700">Банкротство физических лиц</h1>
+                <h1 class="heading header-xl-700"><?= $service->title ?></h1>
                 <p class="sub-heading body-xl-400">
-                    Защита от звонков коллекторов, снятие ареста с имущества, сопровождение дела в
-                    суде и
-                    списание долга.
+                    <?= $service->subheading ?>
                 </p>
             </div>
             <img class="position-absolute bottom-0 end-0 half-circle d-none d-lg-block"
@@ -27,6 +30,7 @@ $this->title = 'Банкротство физических лиц | Maxim Ко�
 </section>
 <div class="main-container">
     <section class="services-questions body-m-400">
+        <?= $service->text ?>
         <h2 class="heading header-l-700">Как помогаем</h2>
         <ul class="list-group">
             <li class="list-item position-relative">
@@ -117,6 +121,6 @@ $this->title = 'Банкротство физических лиц | Maxim Ко�
         </p>
     </section>
     <section class="services-cards">
-        <?= $this->render('_services') ?>
+        <?= ServicesWidget::widget() ?>
     </section>
 </div>

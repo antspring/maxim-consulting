@@ -4,6 +4,7 @@
 use app\components\ConsultationFeedbackFormWidget;
 
 $this->title = 'Контакты | Maxim Консалтинг';
+$this->registerMetaTag(['name' => 'title', 'content' => 'Контакты']);
 ?>
 
 <section class="contacts position-relative">

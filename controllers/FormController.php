@@ -20,6 +20,6 @@ class FormController extends \yii\web\Controller
     {
         $this->formService->saveForm(new FeedbackForm(), Yii::$app->request->post());
 
-        return $this->goBack(Yii::$app->request->referrer);
+        return $this->goHome();
     }
 }

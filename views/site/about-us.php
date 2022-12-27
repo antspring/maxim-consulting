@@ -1,7 +1,10 @@
 <?php
 /** @var yii\web\View $this */
 
+use app\components\ServicesWidget;
+
 $this->title = 'О компании | Maxim Консалтинг';
+$this->registerMetaTag(['name' => 'title', 'content' => 'О компании']);
 ?>
 <div class="round-container position-relative">
     <section class="about-us">
@@ -123,6 +126,6 @@ $this->title = 'О компании | Maxim Консалтинг';
 </section>
 <div class="main-container">
     <section class="services-cards about-us-services">
-        <?= $this->render('_services') ?>
+        <?= ServicesWidget::widget() ?>
     </section>
 </div>
