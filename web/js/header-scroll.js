@@ -12,9 +12,5 @@ window.onscroll = function () {
         burger_button.src = '/images/icons/icon_menu.png';
     } else {
         header.classList.remove('header-slick');
-        button.classList.remove('btn-request-primary');
-        button.classList.remove('btn-request-primary-outline');
-        button.classList.add('btn-request-secondary');
-        button.classList.add('btn-request-secondary-outline');
     }
 }

@@ -68,7 +68,7 @@ $this->beginBody() ?>
                 </div>
             </div>
             <div>
-                <button class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block mb-sm-3"
+                <button id="btn-request" class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block mb-sm-3"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Оставить заявку
                 </button>

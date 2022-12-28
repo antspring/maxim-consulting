@@ -149,4 +149,4 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Юридические 
     </div>
 </section>
 
-<script src="<?= Yii::getAlias('@web/js/change-burger-button.js') ?>"></script>
+<script src="<?= Yii::getAlias('@web/js/change-request-button.js') ?>"></script>
