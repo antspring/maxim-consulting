@@ -43,19 +43,23 @@ $this->beginBody() ?>
                 <div class="nav-items">
                     <ul class="d-flex m-0 p-0 nav-items-list d-none d-lg-flex">
                         <li class="paragraph-main body-m-400">
-                            <a class="link" href="<?= Url::toRoute('/site/services') ?>">Услуги</a>
+                            <a class="link" href="<?= Url::toRoute('/service') ?>">Услуги</a>
                         </li>
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/price') ?>">Цены</a>
                         </li>
                         <li class="paragraph-main body-m-400">
-                            <a class="link" href="<?= Url::toRoute('site/blog') ?>">Блог</a>
+                            <a class="link" href="<?= Url::toRoute('/blog') ?>">Блог</a>
                         </li>
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/about-us') ?>">О компании</a>
                         </li>
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/contacts') ?>">Контакты</a>
+                        </li>
+                        <li class="d-lg-none paragraph-main paragraph-main-link body-m-400">
+                            <a class="link link-burger-menu" href="#exampleModal" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal">Оставить заявку</a>
                         </li>
                         <li class="d-lg-none burger-menu-close position-absolute">
                             <button class="btn-close"></button>
@@ -68,7 +72,8 @@ $this->beginBody() ?>
                 </div>
             </div>
             <div>
-                <button id="btn-request" class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block mb-sm-3"
+                <button id="btn-request"
+                        class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block mb-sm-3"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Оставить заявку
                 </button>

@@ -28,7 +28,7 @@ $form = ActiveForm::begin(['action' => '/form/feedback']); ?>
     ['class' => 'btn btn-request btn-request-primary btn-request-primary-fill body-m-400', 'type' => 'submit']
 ) ?>
 <p class="mt-3 mb-0 agreement-text caption-400">Нажимая «Оставить заявку», я даю согласие на
-    <a class="link" href="<?= \yii\helpers\Url::toRoute('/site/privacy-policy') ?>">
+    <a class="link" href="<?= \yii\helpers\Url::toRoute('site/privacy-policy') ?>">
         обработку персональных данных
     </a>
 </p>
