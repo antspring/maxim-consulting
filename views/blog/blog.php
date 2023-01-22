@@ -13,6 +13,8 @@ use yii\helpers\StringHelper;
 use yii\helpers\Url;
 use yii\widgets\LinkPager;
 
+\app\assets\BlogAsset::register($this);
+
 $this->title = 'Блог | Maxim Консалтинг';
 $this->registerMetaTag(['name' => 'title', 'content' => 'Блог']);
 ?>
@@ -51,7 +53,7 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Блог']);
                                     $article->created_at
                                 ) ?></p>
                         </div>
-                        <a class="link" href="<?= Url::toRoute('/site/blog-article?id=' . $article->id) ?>">
+                        <a class="link" href="<?= Url::toRoute(['/blog/article', 'id' => $article->id]) ?>">
                             <p class="blog-content-item-title mt-3 header-m-600">
                                 <?= $article->title ?>
                             </p>
@@ -80,26 +82,3 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Блог']);
         <?= ServicesWidget::widget() ?>
     </section>
 </div>
-
-<script>
-    let buttons_blog = document.querySelectorAll('.blog-switcher-button'),
-        blog_container = document.querySelector('#pjax-block');
-    buttons_blog.forEach(button => {
-        button.onclick = function (event) {
-            buttons_blog.forEach(item => {
-                item.classList.remove('active');
-            })
-            event.target.classList.add('active');
-
-            async function getBlogRubric() {
-                await fetch('/site/blog-rubric?id=' + event.target.id).then(async (response) => {
-                    blog_container.innerHTML = await response.text()
-                });
-            }
-
-            getBlogRubric();
-        }
-    });
-</script>
-
-<script src="<?= Yii::getAlias('@web/js/change-button.js') ?>"></script>

@@ -124,4 +124,3 @@ $this->registerMetaTag(['name' => 'title', 'content' => $service->title])
         <?= ServicesWidget::widget() ?>
     </section>
 </div>
-<script src="<?= Yii::getAlias('@web/js/change-request-button.js') ?>"></script>

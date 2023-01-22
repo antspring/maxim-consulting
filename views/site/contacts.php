@@ -3,6 +3,8 @@
 
 use app\components\ConsultationFeedbackFormWidget;
 
+\app\assets\ButtonAsset::register($this);
+
 $this->title = 'Контакты | Maxim Консалтинг';
 $this->registerMetaTag(['name' => 'title', 'content' => 'Контакты']);
 ?>
@@ -18,5 +20,3 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Контакты']);
              alt="">
     </div>
 </section>
-
-<script src="<?= Yii::getAlias('@web/js/change-request-button.js') ?>"></script>

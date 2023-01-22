@@ -94,5 +94,3 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Политика кон
         </div>
     </section>
 </div>
-
-<script src="<?= Yii::getAlias('@web/js/change-button.js') ?>"></script>

@@ -43,7 +43,7 @@ $this->registerMetaTag(['name' => 'title', 'content' => $article->title]);
                         <img class="main-blog-image" src="<?= Yii::getAlias('@web/' . $blog->image) ?>" alt="">
                         <div class="main-blog-item-text">
                             <a class="link"
-                               href="<?= \yii\helpers\Url::toRoute('site/blog-article?id=' . $blog->id) ?>">
+                               href="<?= \yii\helpers\Url::toRoute(['blog/article', 'id' => $blog->id]) ?>">
                                 <p class="body-m-600">
                                     <?= $blog->title ?>
                                 </p>
@@ -61,8 +61,6 @@ $this->registerMetaTag(['name' => 'title', 'content' => $article->title]);
             } ?>
         </div>
         <a class="btn-request btn-request-primary btn-request-primary-outline link body-m-400"
-           href="<?= Yii::getAlias('/site/blog') ?>">Больше новостей</a>
+           href="<?= \yii\helpers\Url::toRoute('/blog') ?>">Больше новостей</a>
     </div>
 </section>
-
-<script src="<?= Yii::getAlias('@web/js/change-button.js') ?>"></script>

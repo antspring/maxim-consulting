@@ -6,6 +6,7 @@ use app\models\Services;
 
 class ServicesWidget extends \yii\base\Widget
 {
+
     public function run()
     {
         $query = Services::find();

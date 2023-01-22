@@ -3,6 +3,8 @@
 
 use app\components\ServicesWidget;
 
+\app\assets\ButtonAsset::register($this);
+
 $this->title = 'О компании | Maxim Консалтинг';
 $this->registerMetaTag(['name' => 'title', 'content' => 'О компании']);
 ?>
@@ -129,5 +131,3 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'О компании']);
         <?= ServicesWidget::widget() ?>
     </section>
 </div>
-
-<script src="<?= Yii::getAlias('@web/js/change-request-button.js') ?>"></script>

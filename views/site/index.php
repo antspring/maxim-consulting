@@ -6,6 +6,8 @@ use app\components\ServicesWidget;
 
 /** @var app\models\News $news */
 
+\app\assets\ButtonAsset::register($this);
+
 $this->title = 'Юридические услуги | Maxim Consulting';
 $this->registerMetaTag(['name' => 'title', 'content' => 'Юридические услуги']);
 ?>
@@ -73,7 +75,7 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Юридические 
                     </ul>
                 </div>
                 <a class="btn-request btn-request-primary btn-request-primary-outline link mt-xs-3 mt-sm-5 mt-xxl-0"
-                   href="<?= Yii::getAlias('/site/about-us') ?>">Подробнее о
+                   href="<?= \yii\helpers\Url::toRoute('site/about-us') ?>">Подробнее о
                     компании</a>
             </div>
         </div>
@@ -95,7 +97,7 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Юридические 
                                 data-bs-toggle="modal" data-bs-target="#exampleModal">Оставить заявку
                         </button>
                         <a class="btn-request btn-request-primary btn-request-primary-outline link body-m-400"
-                           href="<?= Yii::getAlias('/site/contacts') ?>">Контакты</a>
+                           href="<?= \yii\helpers\Url::toRoute('site/contacts') ?>">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -127,7 +129,8 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Юридические 
                     <div class="main-blog-item d-flex flex-column flex-md-row me-1">
                         <img class="main-blog-image" src="<?= Yii::getAlias('@web/' . $new->image) ?>" alt="">
                         <div class="main-blog-item-text">
-                            <a class="link" href="<?= \yii\helpers\Url::toRoute('site/blog-article?id=' . $new->id) ?>">
+                            <a class="link"
+                               href="<?= \yii\helpers\Url::toRoute(['blog/article', 'id' => $new->id]) ?>">
                                 <p class="body-m-600">
                                     <?= $new->title ?>
                                 </p>
@@ -145,8 +148,6 @@ $this->registerMetaTag(['name' => 'title', 'content' => 'Юридические 
             } ?>
         </div>
         <a class="btn-request btn-request-primary btn-request-primary-outline link body-m-400"
-           href="<?= Yii::getAlias('/site/blog') ?>">Больше новостей</a>
+           href="<?= \yii\helpers\Url::toRoute('/blog') ?>">Больше новостей</a>
     </div>
 </section>
-
-<script src="<?= Yii::getAlias('@web/js/change-request-button.js') ?>"></script>

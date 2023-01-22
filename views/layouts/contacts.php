@@ -12,6 +12,7 @@ use yii\bootstrap5\Html;
 use yii\helpers\Url;
 
 AppAsset::register($this);
+\app\assets\ContactsAsset::register($this);
 
 $this->registerCsrfMetaTags();
 $this->registerMetaTag(['charset' => Yii::$app->charset], 'charset');
@@ -43,19 +44,23 @@ $this->beginBody() ?>
                 <div class="nav-items">
                     <ul class="d-flex m-0 p-0 nav-items-list d-none d-lg-flex">
                         <li class="paragraph-main body-m-400">
-                            <a class="link" href="<?= Url::toRoute('/site/services') ?>">Услуги</a>
+                            <a class="link" href="<?= Url::toRoute('/service') ?>">Услуги</a>
                         </li>
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/price') ?>">Цены</a>
                         </li>
                         <li class="paragraph-main body-m-400">
-                            <a class="link" href="<?= Url::toRoute('site/blog') ?>">Блог</a>
+                            <a class="link" href="<?= Url::toRoute('/blog') ?>">Блог</a>
                         </li>
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/about-us') ?>">О компании</a>
                         </li>
                         <li class="paragraph-main body-m-400">
                             <a class="link" href="<?= Url::toRoute('/site/contacts') ?>">Контакты</a>
+                        </li>
+                        <li class="d-lg-none paragraph-main paragraph-main-link body-m-400">
+                            <a class="link link-burger-menu" href="#exampleModal" data-bs-toggle="modal"
+                               data-bs-target="#exampleModal">Оставить заявку</a>
                         </li>
                         <li class="d-lg-none burger-menu-close position-absolute">
                             <button class="btn-close"></button>
@@ -68,7 +73,8 @@ $this->beginBody() ?>
                 </div>
             </div>
             <div>
-                <button id="btn-request" class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block mb-sm-3"
+                <button id="btn-request"
+                        class="btn-request btn-request-secondary btn-request-secondary-outline body-m-400 d-none d-lg-block mb-sm-3"
                         data-bs-toggle="modal"
                         data-bs-target="#exampleModal">Оставить заявку
                 </button>
@@ -185,27 +191,6 @@ $this->beginBody() ?>
         </div>
     </footer>
 </div>
-<script>
-    let select = document.querySelector('.contacts-select'),
-        address = document.querySelector('.contact-address'),
-        time = document.querySelector('.contact-time'),
-        tel_number = document.querySelector('.contact-tel'),
-        email = document.querySelector('.contact-email');
-
-    select.onchange = function (event) {
-        async function getContacts() {
-            await fetch('/site/get-contacts?id=' + event.target.value).then(async (response) => {
-                response = JSON.parse(await response.text());
-                address.innerHTML = response.address;
-                time.innerHTML = response.time;
-                tel_number.innerHTML = response.tel_number;
-                email.innerHTML = response.email;
-            })
-        }
-
-        getContacts();
-    }
-</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
